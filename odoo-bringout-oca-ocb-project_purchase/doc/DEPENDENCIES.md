@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [purchase](../../../../../oca-ocb-core/odoo-bringout-oca-ocb-purchase)
-- [project](../../../../odoo-bringout-oca-ocb-project)
+- [purchase](https://github.com/bringout/oca-ocb-core)
+- [project](https://github.com/bringout/oca-ocb-project)

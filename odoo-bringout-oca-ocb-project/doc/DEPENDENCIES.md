@@ -2,12 +2,12 @@
 
 This addon depends on:
 
-- [analytic](../../../../../oca-ocb-core/odoo-bringout-oca-ocb-analytic)
-- [base_setup](../../../../../oca-ocb-core/odoo-bringout-oca-ocb-base_setup)
-- [mail](../../../../../oca-ocb-core/odoo-bringout-oca-ocb-mail)
-- [portal](../../../../../oca-ocb-website/odoo-bringout-oca-ocb-portal)
-- [rating](../../../../../oca-ocb-core/odoo-bringout-oca-ocb-rating)
-- [resource](../../../../../oca-ocb-core/odoo-bringout-oca-ocb-resource)
-- [web](../../../../../oca-ocb-core/odoo-bringout-oca-ocb-web)
-- [web_tour](../../../../../oca-ocb-web/odoo-bringout-oca-ocb-web_tour)
-- [digest](../../../../../oca-ocb-core/odoo-bringout-oca-ocb-digest)
+- [analytic](https://github.com/bringout/oca-ocb-core)
+- [base_setup](https://github.com/bringout/oca-ocb-core)
+- [mail](https://github.com/bringout/oca-ocb-core)
+- [portal](https://github.com/bringout/oca-ocb-website)
+- [rating](https://github.com/bringout/oca-ocb-core)
+- [resource](https://github.com/bringout/oca-ocb-core)
+- [web](https://github.com/bringout/oca-ocb-core)
+- [web_tour](https://github.com/bringout/oca-ocb-web)
+- [digest](https://github.com/bringout/oca-ocb-core)
