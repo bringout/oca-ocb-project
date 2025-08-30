@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [hr_timesheet](../../odoo-bringout-oca-ocb-hr_timesheet)
-- [hr_holidays](../../odoo-bringout-oca-ocb-hr_holidays)
+- [hr_timesheet](../../../../../oca-ocb-hr/odoo-bringout-oca-ocb-hr_timesheet)
+- [hr_holidays](../../../../../oca-ocb-hr/odoo-bringout-oca-ocb-hr_holidays)
