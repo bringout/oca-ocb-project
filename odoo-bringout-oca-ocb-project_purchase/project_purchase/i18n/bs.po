@@ -15,6 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+# taken from hr.po
 #. module: project_purchase
 #: model:ir.model.fields,field_description:project_purchase.field_project_project__purchase_orders_count
 msgid "# Purchase Orders"
@@ -22,11 +23,12 @@ msgstr "# Nalozi u nabavi"
 
 #. module: project_purchase
 #. odoo-python
-#: code:addons/project_purchase/models/project.py:0
+#: code:addons/project_purchase/models/project.py
 #, python-format
 msgid "Other Costs"
 msgstr "Ostali troškovi"
 
+# taken from hr.po
 #. module: project_purchase
 #: model:ir.model,name:project_purchase.model_project_project
 msgid "Project"
@@ -34,21 +36,21 @@ msgstr "Projekt"
 
 #. module: project_purchase
 #. odoo-python
-#: code:addons/project_purchase/models/project.py:0
+#: code:addons/project_purchase/models/project.py
 #, python-format
 msgid "Purchase Order Items"
 msgstr "Stavke nabavnog naloga"
 
+# taken from hr.po
 #. module: project_purchase
 #: model:ir.model,name:project_purchase.model_purchase_order_line
 msgid "Purchase Order Line"
 msgstr "Stavka naloga nabave"
 
+# taken from hr.po
 #. module: project_purchase
 #. odoo-python
-#: code:addons/project_purchase/models/project.py:0
-#: code:addons/project_purchase/models/project.py:0
-#: code:addons/project_purchase/models/project.py:0
+#: code:addons/project_purchase/models/project.py
 #, python-format
 msgid "Purchase Orders"
 msgstr "Nalozi u nabavi"
