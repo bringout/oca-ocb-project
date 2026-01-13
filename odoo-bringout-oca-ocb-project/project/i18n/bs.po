@@ -720,7 +720,7 @@ msgstr "<strong>Krajnji rok:</strong>"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_task
 msgid "<strong>Description</strong>"
-msgstr "<strong>Opis</strong>"
+msgstr "<strong>Opis</strong><br/>"
 
 # taken from hr.po
 #. module: project
@@ -823,7 +823,7 @@ msgstr "Upozorenje pristupa"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_needaction
 msgid "Action Needed"
-msgstr "Potrebna akcija"
+msgstr "Potrebna radnja"
 
 # taken from hr.po
 #. module: project
@@ -841,7 +841,7 @@ msgstr "Aktivnosti"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Dekoracija iznimke aktivnosti"
+msgstr "Dekoracija izuzetka aktivnosti"
 
 # taken from hr.po
 #. module: project
@@ -1167,7 +1167,7 @@ msgstr "Dodijeljeni zadaci"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.rating_rating_view_form_project
 msgid "Assigned to"
-msgstr "Dodjeljeno"
+msgstr "Dodijeljeno"
 
 # taken from hr.po
 #. module: project
@@ -1206,7 +1206,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_attachment_count
 msgid "Attachment Count"
-msgstr "Broj zakački"
+msgstr "Broj priloga"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__attachment_ids
@@ -1541,13 +1541,13 @@ msgstr "Preduzeća"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__company_id
 msgid "Company"
-msgstr "Preduzeće"
+msgstr "Kompanija"
 
 # taken from hr.po
 #. module: project
 #: model:ir.model,name:project.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 # taken from hr.po
 #. module: project
@@ -2157,7 +2157,7 @@ msgstr "Nemate pristup, preskočite ove podatke za sažetak e-pošte korisnika"
 #: code:addons/project/models/project.py
 #, python-format
 msgid "Done"
-msgstr "${object.project_id.company_id.name}: Anketa zadovoljstva"
+msgstr "Dovršeno"
 
 # taken from hr.po
 #. module: project
@@ -2395,13 +2395,13 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_follower_ids
 msgid "Followers"
-msgstr "Pratioci"
+msgstr "Pratitelji"
 
 # taken from hr.po
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Pratioci (Partneri)"
+msgstr "Pratitelji (partneri)"
 
 # taken from hr.po
 #. module: project
@@ -2489,7 +2489,7 @@ msgstr "Siva kanban oznaka"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_collaborator_view_search
 msgid "Group By"
-msgstr "Getting Things Done (GTD)"
+msgstr "Grupiši po..."
 
 #. module: project
 #. odoo-javascript
@@ -2613,7 +2613,7 @@ msgstr "Ako je zakačeno, nove poruke će zahtjevati vašu pažnju"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_milestone__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "# Radni dani za dodjeljivanje"
+msgstr "Ako je označeno neke poruke mogu imati grešku u dostavi."
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project_stage__fold
@@ -2838,7 +2838,7 @@ msgstr "Je li rok u budućnosti"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_is_follower
 msgid "Is Follower"
-msgstr "Je pratilac"
+msgstr "Pratilac"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__is_milestone_exceeded
@@ -2985,7 +2985,7 @@ msgstr "Posljednji"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_collaborator____last_update
 msgid "Last Modified on"
-msgstr "Zadnje mijenjano"
+msgstr "Zadnja izmjena na"
 
 # taken from hr.po
 #. module: project
@@ -3027,13 +3027,13 @@ msgstr "Vrijeme promjene"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_collaborator__write_uid
 msgid "Last Updated by"
-msgstr "Zadnji ažurirao"
+msgstr "Zadnje ažuriranje izvršio"
 
 # taken from hr.po
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_collaborator__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažurirano"
+msgstr "Zadnje ažuriranje na"
 
 # taken from hr.po
 #. module: project
@@ -3254,7 +3254,7 @@ msgstr "Greška pri isporuci poruke"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_ids
 msgid "Messages"
-msgstr "Poruke"
+msgstr "Nepročitane poruke"
 
 # taken from hr.po
 #. module: project
@@ -3410,7 +3410,7 @@ msgstr "Neutral face"
 #: code:addons/project/models/project.py
 #, python-format
 msgid "New"
-msgstr "Koristite zvjezdicu za zadatke vezane za zlatne klijente"
+msgstr "Novi"
 
 # taken from hr.po
 #. module: project
@@ -3676,7 +3676,7 @@ msgstr "Broj grešaka"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_milestone__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "Prognoza"
+msgstr "Broj poruka koje zahtijevaju aktivnost"
 
 # taken from hr.po
 #. module: project
@@ -5802,7 +5802,7 @@ msgstr "Unassign Me"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_search
 msgid "Unassigned"
-msgstr "Nedodeljen"
+msgstr "Nedodjeljeno"
 
 # taken from hr.po
 #. module: project
@@ -5994,7 +5994,7 @@ msgstr "Želite bolje <b>voditi projekte</b>? <i>Započnite ovdje.</i>"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__website_message_ids
 msgid "Website Messages"
-msgstr "Poruke sa website-a"
+msgstr "Nepročitane poruke"
 
 #. module: project
 #. odoo-javascript
