@@ -45,7 +45,7 @@ msgstr "Stavke nabavnog naloga"
 #. module: project_purchase
 #: model:ir.model,name:project_purchase.model_purchase_order_line
 msgid "Purchase Order Line"
-msgstr "Stavka zahtjeva za nabavu"
+msgstr "Stavka naloga nabave"
 
 # taken from hr.po
 #. module: project_purchase
@@ -53,4 +53,4 @@ msgstr "Stavka zahtjeva za nabavu"
 #: code:addons/project_purchase/models/project.py
 #, python-format
 msgid "Purchase Orders"
-msgstr "Zahtjevi za nabavom"
+msgstr "Nalozi u nabavi"

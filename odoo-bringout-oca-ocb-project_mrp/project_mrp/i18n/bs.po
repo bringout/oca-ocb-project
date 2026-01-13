@@ -35,7 +35,7 @@ msgstr "Broj sastavnica"
 #: code:addons/project_mrp/models/project.py
 #, python-format
 msgid "Manufacturing Orders"
-msgstr "Proizvodni nalozi"
+msgstr "Nalozi za proizvodnju"
 
 # taken from hr.po
 #. module: project_mrp
