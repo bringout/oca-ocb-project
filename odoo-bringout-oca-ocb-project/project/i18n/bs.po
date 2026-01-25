@@ -115,7 +115,7 @@ msgstr "Prekretnice za %(name)s"
 #: code:addons/project/models/project.py
 #, python-format
 msgid "%(name)s's Rating"
-msgstr "% Uključeno"
+msgstr "%(name)s's Rating"
 
 # taken from hr.po
 #. module: project
@@ -1557,10 +1557,7 @@ msgstr "Potvrda"
 #: code:addons/project/static/src/js/tours/project.js
 #, python-format
 msgid "Congratulations, you are now a master of project management."
-msgstr ""
-"Komunicirajte sa klijentima na zadatku koristeći email gateway. Priložite "
-"dizajne logoa zadatku, tako da informacije teče od dizajnera do radnika koji"
-" štampaju majicu. Organizujte prioritete među narudžbama %s koristeći ikonu."
+msgstr "Congratulations, you are now a master of project management."
 
 # taken from hr.po
 #. module: project
@@ -1929,11 +1926,7 @@ msgstr "Krajnji rok: %s"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_message_user_assigned
 msgid "Dear"
-msgstr ""
-"Klijenti predlažu povratne informacije putem emaila; Odoo kreira zadatke "
-"automatski, i možete komunicirati na zadatku direktno. Vaši menadžeri "
-"odlučuju koje povratne informacije su prihvaćene %s i koje povratne "
-"informacije se prebacuju u kolonu \"Odbačeno\"."
+msgstr "Dear"
 
 # taken from hr.po
 #. module: project
@@ -4297,7 +4290,7 @@ msgstr "Objavljeno"
 #: code:addons/project/static/src/project_sharing/components/chatter/chatter_container.js
 #, python-format
 msgid "Published on %s"
-msgstr "Zadovoljstvo projektom"
+msgstr "Published on %s"
 
 # taken from hr.po
 #. module: project
@@ -4601,7 +4594,7 @@ msgstr "Izvještavanje"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js
 #, python-format
 msgid "Research"
-msgstr "Ocjene od %s"
+msgstr "Research"
 
 # taken from hr.po
 #. module: project
@@ -5266,7 +5259,7 @@ msgstr "Svi zadaci"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_track_depending_tasks
 msgid "Task:"
-msgstr "Zadatak %s ne može imati nekoliko nivoa podzadataka."
+msgstr "Task:"
 
 # taken from hr.po
 #. module: project
@@ -6024,7 +6017,7 @@ msgstr "Da li želite de-arhivirati i sve zadatke sadržane u ovim fazama?"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js
 #, python-format
 msgid "Writing"
-msgstr "Čeka sljedeću fazu: koristite %s i %s bullet."
+msgstr "Writing"
 
 # taken from hr.po
 #. module: project
@@ -6124,9 +6117,7 @@ msgstr "Ne možete pisati u polja %s u zadatku."
 #: code:addons/project/models/project.py
 #, python-format
 msgid "You have been assigned to %s"
-msgstr ""
-"Ne možete obrisati projekt koji sadrži zadatke. Možete ga ili arhivirati ili"
-" prvo obrisati sve njegove zadatke."
+msgstr "You have been assigned to %s"
 
 # taken from hr.po
 #. module: project
