@@ -1,14 +1,26 @@
-/* @odoo-module */
+import { useState } from "@odoo/owl";
+import { ProjectTaskKanbanCompiler } from "./project_task_kanban_compiler";
+import { RottingKanbanRecord } from "@mail/js/rotting_mixin/rotting_kanban_record";
+import { SubtaskKanbanList } from "@project/components/subtask_kanban_list/subtask_kanban_list"
 
-import { Record } from '@web/views/relational_model';
+export class ProjectTaskKanbanRecord extends RottingKanbanRecord {
+    static Compiler = ProjectTaskKanbanCompiler;
+    static components = {
+        ...RottingKanbanRecord.components,
+        SubtaskKanbanList,
+    };
 
-export class ProjectTaskRecord extends Record {
-    async _applyChanges(changes) {
-        const value = changes.personal_stage_type_ids;
-        if (value && Array.isArray(value)) {
-            delete changes.personal_stage_type_ids;
-            changes.personal_stage_type_id = value;
-        }
-        await super._applyChanges(changes);
+    setup() {
+        super.setup();
+        this.state = useState({folded: true});
+    }
+
+    /**
+     * @override
+     */
+    get renderingContext() {
+        const context = super.renderingContext;
+        context["state"] = this.state;
+        return context;
     }
 }

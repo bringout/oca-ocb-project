@@ -1,30 +1,30 @@
-# -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from datetime import timedelta
 from dateutil.relativedelta import relativedelta
-from werkzeug.urls import url_encode
 
 from odoo import api, fields, models
-from odoo.osv import expression
-from odoo.tools import formatLang
+from odoo.fields import Domain
+from odoo.tools import format_amount, formatLang
 
 STATUS_COLOR = {
     'on_track': 20,  # green / success
-    'at_risk': 2,  # orange
+    'at_risk': 22,  # orange
     'off_track': 23,  # red / danger
-    'on_hold': 4,  # light blue
+    'on_hold': 21,  # light blue
+    'done': 24,  # purple
     False: 0,  # default grey -- for studio
     # Only used in project.task
     'to_define': 0,
 }
 
+
 class ProjectUpdate(models.Model):
     _name = 'project.update'
     _description = 'Project Update'
-    _order = 'date desc'
+    _order = 'id desc'
     _inherit = ['mail.thread.cc', 'mail.activity.mixin']
 
+    @api.model
     def default_get(self, fields):
         result = super().default_get(fields)
         if 'project_id' in fields and not result.get('project_id'):
@@ -46,16 +46,21 @@ class ProjectUpdate(models.Model):
         ('on_track', 'On Track'),
         ('at_risk', 'At Risk'),
         ('off_track', 'Off Track'),
-        ('on_hold', 'On Hold')
-    ], required=True, tracking=True)
-    color = fields.Integer(compute='_compute_color')
+        ('on_hold', 'On Hold'),
+        ('done', 'Complete'),
+    ], required=True, tracking=True, export_string_translation=False)
+    color = fields.Integer(compute='_compute_color', export_string_translation=False)
     progress = fields.Integer(tracking=True)
-    progress_percentage = fields.Float(compute='_compute_progress_percentage')
+    progress_percentage = fields.Float(compute='_compute_progress_percentage', export_string_translation=False)
     user_id = fields.Many2one('res.users', string='Author', required=True, default=lambda self: self.env.user)
     description = fields.Html()
     date = fields.Date(default=fields.Date.context_today, tracking=True)
-    project_id = fields.Many2one('project.project', required=True)
-    name_cropped = fields.Char(compute="_compute_name_cropped")
+    project_id = fields.Many2one('project.project', required=True, domain=[('is_template', '=', False)], index=True, export_string_translation=False)
+    name_cropped = fields.Char(compute="_compute_name_cropped", export_string_translation=False)
+    task_count = fields.Integer("Task Count", readonly=True, export_string_translation=False)
+    closed_task_count = fields.Integer("Closed Task Count", readonly=True, export_string_translation=False)
+    closed_task_percentage = fields.Integer("Closed Task Percentage", compute="_compute_closed_task_percentage", export_string_translation=False)
+    label_tasks = fields.Char(related="project_id.label_tasks")
 
     @api.depends('status')
     def _compute_color(self):
@@ -64,13 +69,17 @@ class ProjectUpdate(models.Model):
 
     @api.depends('progress')
     def _compute_progress_percentage(self):
-        for u in self:
-            u.progress_percentage = u.progress / 100
+        for update in self:
+            update.progress_percentage = update.progress / 100
 
     @api.depends('name')
     def _compute_name_cropped(self):
-        for u in self:
-            u.name_cropped = (u.name[:57] + '...') if len(u.name) > 60 else u.name
+        for update in self:
+            update.name_cropped = (update.name[:57] + '...') if update.name and len(update.name) > 60 else update.name
+
+    def _compute_closed_task_percentage(self):
+        for update in self:
+            update.closed_task_percentage = update.task_count and round(update.closed_task_count * 100 / update.task_count)
 
     # ---------------------------------
     # ORM Override
@@ -79,7 +88,12 @@ class ProjectUpdate(models.Model):
     def create(self, vals_list):
         updates = super().create(vals_list)
         for update in updates:
-            update.project_id.sudo().last_update_id = update
+            project = update.project_id
+            project.sudo().last_update_id = update
+            update.write({
+                "task_count": project.task_count,
+                "closed_task_count": project.task_count - project.open_task_count,
+            })
         return updates
 
     def unlink(self):
@@ -99,12 +113,16 @@ class ProjectUpdate(models.Model):
     @api.model
     def _get_template_values(self, project):
         milestones = self._get_milestone_values(project)
+        profitability_values, show_profitability = project._get_profitability_values()
         return {
             'user': self.env.user,
             'project': project,
+            'profitability': profitability_values,
+            'show_profitability': show_profitability,
             'show_activities': milestones['show_section'],
             'milestones': milestones,
             'format_lang': lambda value, digits: formatLang(self.env, value, digits=digits),
+            'format_monetary': lambda value: format_amount(self.env, value, project.currency_id, trailing_zeroes=False),
         }
 
     @api.model
@@ -122,9 +140,9 @@ class ProjectUpdate(models.Model):
             [('project_id', '=', project.id),
              '|', ('deadline', '<', fields.Date.context_today(self) + relativedelta(years=1)), ('deadline', '=', False)])._get_data_list()
         updated_milestones = self._get_last_updated_milestone(project)
-        domain = [('project_id', '=', project.id)]
+        domain = Domain('project_id', '=', project.id)
         if project.last_update_id.create_date:
-            domain = expression.AND([domain, [('create_date', '>', project.last_update_id.create_date)]])
+            domain &= Domain('create_date', '>', project.last_update_id.create_date)
         created_milestones = Milestone.search(domain)._get_data_list()
         return {
             'show_section': (list_milestones or updated_milestones or created_milestones) and True or False,
@@ -145,7 +163,7 @@ class ProjectUpdate(models.Model):
                  INNER JOIN mail_tracking_value mtv
                          ON mm.id = mtv.mail_message_id
                  INNER JOIN ir_model_fields imf
-                         ON mtv.field = imf.id
+                         ON mtv.field_id = imf.id
                         AND imf.model = 'project.milestone'
                         AND imf.name = 'deadline'
                  INNER JOIN project_milestone pm

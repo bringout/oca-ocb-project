@@ -1,8 +1,6 @@
-/** @odoo-module */
-
 import { listView } from "@web/views/list/list_view";
-
-import { ProjectSharingListRenderer } from "./list_renderer";
+import { ProjectTaskControlPanel } from "@project/views/project_task_control_panel/project_task_control_panel";
+import { ProjectTaskRelationalModel } from "@project/views/project_task_relational_model";
 
 const props = listView.props;
 listView.props = function (genericProps, view) {
@@ -12,4 +10,6 @@ listView.props = function (genericProps, view) {
         allowSelectors: false,
     };
 };
-listView.Renderer = ProjectSharingListRenderer;
+
+listView.Model = ProjectTaskRelationalModel;
+listView.ControlPanel = ProjectTaskControlPanel;

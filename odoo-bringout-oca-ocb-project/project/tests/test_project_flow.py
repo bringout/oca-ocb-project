@@ -1,137 +1,15 @@
-# -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
-from markupsafe import Markup
-
 from .test_project_base import TestProjectCommon
 from odoo import Command
-from odoo.tools import mute_logger
-from odoo.addons.mail.tests.common import MailCommon
+from odoo.addons.mail.tests.common import MailCase
 from odoo.exceptions import AccessError
 
 
-EMAIL_TPL = """Return-Path: <whatever-2a840@postmaster.twitter.com>
-X-Original-To: {to}
-Delivered-To: {to}
-To: {to}
-cc: {cc}
-Received: by mail1.odoo.com (Postfix, from userid 10002)
-    id 5DF9ABFB2A; Fri, 10 Aug 2012 16:16:39 +0200 (CEST)
-Message-ID: {msg_id}
-Date: Tue, 29 Nov 2011 12:43:21 +0530
-From: {email_from}
-MIME-Version: 1.0
-Subject: {subject}
-Content-Type: text/plain; charset=ISO-8859-1; format=flowed
-
-Hello,
-
-This email should create a new entry in your module. Please check that it
-effectively works.
-
-Thanks,
-
---
-Raoul Boitempoils
-Integrator at Agrolait"""
-
-
-class TestProjectFlow(TestProjectCommon, MailCommon):
+class TestProjectFlow(TestProjectCommon, MailCase):
 
     def test_project_process_project_manager_duplicate(self):
         pigs = self.project_pigs.with_user(self.user_projectmanager)
         dogs = pigs.copy()
         self.assertEqual(len(dogs.tasks), 2, 'project: duplicating a project must duplicate its tasks')
-
-    @mute_logger('odoo.addons.mail.models.mail_thread')
-    def test_task_process_without_stage(self):
-        # Do: incoming mail from an unknown partner on an alias creates a new task 'Frogs'
-        task = self.format_and_process(
-            EMAIL_TPL, to='project+pigs@mydomain.com, valid.lelitre@agrolait.com', cc='valid.other@gmail.com',
-            email_from='%s' % self.user_projectuser.email,
-            subject='Frogs', msg_id='<1198923581.41972151344608186760.JavaMail@agrolait.com>',
-            target_model='project.task')
-
-        # Test: one task created by mailgateway administrator
-        self.assertEqual(len(task), 1, 'project: message_process: a new project.task should have been created')
-        # Test: check partner in message followers
-        self.assertIn(self.partner_2, task.message_partner_ids, "Partner in message cc is not added as a task followers.")
-        # Test: messages
-        self.assertEqual(len(task.message_ids), 1,
-                         'project: message_process: newly created task should have 1 message: email')
-        self.assertEqual(task.message_ids.subtype_id, self.env.ref('project.mt_task_new'),
-                         'project: message_process: first message of new task should have Task Created subtype')
-        self.assertEqual(task.message_ids.author_id, self.user_projectuser.partner_id,
-                         'project: message_process: second message should be the one from Agrolait (partner failed)')
-        self.assertEqual(task.message_ids.subject, 'Frogs',
-                         'project: message_process: second message should be the one from Agrolait (subject failed)')
-        # Test: task content
-        self.assertEqual(task.name, 'Frogs', 'project_task: name should be the email subject')
-        self.assertEqual(task.project_id, self.project_pigs, 'project_task: incorrect project')
-        self.assertEqual(task.stage_id.sequence, False, "project_task: shouldn't have a stage, i.e. sequence=False")
-
-    @mute_logger('odoo.addons.mail.models.mail_thread')
-    def test_task_process_with_stages(self):
-        # Do: incoming mail from an unknown partner on an alias creates a new task 'Cats'
-        task = self.format_and_process(
-            EMAIL_TPL, to='project+goats@mydomain.com, valid.lelitre@agrolait.com', cc='valid.other@gmail.com',
-            email_from='%s' % self.user_projectuser.email,
-            subject='Cats', msg_id='<1198923581.41972151344608186760.JavaMail@agrolait.com>',
-            target_model='project.task')
-
-        # Test: one task created by mailgateway administrator
-        self.assertEqual(len(task), 1, 'project: message_process: a new project.task should have been created')
-        # Test: check partner in message followers
-        self.assertIn(self.partner_2, task.message_partner_ids, "Partner in message cc is not added as a task followers.")
-        # Test: messages
-        self.assertEqual(len(task.message_ids), 1,
-                         'project: message_process: newly created task should have 1 messages: email')
-        self.assertEqual(task.message_ids.subtype_id, self.env.ref('project.mt_task_new'),
-                         'project: message_process: first message of new task should have Task Created subtype')
-        self.assertEqual(task.message_ids.author_id, self.user_projectuser.partner_id,
-                         'project: message_process: first message should be the one from Agrolait (partner failed)')
-        self.assertEqual(task.message_ids.subject, 'Cats',
-                         'project: message_process: first message should be the one from Agrolait (subject failed)')
-        # Test: task content
-        self.assertEqual(task.name, 'Cats', 'project_task: name should be the email subject')
-        self.assertEqual(task.project_id, self.project_goats, 'project_task: incorrect project')
-        self.assertEqual(task.stage_id.sequence, 1, "project_task: should have a stage with sequence=1")
-
-    @mute_logger('odoo.addons.mail.models.mail_thread')
-    def test_task_from_email_alias(self):
-        # Do: incoming mail from a known partner email on an alias creates a new task 'Super Frog'
-        task = self.format_and_process(
-            EMAIL_TPL, to='project+goats@mydomain.com, valid.lelitre@agrolait.com', cc='valid.other@gmail.com',
-            email_from='%s' % self.user_portal.email,
-            subject='Super Frog', msg_id='<1198923581.41972151344608186760.JavaMail@agrolait.com>',
-            target_model='project.task')
-
-        # Test: one task created by mailgateway administrator
-        self.assertEqual(len(task), 1, 'project: message_process: a new project.task should have been created')
-        # Test: check partner in message followers
-        self.assertIn(self.partner_2, task.message_partner_ids, "Partner in message cc is not added as a task followers.")
-        # Test: check partner has not been assgined
-        self.assertFalse(task.user_ids, "Partner is not added as an assignees")
-        # Test: messages
-        self.assertEqual(len(task.message_ids), 1,
-                         'project: message_process: newly created task should have 1 messages: email')
-        self.assertEqual(task.message_ids.subtype_id, self.env.ref('project.mt_task_new'),
-                         'project: message_process: first message of new task should have Task Created subtype')
-        self.assertEqual(task.message_ids.author_id, self.user_portal.partner_id,
-                         'project: message_process: first message should be the one from Agrolait (partner failed)')
-        self.assertEqual(task.message_ids.subject, 'Super Frog',
-                         'project: message_process: first message should be the one from Agrolait (subject failed)')
-        # Test: task content
-        self.assertEqual(task.name, 'Super Frog', 'project_task: name should be the email subject')
-        self.assertEqual(task.project_id, self.project_goats, 'project_task: incorrect project')
-        self.assertEqual(task.stage_id.sequence, 1, "project_task: should have a stage with sequence=1")
-        self.assertEqual(
-            task.description,
-            Markup(
-                '<pre>Hello,\n\nThis email should create a new entry in your module. Please check that it\neffectively works.\n\nThanks,\n<span data-o-mail-quote="1">\n--\nRaoul Boitempoils\nIntegrator at Agrolait</span></pre>\n'
-            ),
-            'The task description should be the email content.',
-        )
 
     def test_subtask_process(self):
         """
@@ -153,7 +31,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             'user_ids': self.user_projectuser,
             'project_id': self.project_pigs.id,
             'partner_id': self.partner_2.id,
-            'planned_hours': 12,
+            'allocated_hours': 12,
         })
 
         another_parent_task = Task.create({
@@ -161,7 +39,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             'user_ids': self.user_projectuser,
             'project_id': self.project_pigs.id,
             'partner_id': self.partner_3.id,
-            'planned_hours': 0,
+            'allocated_hours': 0,
         })
 
         # remove the partner_id of the 'goats' project
@@ -174,7 +52,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
         # the child task 1 is linked to a project without partner_id (goats project)
         child_task_1 = Task.with_context(default_project_id=self.project_goats.id, default_parent_id=parent_task.id).create({
             'name': 'Task Child with project',
-            'planned_hours': 3,
+            'allocated_hours': 3,
         })
 
         # the child task 2 is linked to a project with a partner_id (pigs project)
@@ -182,8 +60,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             'name': 'Task Child without project',
             'parent_id': parent_task.id,
             'project_id': self.project_pigs.id,
-            'display_project_id': self.project_pigs.id,
-            'planned_hours': 5,
+            'allocated_hours': 5,
         })
 
         self.assertEqual(
@@ -199,7 +76,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             "Parent task should have 2 children")
 
         self.assertEqual(
-            parent_task.subtask_planned_hours, 8,
+            parent_task.subtask_allocated_hours, 8,
             "Planned hours of subtask should impact parent task")
 
         # change the parent of a subtask without a project partner_id
@@ -222,7 +99,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
 
         # set a project with partner_id to a subtask without project partner_id
         child_task_1.write({
-            'display_project_id': self.project_pigs.id
+            'project_id': self.project_pigs.id
         })
 
         self.assertNotEqual(
@@ -236,7 +113,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
 
         # set a project with partner_id to a subtask with a project partner_id
         child_task_2.write({
-            'display_project_id': self.project_goats.id
+            'project_id': self.project_goats.id
         })
 
         self.assertEqual(
@@ -359,11 +236,11 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
         self.assertEqual(task.personal_stage_id.stage_id.name, stages[0].get('name'), "tasks assigned to the current user should be in the right default stage")
 
     def test_send_rating_review(self):
-        project_settings = self.env["res.config.settings"].create({'group_project_rating': True})
-        project_settings.execute()
-        self.assertTrue(self.project_goats.rating_active, 'The customer ratings should be enabled in this project.')
-
         won_stage = self.project_goats.type_ids[-1]
+        won_stage.write({
+            'rating_active': True,
+            'rating_status': 'stage',
+        })
         rating_request_mail_template = self.env.ref('project.rating_project_request_email_template')
         won_stage.write({'rating_template_id': rating_request_mail_template.id})
         tasks = self.env['project.task'].with_context(mail_create_nolog=True, default_project_id=self.project_goats.id).create([
@@ -427,42 +304,173 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
         self.assertEqual(len(project_A.message_ids), init_nb_log + 2,
             "should have 2 new messages: one for tracking, one for template")
 
-    def test_project_notify_get_recipients_groups(self):
-        projects = self.env['project.project'].create([
-            {
-                'name': 'public project',
-                'privacy_visibility': 'portal',
-                'partner_id': self.partner_1.id,
-            },
-            {
-                'name': 'internal project',
-                'privacy_visibility': 'employees',
-                'partner_id': self.partner_1.id,
-            },
-            {
-                'name': 'private project',
-                'privacy_visibility': 'followers',
-                'partner_id': self.partner_1.id,
-            },
-        ])
-        for project in projects:
-            groups = project._notify_get_recipients_groups()
-            groups_per_key = {g[0]: g for g in groups}
-            for key, group in groups_per_key.items():
-                has_button_access = group[2]['has_button_access']
-                if key in ['portal', 'portal_customer']:
-                    self.assertEqual(
-                        has_button_access,
-                        project.name == 'public project',
-                        "Only the public project should have its name clickable in the email sent to the customer when an email is sent via a email template set in the project stage for instance."
-                    )
-                elif key == 'user':
-                    self.assertTrue(has_button_access)
-
     def test_private_task_search_tag(self):
         task = self.env['project.task'].create({
             'name': 'Test Private Task',
         })
         # Tag name_search should not raise Error if project_id is False
         task.tag_ids.with_context(project_id=task.project_id.id).name_search(
-            args=["!", ["id", "in", []]])
+            domain=["!", ["id", "in", []]])
+
+    def test_copy_project_with_default_name(self):
+        """ Test the new project after the duplication got the exepected name
+
+            Test Cases:
+            ==========
+            1. Duplicate a project
+            2. Check the new project got the name of the project to copy plus `(copy)`
+            3. Duplicate a project with default name
+            4. Check the new project got the name defined in the default
+        """
+        project = self.project_pigs.copy()
+        self.assertEqual(project.name, 'Pigs (copy)', "The name of the copied project should be 'Pigs (copy)'")
+
+        project = self.project_pigs.copy({'name': 'Pigs 2'})
+        self.assertEqual(project.name, 'Pigs 2', "The name of the copied project should be 'Pigs 2'")
+
+    def test_description_field_history_on_update(self):
+        """Test updating 'description' field in project task and checking history content at revision id."""
+
+        task = self.env['project.task'].create({
+            'name': 'Test Task',
+            'description': 'Hello',
+        })
+        task.description = False
+        self.assertEqual(task.html_field_history_get_content_at_revision('description', 1), '<p>Hello</p>', "should recover previous text for description")
+
+    def test_copy_project_with_embedded_actions(self):
+        project_pigs_milestone_action = self.env['ir.actions.act_window'].create({
+            'name': 'Milestones',
+            'res_model': 'project.milestone',
+            'view_mode': 'kanban,list,form',
+            'domain': f"[('project_id', '=', {self.project_pigs.id})]",
+        })
+        task_action = self.env['ir.actions.act_window'].create({
+            'name': 'Tasks',
+            'res_model': 'project.task',
+            'view_mode': 'kanban,list,form',
+            'domain': "[('project_id', '=', active_id), ('display_in_project', '=', True)]",
+            'context': "{'default_project_id': active_id}",
+        })
+        task_embedded_action = self.env['ir.embedded.actions'].create({
+            'parent_res_model': 'project.project',
+            'parent_res_id': self.project_pigs.id,
+            'action_id': project_pigs_milestone_action.id,
+            'parent_action_id': task_action.id,
+        })
+        project_model = self.env['ir.model'].search([('model', '=', 'project.task')])
+        task_embedded_filter = self.env['ir.filters'].create({
+            'name': 'filter',
+            'embedded_action_id': task_embedded_action.id,
+            'embedded_parent_res_id': self.project_pigs.id,
+            'action_id': project_pigs_milestone_action.id,
+            'model_id': project_model.id,
+        })
+
+        new_project_pigs = self.project_pigs.copy()
+        embedded_action = self.env['ir.embedded.actions'].search([
+            ('parent_res_model', '=', 'project.project'),
+            ('parent_res_id', '=', new_project_pigs.id),
+        ])
+        self.assertTrue(
+            embedded_action,
+            'The embedded action linked to project pigs should also be copied.',
+        )
+        self.assertEqual(
+            embedded_action.action_id,
+            task_embedded_action.action_id,
+            "The new embedded action should have the same action than the one copied.",
+        )
+        self.assertEqual(
+            embedded_action.parent_res_model,
+            task_embedded_action.parent_res_model,
+        )
+        self.assertEqual(
+            embedded_action.parent_action_id,
+            task_embedded_action.parent_action_id,
+        )
+        duplicated_task_embedded_filter = embedded_action.filter_ids
+        self.assertEqual(
+            len(duplicated_task_embedded_filter),
+            1,
+            "The filter linked to the original embedded action should also be copied."
+        )
+        self.assertEqual(duplicated_task_embedded_filter.name, f"{task_embedded_filter.name} (copy)")
+        self.assertEqual(duplicated_task_embedded_filter.embedded_action_id, embedded_action)
+        self.assertEqual(duplicated_task_embedded_filter.embedded_parent_res_id, new_project_pigs.id)
+        self.assertEqual(duplicated_task_embedded_filter.action_id, task_embedded_filter.action_id)
+        self.assertEqual(duplicated_task_embedded_filter.model_id, task_embedded_filter.model_id)
+
+    def test_do_not_copy_project_stage(self):
+        stage = self.env['project.project.stage'].create({'name': 'Custom stage'})  # Default sequence is 50
+        self.project_pigs.stage_id = stage.id
+        project_copy = self.project_pigs.with_context(default_stage_id=stage.id).copy()
+        self.assertNotEqual(project_copy.stage_id, self.project_pigs.stage_id, 'Copied project should have lowest sequence stage')
+
+    def test_project_task_copy_without_archive_user(self):
+        self.user_projectuser.action_archive()
+        task = self.task_1.copy()
+        self.assertFalse(task.user_ids)
+        task_b = self.task_2.copy({
+            'name': 'Task B',
+            'user_ids': [Command.set([self.user_projectuser.id, self.user_projectmanager.id])],
+        })
+        self.assertEqual(self.user_projectuser + self.user_projectmanager, task_b.user_ids)
+
+    def test_project_sub_task_copy_without_archive_user(self):
+        self.task_1.write({
+            'child_ids': [self.task_2.id]
+        })
+        self.user_projectmanager.action_archive()
+        task_1_copy = self.task_1.copy()
+        self.assertFalse(task_1_copy.child_ids.user_ids)
+
+    def test_task_email_context_with_subtitles(self):
+        task = self.env['project.task'].create({
+            'name': 'Task',
+            'user_ids': [Command.set([self.user_projectuser.id])],
+            'project_id': self.project_goats.id,
+        })
+        self.assertFalse(self.project_goats.message_follower_ids)
+        self.assertEqual(self.project_goats.privacy_visibility, 'followers')
+        self.project_goats.invalidate_recordset()
+        render_context = task.with_user(self.user_projectuser)._notify_by_email_prepare_rendering_context(task.message_ids, {})
+        self.assertListEqual(render_context['subtitles'], ['Task', 'Project: Goats, Stage: New'])
+
+    def test_project_multi_tasks_copy_with_archive_user(self):
+        """
+        Step 1: Create new  an active project user
+        Step 2: Create three tasks
+            - Task 1: No users assigned.
+            - Task 2: Assigned to two active users.
+            - Task 3: Assigned to one active and one soon-to-be-archived user.
+        Step 3: Archive one of the users
+        Step 4: Copy all tasks
+        Step 5: Validate expected user_ids on copied tasks
+           - Task1 had no users → expect no users in the copied task.
+           - Task2 had 2 active users → both should be preserved.
+           - Task3 had one active + one archived user → only active (self.user_projectuser) should be preserved in the copy.
+        """
+
+        user_projectuser = self.user_projectuser.copy()
+
+        tasks = self.env['project.task'].create([{
+            'name': 'Task1',
+            'project_id': self.project_goats.id,
+        }, {
+            'name': 'Task2',
+            'user_ids': [Command.set([self.user_projectuser.id, self.user_projectmanager.id])],
+            'project_id': self.project_goats.id,
+        }, {
+            'name': 'Task3',
+            'user_ids': [Command.set([self.user_projectuser.id, user_projectuser.id])],
+            'project_id': self.project_goats.id,
+        }])
+
+        user_projectuser.action_archive()
+
+        task1, task_2, task_3 = tasks.copy()
+
+        self.assertFalse(task1.user_ids)
+        self.assertEqual(self.user_projectuser + self.user_projectmanager, task_2.user_ids)
+        self.assertEqual(self.user_projectuser, task_3.user_ids)

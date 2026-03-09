@@ -1,14 +1,19 @@
-/** @odoo-module  */
-
 import { formatDate } from "@web/core/l10n/dates";
 import { useService } from '@web/core/utils/hooks';
+import { Component, useState, onWillUpdateProps } from "@odoo/owl";
 
-const { Component, useState, onWillUpdateProps, status } = owl;
 const { DateTime } = luxon;
 
 export class ProjectMilestone extends Component {
+    static props = {
+        context: Object,
+        milestone: Object,
+    };
+    static template = "project.ProjectMilestone";
+
     setup() {
         this.orm = useService('orm');
+        this.dialog = useService("dialog");
         this.milestone = useState(this.props.milestone);
         this.state = useState({
             colorClass: this._getColorClass(),
@@ -45,29 +50,6 @@ export class ProjectMilestone extends Component {
         }
     }
 
-    async onDeleteMilestone() {
-        await this.orm.call('project.milestone', 'unlink', [this.milestone.id]);
-        await this.props.load();
-    }
-
-    async onOpenMilestone() {
-        if (!this.write_mutex) {
-            this.write_mutex = true;
-            this.props.open({
-                resModel: this.resModel,
-                resId: this.milestone.id,
-                title: this.env._t("Milestone"),
-            }, {
-                onClose: async () => {
-                    if (status(this) === "mounted") {
-                        await this.props.load();
-                        this.write_mutex = false;
-                    }
-                },
-            });
-        }
-    }
-
     async toggleIsReached() {
         if (!this.write_mutex) {
             this.write_mutex = true;
@@ -82,11 +64,3 @@ export class ProjectMilestone extends Component {
         }
     }
 }
-
-ProjectMilestone.props = {
-    context: Object,
-    milestone: Object,
-    open: Function,
-    load: Function,
-};
-ProjectMilestone.template = 'project.ProjectMilestone';
