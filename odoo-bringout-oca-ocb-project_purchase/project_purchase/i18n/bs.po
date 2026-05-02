@@ -15,38 +15,33 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #. module: project_purchase
 #: model:product.template,name:project_purchase.product_product_bricks_product_template
 msgid "Bricks"
-msgstr ""
+msgstr "Cigle"
 
 #. module: project_purchase
 #: model:product.template,name:project_purchase.product_product_cement_product_template
 msgid "Cement"
-msgstr ""
+msgstr "Cement"
 
 #. module: project_purchase
 #: model:ir.model.fields,field_description:project_purchase.field_project_project__display_name
-#: model:ir.model.fields,field_description:project_purchase.field_purchase_order__display_name
-#: model:ir.model.fields,field_description:project_purchase.field_purchase_order_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Naziv za prikaz"
 
 #. module: project_purchase
 #: model:ir.model.fields,field_description:project_purchase.field_project_project__id
-#: model:ir.model.fields,field_description:project_purchase.field_purchase_order__id
-#: model:ir.model.fields,field_description:project_purchase.field_purchase_order_line__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: project_purchase
 #. odoo-python
 #: code:addons/project_purchase/models/project_project.py:0
 msgid "No purchase order found. Let's create one."
-msgstr ""
+msgstr "Nema pronađenih narudžbenica nabavke. Kreirajmo jednu."
 
 #. module: project_purchase
 #. odoo-python
@@ -55,32 +50,53 @@ msgid ""
 "Once you ordered your products from your supplier, confirm your request for "
 "quotation and it will turn into a purchase order."
 msgstr ""
+"Kada naručite proizvode od dobavljača, potvrdite svoj zahtjev za predračunom"
+" i on će postati narudžbenica nabavke."
 
+# taken from hr.po
 #. module: project_purchase
 #: model:ir.model,name:project_purchase.model_project_project
-#: model:ir.model.fields,field_description:project_purchase.field_purchase_order__project_id
 msgid "Project"
-msgstr ""
+msgstr "Projekt"
 
 #. module: project_purchase
 #: model:ir.model,name:project_purchase.model_purchase_order
 msgid "Purchase Order"
-msgstr ""
+msgstr "Narudžbenica nabavke"
 
+# taken from hr.po
 #. module: project_purchase
 #: model:ir.model,name:project_purchase.model_purchase_order_line
 msgid "Purchase Order Line"
-msgstr ""
+msgstr "Stavka naloga nabave"
 
+# taken from hr.po
 #. module: project_purchase
 #. odoo-python
 #: code:addons/project_purchase/models/project_project.py:0
-#: model:ir.embedded.actions,name:project_purchase.project_embedded_action_purchase_orders
-#: model:ir.embedded.actions,name:project_purchase.project_embedded_action_purchase_orders_dashboard
+#, python-format
 msgid "Purchase Orders"
-msgstr ""
+msgstr "Nalozi u nabavi"
 
 #. module: project_purchase
 #: model:product.template,name:project_purchase.product_product_sand_product_template
 msgid "Sand"
-msgstr ""
+msgstr "Pijesak"
+
+# taken from hr.po
+#. module: project_purchase
+#: model:ir.model.fields,field_description:project_purchase.field_project_project__purchase_orders_count
+msgid "# Purchase Orders"
+msgstr "# Nalozi u nabavi"
+
+#. module: project_purchase
+#: code:addons/project_purchase/models/project.py:0
+#, python-format
+msgid "Other Costs"
+msgstr "Ostali troškovi"
+
+#. module: project_purchase
+#: code:addons/project_purchase/models/project.py:0
+#, python-format
+msgid "Purchase Order Items"
+msgstr "Stavke nabavnog naloga"
