@@ -24,7 +24,7 @@ msgstr "# Troškovi"
 # taken from hr.po
 #. module: project_hr_expense
 #. odoo-python
-#: code:addons/project_hr_expense/models/project.py
+#: code:addons/project_hr_expense/models/project_project.py:0
 #, python-format
 msgid "Expenses"
 msgstr "Troškovi"
@@ -34,3 +34,18 @@ msgstr "Troškovi"
 #: model:ir.model,name:project_hr_expense.model_project_project
 msgid "Project"
 msgstr "Projekt"
+
+#. module: project_hr_expense
+#: model:ir.model.fields,field_description:project_hr_expense.field_hr_expense__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: project_hr_expense
+#: model:ir.model,name:project_hr_expense.model_hr_expense
+msgid "Expense"
+msgstr "Trošak"
+
+#. module: project_hr_expense
+#: model:ir.model.fields,field_description:project_hr_expense.field_hr_expense__id
+msgid "ID"
+msgstr "ID"

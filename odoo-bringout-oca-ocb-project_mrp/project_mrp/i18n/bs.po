@@ -18,7 +18,7 @@ msgstr ""
 # taken from hr.po
 #. module: project_mrp
 #. odoo-python
-#: code:addons/project_mrp/models/project.py
+#: code:addons/project_mrp/models/project_project.py:0
 #, python-format
 msgid "Bills of Materials"
 msgstr "Sastavnica"
@@ -32,7 +32,7 @@ msgstr "Broj sastavnica"
 # taken from hr.po
 #. module: project_mrp
 #. odoo-python
-#: code:addons/project_mrp/models/project.py
+#: code:addons/project_mrp/models/project_project.py:0
 #, python-format
 msgid "Manufacturing Orders"
 msgstr "Nalozi za proizvodnju"
@@ -54,3 +54,53 @@ msgstr "Projekt"
 #: model:ir.model.fields,field_description:project_mrp.field_project_project__workorder_count
 msgid "Work Order Count"
 msgstr "Broj radnih naloga"
+
+#. module: project_mrp
+#: model_terms:ir.ui.view,arch_db:project_mrp.mrp_production_form_view_inherit_project_mrp
+msgid "<span class=\"o_stat_text\">Project</span>"
+msgstr "<span class=\"o_stat_text\">Projekat</span>"
+
+#. module: project_mrp
+#: model:ir.model,name:project_mrp.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Sastavnica materijala"
+
+#. module: project_mrp
+#: code:addons/project_mrp/models/project_project.py:0
+msgid ""
+"Bills of materials allow you to define the list of required raw materials "
+"used to make a finished product; through a manufacturing order or a pack of "
+"products."
+msgstr ""
+"Sastavnice materijala omogućavaju vam da definišete listu potrebnih sirovina"
+" za izradu gotovog proizvoda; kroz proizvodni nalog ili paket proizvoda."
+
+#. module: project_mrp
+#: model:ir.model.fields,field_description:project_mrp.field_mrp_bom__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: project_mrp
+#: model:ir.model.fields,field_description:project_mrp.field_mrp_bom__id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_mrp
+#: model:ir.model,name:project_mrp.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "Proizvodni nalog"
+
+#. module: project_mrp
+#: code:addons/project_mrp/models/project_project.py:0
+msgid "No bill of materials found. Let's create one."
+msgstr "Nema pronađenih sastavnica materijala. Kreirajmo jednu."
+
+#. module: project_mrp
+#: model:ir.model,name:project_mrp.model_stock_move
+msgid "Stock Move"
+msgstr "Kretanje zaliha"
+
+#. module: project_mrp
+#: model:ir.model,name:project_mrp.model_stock_rule
+msgid "Stock Rule"
+msgstr "Pravilo zaliha"

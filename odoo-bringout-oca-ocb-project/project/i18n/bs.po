@@ -17,7 +17,7 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid ""
 "\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/views/project_calendar/project_calendar_controller.js
+#: code:addons/project/static/src/views/project_calendar/project_calendar_controller.js:0
 #, python-format
 msgid " - Tasks by Deadline"
 msgstr " - Zadaci po roku izvršenja"
@@ -64,7 +64,7 @@ msgstr "# zadataka"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/views/burndown_chart/burndown_chart_model.js
+#: code:addons/project/static/src/views/burndown_chart/burndown_chart_model.js:0
 #, python-format
 msgid "# of Tasks"
 msgstr "# od zadataka"
@@ -72,7 +72,7 @@ msgstr "# od zadataka"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_kanban
 msgid "#{record.commercial_partner_id.value}"
-msgstr "#{record.commercial_partner_id.value}"
+msgstr ""
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
@@ -86,25 +86,25 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_kanban
 msgid "#{record.partner_id.value}"
-msgstr "#{record.partner_id.value}"
+msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "%(name)s"
-msgstr "%(name)s"
+msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "%(name)s's Burndown Chart"
 msgstr "Burndown grafikon za %(name)s"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "%(name)s's Milestones"
 msgstr "Prekretnice za %(name)s"
@@ -112,15 +112,15 @@ msgstr "Prekretnice za %(name)s"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "%(name)s's Rating"
-msgstr "%(name)s's Rating"
+msgstr ""
 
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "%(name)s's Tasks Analysis"
 msgstr "Analiza zadataka %(name)s"
@@ -128,7 +128,7 @@ msgstr "Analiza zadataka %(name)s"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "%(name)s's Updates"
 msgstr "%(name)s's Ažuriranja"
@@ -136,14 +136,14 @@ msgstr "%(name)s's Ažuriranja"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "%s (copy)"
 msgstr "%s (kopija)"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "(+ %(child_count)s tasks)"
 msgstr "(+ %(child_count)s zadataka)"
@@ -151,7 +151,7 @@ msgstr "(+ %(child_count)s zadataka)"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "(+ 1 task)"
 msgstr "(+ 1 zadatak)"
@@ -175,7 +175,7 @@ msgstr "- dostignuto"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid ""
 ".\n"
@@ -297,7 +297,7 @@ msgstr "31"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid "<b>Drag &amp; drop</b> the card to change your task from stage."
 msgstr ""
@@ -307,7 +307,7 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid ""
 "<b>Log notes</b> for internal communications <i>(the people following this task won't be notified \n"
@@ -551,12 +551,12 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
 msgid "<i class=\"fa fa-warning\"/>&amp;nbsp;"
-msgstr "<i class=\"fa fa-warning\"/>&amp;nbsp;"
+msgstr ""
 
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "<p><em>Number of tasks: %(tasks_count)s</em></p>"
 msgstr "<p><em>Broj zadataka: %(tasks_count)s</em></p>"
@@ -611,7 +611,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
 msgid "<span class=\"fa fa-user me-2\" aria-label=\"Partner\" title=\"Partner\"/>"
-msgstr "<span class=\"fa fa-user me-2\" aria-label=\"Partner\" title=\"Partner\"/>"
+msgstr ""
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -636,7 +636,7 @@ msgstr "<span class=\"o_stat_text\">Posljednja ocjena</span>"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
+#: model_terms:ir.ui.view,arch_db:project.view_task_form2
 msgid "<span class=\"o_stat_text\">Sub-tasks</span>"
 msgstr "<span class=\"o_stat_text\">Pod zadaci</span>"
 
@@ -725,7 +725,7 @@ msgstr "<u>Prekretnice</u>"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_update_default_description
 msgid "=&gt;"
-msgstr "=&gt;"
+msgstr ""
 
 # taken from hr.po
 #. module: project
@@ -748,14 +748,14 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "A new task will be created on the following dates:"
 msgstr "Novi zadatak će biti kreiran na sljedeće datume:"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task_type.py:0
 #, python-format
 msgid ""
 "A personal stage cannot be linked to a project because it is only visible to"
@@ -787,7 +787,7 @@ msgid "Access Instruction Message"
 msgstr "Poruka s uputama za pristup"
 
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_share_wizard__access_mode
+#: model:ir.model.fields,field_description:project.field_project_share_collaborator_wizard__access_mode
 msgid "Access Mode"
 msgstr "Način pristupa"
 
@@ -805,9 +805,9 @@ msgstr "Potrebna akcija"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_project__active
+#: model:ir.model.fields,field_description:project.field_project_role__active
 msgid "Active"
-msgstr "Aktivan"
+msgstr "Aktivno"
 
 # taken from hr.po
 #. module: project
@@ -819,7 +819,7 @@ msgstr "Aktivnosti"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Dekoracija iznimke aktivnosti"
+msgstr "Dekoracija izuzetka aktivnosti"
 
 # taken from hr.po
 #. module: project
@@ -841,7 +841,7 @@ msgstr "Tipovi aktivnosti"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.xml
+#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.xml:0
 #, python-format
 msgid "Add Milestone"
 msgstr "Dodaj prekretnicu"
@@ -861,7 +861,7 @@ msgstr "Dodaj bilješku"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid ""
 "Add columns to organize your tasks into <b>stages</b> <i>e.g. New - In "
@@ -888,7 +888,7 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid "Add your task once it is ready."
 msgstr "Dodajte svoj zadatak kada je spreman."
@@ -896,11 +896,11 @@ msgstr "Dodajte svoj zadatak kada je spreman."
 #. module: project
 #: model:res.groups,name:project.group_project_manager
 msgid "Administrator"
-msgstr "Administrator"
+msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Agile Scrum"
 msgstr ""
@@ -910,7 +910,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_id
 msgid "Alias"
-msgstr "Alias"
+msgstr ""
 
 # taken from hr.po
 #. module: project
@@ -944,10 +944,10 @@ msgstr "Zamjenski model"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "All"
-msgstr "Sve"
+msgstr "Svi"
 
 # taken from hr.po
 #. module: project
@@ -1045,14 +1045,14 @@ msgstr "Travanj"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/views/project_task_form/project_task_form_controller.js
+#: code:addons/project/static/src/views/project_task_form/project_task_form_controller.js:0
 #, python-format
 msgid "Archive"
 msgstr "Arhiviraj"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.view_project_task_type_delete_wizard
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_stage_delete_wizard
 msgid "Archive Stages"
 msgstr "Arhiviraj faze"
 
@@ -1064,7 +1064,7 @@ msgstr "Arhivirano"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Archived tasks cannot be recurring. Please unarchive the task first."
 msgstr ""
@@ -1095,14 +1095,14 @@ msgstr "Ikona strelice"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Assembling"
 msgstr "Sastavljanje"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid "Assign a responsible to your task"
 msgstr "Dodijelite odgovornu osobu zadatku"
@@ -1122,7 +1122,7 @@ msgstr "Dodijeli mi"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Assigned"
 msgstr "Dodijeljeno"
@@ -1130,7 +1130,7 @@ msgstr "Dodijeljeno"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Assigned On: %s"
 msgstr "Datum dodjeljivanja: %s"
@@ -1184,7 +1184,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_attachment_count
 msgid "Attachment Count"
-msgstr "Broj zakački"
+msgstr "Broj priloga"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__attachment_ids
@@ -1210,7 +1210,7 @@ msgid "Auto-generate tasks for regular activities"
 msgstr "Automatski generiraj zadatke za redovite aktivnosti"
 
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_task_type__auto_validation_kanban_state
+#: model:ir.model.fields,field_description:project.field_project_task_type__auto_validation_state
 msgid "Automatic Kanban Status"
 msgstr "Automatski Kanban status"
 
@@ -1227,14 +1227,14 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml:0
 #, python-format
 msgid "Avatar"
-msgstr "Avatar"
+msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_project__rating_avg
+#: code:addons/project/models/project_project.py:0
 msgid "Average Rating"
 msgstr "Prosječna ocjena"
 
@@ -1268,7 +1268,7 @@ msgstr "Prosječna ocjena: Zadovoljavajuće"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Backlog"
 msgstr "Zaostatak"
@@ -1282,21 +1282,21 @@ msgstr "Saldo"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
 #, python-format
 msgid "Billed"
 msgstr "Fakturisano"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_task__dependent_ids
+#: model:ir.model.fields,field_description:project.field_report_project_task_user__dependent_ids
 msgid "Block"
 msgstr "Blokirano"
 
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Blocked"
 msgstr "Blokiran"
@@ -1309,14 +1309,14 @@ msgstr "Blokirano od"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.view_task_search_form
+#: model:ir.actions.act_window,name:project.project_sharing_project_task_action_blocking_tasks
 msgid "Blocking"
 msgstr "Blokira"
 
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Brainstorm"
 msgstr "Razmjena ideja"
@@ -1328,7 +1328,7 @@ msgstr "Greška"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "Burndown Chart"
 msgstr "Burndown dijagram"
@@ -1346,7 +1346,7 @@ msgstr "Može biti označen kao završen"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Canceled"
 msgstr "Otkazano"
@@ -1354,7 +1354,7 @@ msgstr "Otkazano"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/report/project_task_burndown_chart_report.py
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Cannot aggregate field %r."
 msgstr "Polje %r nije moguće objediniti."
@@ -1372,7 +1372,7 @@ msgstr "Tekst potomka"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid ""
 "Choose a <b>name</b> for your project. <i>It can be anything you want: the name of a customer,\n"
@@ -1384,7 +1384,7 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid ""
 "Choose a task <b>name</b> <i>(e.g. Website Design, Purchase Goods...)</i>"
@@ -1401,16 +1401,16 @@ msgstr "Grad"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Client Review"
 msgstr "Kružne reference nisu dozvoljene između zadataka i podzadataka"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
+#: model_terms:ir.ui.view,arch_db:project.view_task_search_form_base
 msgid "Closed"
-msgstr "Kliknite <i>Kreiraj</i> da počnete novi zadatak."
+msgstr "Zatvoreno"
 
 # taken from hr.po
 #. module: project
@@ -1428,13 +1428,13 @@ msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_search
+#: model_terms:ir.ui.view,arch_db:project.project_task_burndown_chart_report_view_search
 msgid "Closed Tasks"
 msgstr "Kliknite na ovo dugme da modificirate zadatak."
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_task__is_closed
+#: model:ir.model.fields,field_description:project.field_project_task_burndown_chart_report__is_closed
 msgid "Closing Stage"
 msgstr "Faza zatvaranja"
 
@@ -1450,14 +1450,14 @@ msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_collaborator__partner_id
+#: model:ir.model.fields,field_description:project.field_project_share_collaborator_wizard__partner_id
 msgid "Collaborator"
 msgstr "Suradnik"
 
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: model:ir.model.fields,field_description:project.field_project_share_wizard__collaborator_ids
 #, python-format
 msgid "Collaborators"
 msgstr "Suradnici"
@@ -1481,7 +1481,7 @@ msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_tags__color
+#: model:ir.model.fields,field_description:project.field_project_role__color
 msgid "Color"
 msgstr "Boja"
 
@@ -1499,7 +1499,7 @@ msgstr "Poslovni entitet"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid ""
 "Communicate with customers on the task using the email gateway. Attach logo designs to the task, so that information flows from\n"
@@ -1518,7 +1518,7 @@ msgstr "Preduzeća"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__company_id
 msgid "Company"
-msgstr "Preduzeće"
+msgstr "Kompanija"
 
 # taken from hr.po
 #. module: project
@@ -1540,29 +1540,29 @@ msgstr "Uredi faze"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.view_project_task_type_delete_confirmation_wizard
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_stage_unarchive_wizard
 msgid "Confirm"
 msgstr "Potvrdi"
 
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/wizard/project_task_type_delete.py
+#: code:addons/project/wizard/project_share_wizard.py:0
 #, python-format
 msgid "Confirmation"
 msgstr "Potvrda"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: model_terms:web_tour.tour,rainbow_man_message:project.project_tour
 #, python-format
 msgid "Congratulations, you are now a master of project management."
-msgstr "Congratulations, you are now a master of project management."
+msgstr ""
 
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Consulting"
 msgstr "Savjetovanje"
@@ -1575,22 +1575,22 @@ msgstr "Kontakt"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_stop_recurrence_confirmation_dialog/project_stop_recurrence_confirmation_dialog.xml
+#: code:addons/project/static/src/components/project_stop_recurrence_confirmation_dialog/project_stop_recurrence_confirmation_dialog.xml:0
 #, python-format
 msgid "Continue Recurrence"
 msgstr "Nastavi ponavljanje"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Copywriting"
-msgstr "Copywriting"
+msgstr ""
 
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
 #, python-format
 msgid "Costs"
 msgstr "Troškovi"
@@ -1603,7 +1603,7 @@ msgstr "Naslovna slika"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid ""
 "Create <b>activities</b> to set yourself to-dos or to schedule meetings."
@@ -1655,7 +1655,7 @@ msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.edit_project
+#: model_terms:ir.ui.view,arch_db:project.project_project_view_form_simplified_template
 msgid "Create tasks by sending an email to"
 msgstr "Stvorite zadatke slanjem e-maila"
 
@@ -1684,7 +1684,7 @@ msgstr "Kreirano"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
+#: model_terms:ir.ui.view,arch_db:project.view_task_search_form_base
 msgid "Creation Date"
 msgstr "Datum kreiranja"
 
@@ -1714,7 +1714,7 @@ msgstr "Trenutna faza ovog zadatka"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml:0
 #, python-format
 msgid ""
 "Currently available to everyone viewing this document, click to restrict to "
@@ -1725,7 +1725,7 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml:0
 #, python-format
 msgid ""
 "Currently restricted to internal employees, click to make it available to "
@@ -1743,7 +1743,7 @@ msgstr "Prilagođena poruka odbijanja"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Customer"
 msgstr "Kupac"
@@ -1751,7 +1751,7 @@ msgstr "Kupac"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Customer Email"
 msgstr "Email stranke"
@@ -1759,7 +1759,7 @@ msgstr "Email stranke"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Customer Feedback"
 msgstr "Povratne informacije kupca"
@@ -1778,13 +1778,13 @@ msgstr "Ocjene kupaca"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_project__rating_status
+#: model:ir.model.fields,field_description:project.field_project_task_type__rating_status
 msgid "Customer Ratings Status"
 msgstr "Status ocjena kupaca"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid ""
 "Customers propose feedbacks by email; Odoo creates tasks automatically, and you can\n"
@@ -1796,7 +1796,7 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "Customers will be added to the followers of their project and tasks."
 msgstr "Klijenti će biti dodani kao pratitelji na njihove projekte i zadatke."
@@ -1815,21 +1815,21 @@ msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields.selection,name:project.selection__project_project__rating_status_period__daily
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status_period__daily
 msgid "Daily"
 msgstr "Dnevno"
 
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/views/burndown_chart/burndown_chart_search_model.js
+#: model:ir.model.fields,field_description:project.field_project_task_burndown_chart_report__date
 #, python-format
 msgid "Date"
-msgstr "Radni dani za dodjeljivanje"
+msgstr "Datum"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/views/burndown_chart/burndown_chart_search_model.js
+#: code:addons/project/static/src/views/burndown_chart/burndown_chart_search_model.js:0
 #, python-format
 msgid "Date and Stage"
 msgstr ""
@@ -1909,7 +1909,7 @@ msgstr "Dana do krajnjeg roka"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Deadline"
 msgstr "Rok izvršenja"
@@ -1917,7 +1917,7 @@ msgstr "Rok izvršenja"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Deadline: %s"
 msgstr "Krajnji rok: %s"
@@ -1926,7 +1926,7 @@ msgstr "Krajnji rok: %s"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_message_user_assigned
 msgid "Dear"
-msgstr "Dear"
+msgstr ""
 
 # taken from hr.po
 #. module: project
@@ -1983,14 +1983,14 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_attachments_viewer.xml
+#: model:ir.actions.server,name:project.unlink_project_stage_action
 #, python-format
 msgid "Delete"
 msgstr "Obriši"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_milestone.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_milestone.xml:0
 #, python-format
 msgid "Delete Milestone"
 msgstr "Obriši prekretnicu"
@@ -1998,7 +1998,7 @@ msgstr "Obriši prekretnicu"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task_type.py:0
 #, python-format
 msgid "Delete Stage"
 msgstr "Briši stage"
@@ -2015,7 +2015,7 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Delivered"
 msgstr "Dostavljeno"
@@ -2023,7 +2023,7 @@ msgstr "Dostavljeno"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Dependent Tasks"
 msgstr "Zavisni zadaci"
@@ -2043,7 +2043,7 @@ msgstr "Opis koji pruža više informacija o kontekstu ovog projekta"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Design"
 msgstr "Dizajn"
@@ -2057,7 +2057,7 @@ msgstr "Definiriraj redoslijed kojim se izvršavaju zadaci"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Development"
 msgstr "Razvoj"
@@ -2070,7 +2070,7 @@ msgstr "Sažetak"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Digital Marketing"
 msgstr "Digitalni marketing"
@@ -2082,7 +2082,7 @@ msgstr "Upozorenje o onemogućenom ocjenjivanju"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_project_view_form_simplified_footer
+#: code:addons/project/static/src/actions/client_actions.js:0
 msgid "Discard"
 msgstr "Odbaci"
 
@@ -2093,9 +2093,9 @@ msgstr "Prikaz načina pristupa"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_collaborator__display_name
+#: model:ir.model.fields,field_description:project.field_account_analytic_account__display_name
 msgid "Display Name"
-msgstr "Prikazani naziv"
+msgstr "Naziv za prikaz"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__display_parent_task_button
@@ -2116,7 +2116,7 @@ msgstr "Nisu zadovoljili"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/digest.py
+#: code:addons/project/models/digest_digest.py:0
 #, python-format
 msgid "Do not have access, skip this data for user's digest email"
 msgstr "Nemate pristup, preskočite ove podatke za sažetak e-pošte korisnika"
@@ -2125,7 +2125,7 @@ msgstr "Nemate pristup, preskočite ove podatke za sažetak e-pošte korisnika"
 #. module: project
 #. odoo-javascript
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Done"
 msgstr "${object.project_id.company_id.name}: Anketa zadovoljstva"
@@ -2133,10 +2133,10 @@ msgstr "${object.project_id.company_id.name}: Anketa zadovoljstva"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Draft"
-msgstr "U pripremi"
+msgstr "Nacrt"
 
 # taken from hr.po
 #. module: project
@@ -2146,13 +2146,13 @@ msgstr "Padajući izbornik"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields.selection,name:project.selection__project_share_wizard__access_mode__edit
+#: model:ir.model.fields.selection,name:project.selection__project_share_collaborator_wizard__access_mode__edit
 msgid "Edit"
 msgstr "Uredi"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_renderer.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_renderer.js:0
 #, python-format
 msgid "Edit Personal Stage"
 msgstr "Uredi ličnu fazu"
@@ -2166,7 +2166,7 @@ msgstr "Uredi ponavljajući zadatak"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Editing"
 msgstr "Uređivanje"
@@ -2211,7 +2211,7 @@ msgstr "Mailovi poslani za:"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml:0
 #, python-format
 msgid "Employees Only"
 msgstr "Samo djelatnici"
@@ -2230,7 +2230,7 @@ msgstr "Završni datum"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Error! You cannot create a recursive hierarchy of tasks."
 msgstr ""
@@ -2239,7 +2239,7 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "Everyone can propose ideas, and the Editor marks the best ones as"
 msgstr "Svi mogu predlagati ideje, a urednik označava najbolje kao"
@@ -2247,7 +2247,7 @@ msgstr "Svi mogu predlagati ideje, a urednik označava najbolje kao"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
 #, python-format
 msgid "Expected"
 msgstr "Očekivano"
@@ -2274,7 +2274,7 @@ msgstr "Prošireni filteri"
 #. module: project
 #: model:project.tags,name:project.project_tags_05
 msgid "External"
-msgstr "Vanjski"
+msgstr "Eksterno"
 
 # taken from hr.po
 #. module: project
@@ -2284,7 +2284,7 @@ msgstr "Dodatne informacije"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.view_project_calendar
+#: model_terms:ir.ui.view,arch_db:project.view_project
 msgid "Favorite"
 msgstr "Omiljeni"
 
@@ -2296,7 +2296,7 @@ msgstr "Veljača"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/report/project_task_burndown_chart_report.py
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid ""
 "Field %s is not a stored field, only stored fields (regular or many2many) "
@@ -2308,7 +2308,7 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Final Document"
 msgstr "Završni dokument"
@@ -2371,7 +2371,7 @@ msgstr "Pratioci"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Pratioci (Partneri)"
+msgstr "Pratioci (partneri)"
 
 # taken from hr.po
 #. module: project
@@ -2383,7 +2383,7 @@ msgstr "Font awesome ikona npr. fa-tasks"
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_task__repeat_type__forever
 msgid "Forever"
-msgstr "Zauvjek"
+msgstr "Neograničeno"
 
 # taken from hr.po
 #. module: project
@@ -2399,7 +2399,7 @@ msgstr "Petak"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_search
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
 msgid "Future Activities"
 msgstr "Buduće aktivnosti"
 
@@ -2425,7 +2425,7 @@ msgstr "Zatraži povratnu informaciju od korisnika"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid ""
 "Grant employees access to your project or tasks by adding them as followers."
@@ -2435,7 +2435,7 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid ""
 "Grant portal users access to your project or tasks by adding them as "
@@ -2460,11 +2460,11 @@ msgstr "Siva kanban oznaka"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_collaborator_view_search
 msgid "Group By"
-msgstr "Getting Things Done (GTD)"
+msgstr "Grupiši po"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid ""
 "Handle your idea gathering within Tasks of your new Project and discuss them"
@@ -2475,7 +2475,7 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Handoff"
 msgstr "Primopredaja"
@@ -2527,7 +2527,7 @@ msgid "How’s this project going?"
 msgstr "Kako napreduje ovaj projekt?"
 
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_collaborator__id
+#: model:ir.model.fields,field_description:project.field_account_analytic_account__id
 msgid "ID"
 msgstr "ID"
 
@@ -2551,12 +2551,12 @@ msgstr "Ikona"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Ikona za prikaz iznimki."
+msgstr "Ikona za označavanje izuzetne aktivnosti."
 
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Ideas"
 msgstr "Ideje"
@@ -2565,13 +2565,13 @@ msgstr "Ideje"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_milestone__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Ako je zakačeno, nove poruke će zahtjevati vašu pažnju"
+msgstr "Ako je označeno, nove poruke zahtijevaju vašu pažnju."
 
 # taken from hr.po
 #. module: project
 #: model:ir.model.fields,help:project.field_project_milestone__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "# Radni dani za dodjeljivanje"
+msgstr "Ako je označeno, neke poruke imaju grešku pri dostavi."
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project_stage__fold
@@ -2646,7 +2646,7 @@ msgstr ""
 #. module: project
 #. odoo-javascript
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/static/src/components/project_task_state_selection/project_task_state_selection.xml:0
 #, python-format
 msgid "In Progress"
 msgstr "U Toku"
@@ -2654,7 +2654,7 @@ msgstr "U Toku"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "In development"
 msgstr "U razvoju"
@@ -2662,7 +2662,7 @@ msgstr "U razvoju"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Inbox"
 msgstr "Prijemno sanduče"
@@ -2682,7 +2682,7 @@ msgstr "Interno"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml:0
 #, python-format
 msgid "Internal Note"
 msgstr "Interna bilješka"
@@ -2701,21 +2701,21 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml:0
 #, python-format
 msgid "Internal notes are only displayed to internal users."
 msgstr "Interne bilješke su prikazane samo internim korisnicima."
 
 #. module: project
 #. odoo-python
-#: code:addons/project/report/project_task_burndown_chart_report.py
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Invalid aggregation function %r."
 msgstr "Nevažeća agregaciona funkcija %r."
 
 #. module: project
 #. odoo-python
-#: code:addons/project/report/project_task_burndown_chart_report.py
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Invalid field %r on model %r"
 msgstr "Nevažeće polje %r na modelu %r"
@@ -2723,7 +2723,7 @@ msgstr "Nevažeće polje %r na modelu %r"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/report/project_task_burndown_chart_report.py
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Invalid field specification %r."
 msgstr "Neispravna specifikacija polja %r."
@@ -2731,7 +2731,7 @@ msgstr "Neispravna specifikacija polja %r."
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Invalid operator: %s"
 msgstr "Neispravan operator: %s"
@@ -2739,7 +2739,7 @@ msgstr "Neispravan operator: %s"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Invalid value: %s"
 msgstr "Neispravna vrijednost: %s"
@@ -2765,7 +2765,7 @@ msgstr "Pozvani korisnici portala i interni korisnici"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
 #, python-format
 msgid "Invoiced"
 msgstr "Izdani računi"
@@ -2828,14 +2828,14 @@ msgstr "Verzija"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/services/project_task_recurrence.js
+#: code:addons/project/static/src/services/project_task_recurrence.js:0
 #, python-format
 msgid "It seems that some tasks are part of a recurrence."
 msgstr "Izgleda da su neki zadaci dio ponavljanja."
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/services/project_task_recurrence.js
+#: code:addons/project/static/src/services/project_task_recurrence.js:0
 #, python-format
 msgid ""
 "It seems that some tasks are part of a recurrence. At least one of them must"
@@ -2846,14 +2846,14 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/services/project_task_recurrence.js
+#: code:addons/project/static/src/services/project_task_recurrence.js:0
 #, python-format
 msgid "It seems that this task is part of a recurrence."
 msgstr "Izgleda da je ovaj zadatak dio ponavljanja."
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/services/project_task_recurrence.js
+#: code:addons/project/static/src/services/project_task_recurrence.js:0
 #, python-format
 msgid ""
 "It seems that this task is recurrent. Would you like to stop its recurrence?"
@@ -2944,7 +2944,7 @@ msgstr "Posljednji"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_collaborator____last_update
 msgid "Last Modified on"
-msgstr "Zadnje mijenjano"
+msgstr "Zadnja izmjena"
 
 # taken from hr.po
 #. module: project
@@ -2955,7 +2955,7 @@ msgstr "Prošli mjesec"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Last Stage Update"
 msgstr "Posljednja faza ažuriranja"
@@ -3001,7 +3001,7 @@ msgid "Late Activities"
 msgstr "Aktivnosti u kašnjenju"
 
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_search
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
 msgid "Late Milestones"
 msgstr "Kasne prekretnice"
 
@@ -3014,7 +3014,7 @@ msgstr "Kasne"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Later"
 msgstr "Kasnije"
@@ -3022,42 +3022,42 @@ msgstr "Kasnije"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml:0
 #, python-format
 msgid "Leave a comment"
 msgstr "Ostavi komentar"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid "Let's create your first <b>project</b>."
 msgstr "Posljednja ocjena: Veoma nezadovoljan"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid "Let's create your first <b>stage</b>."
 msgstr "Posljednja ocjena: Nezadovoljan"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid "Let's create your first <b>task</b>."
 msgstr "Posljednja ocjena: Zadovoljan"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid "Let's create your second <b>stage</b>."
 msgstr "Kreirajmo vašu drugu <b>fazu</b>."
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid ""
 "Let's go back to the <b>kanban view</b> to have an overview of your next "
@@ -3069,7 +3069,7 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid "Let's start working on your task."
 msgstr "Počnimo sa radom na vašem zadatku."
@@ -3081,21 +3081,21 @@ msgstr "Hajde da kreiramo vaš prvi projekt."
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_share_wizard__share_link
+#: model:ir.model.fields,field_description:project.field_task_share_wizard__share_link
 msgid "Link"
 msgstr "Veza"
 
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Live"
 msgstr "Uživo"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Logo Design"
 msgstr "Dizajn logotipa"
@@ -3118,7 +3118,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_main_attachment_id
 msgid "Main Attachment"
-msgstr "Glavna zakačka"
+msgstr "Glavni prilog"
 
 # taken from hr.po
 #. module: project
@@ -3128,7 +3128,7 @@ msgstr "Glavni prilozi"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid ""
 "Manage the lifecycle of your project using the kanban view. Add newly acquired projects,\n"
@@ -3140,7 +3140,7 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Manufacturing"
 msgstr "Proizvodnja"
@@ -3154,14 +3154,14 @@ msgstr "Ožujak"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
 #, python-format
 msgid "Margin"
 msgstr "RUC"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Material Sourcing"
 msgstr "Dugoročno"
@@ -3203,7 +3203,7 @@ msgstr "Kumulativni tok"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_has_error
 msgid "Message Delivery error"
-msgstr "Greška pri isporuci poruke"
+msgstr "Greška dostave poruke"
 
 # taken from hr.po
 #. module: project
@@ -3215,7 +3215,7 @@ msgstr "Poruke"
 #. module: project
 #. odoo-javascript
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Milestone"
 msgstr "Etapa"
@@ -3237,14 +3237,14 @@ msgstr "Rok prekretnice"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.js
+#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.js:0
 #, python-format
 msgid "Milestones"
 msgstr "Prekretnice"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Mixing"
 msgstr "Miješanje"
@@ -3271,7 +3271,7 @@ msgstr "Mjeseci"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "Rok za moju aktivnost"
+msgstr "Rok moje aktivnosti"
 
 # taken from hr.po
 #. module: project
@@ -3299,7 +3299,7 @@ msgstr "Moji projekti"
 
 # taken from hr.po
 #. module: project
-#: model:ir.actions.act_window,name:project.action_view_all_task
+#: model:ir.actions.act_window,name:project.action_view_my_task
 msgid "My Tasks"
 msgstr "Moji zadaci"
 
@@ -3311,10 +3311,10 @@ msgstr "Moja ažuriranja"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Name"
-msgstr "Naziv:"
+msgstr "Naziv"
 
 # taken from hr.po
 #. module: project
@@ -3361,7 +3361,7 @@ msgstr "Neutralno lice"
 #. module: project
 #. odoo-javascript
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "New"
 msgstr "Novo"
@@ -3370,18 +3370,18 @@ msgstr "Novo"
 #. module: project
 #: model:project.tags,name:project.project_tags_01
 msgid "New Feature"
-msgstr "Nova značajka"
+msgstr "Nova funkcionalnost"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.js
+#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.js:0
 #, python-format
 msgid "New Milestone"
 msgstr "Nova prekretnica"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "New Orders"
 msgstr "Nove narudžbe"
@@ -3389,7 +3389,7 @@ msgstr "Nove narudžbe"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "New Projects"
 msgstr "Novi projekti"
@@ -3397,7 +3397,7 @@ msgstr "Novi projekti"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "New Request"
 msgstr "Naziv zadataka :"
@@ -3405,7 +3405,7 @@ msgstr "Naziv zadataka :"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Newest"
 msgstr "Najnoviji"
@@ -3413,7 +3413,7 @@ msgstr "Najnoviji"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_pager.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_pager.xml:0
 #, python-format
 msgid "Next"
 msgstr "Sljedeći"
@@ -3426,7 +3426,7 @@ msgstr "Sljdedeće aktivnosti"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.view_task_form2
+#: model_terms:ir.ui.view,arch_db:project.project_task_view_tree_base
 msgid "Next Activity"
 msgstr "Sljedeća aktivnost"
 
@@ -3440,13 +3440,13 @@ msgstr "Događaj sljedećeg kalendara aktivnosti"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Krajnji rok za sljedeću aktivnost"
+msgstr "Rok sljedeće aktivnosti"
 
 # taken from hr.po
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__activity_summary
 msgid "Next Activity Summary"
-msgstr "Pregled sljedeće aktivnosti"
+msgstr "Sažetak sljedeće aktivnosti"
 
 # taken from hr.po
 #. module: project
@@ -3493,7 +3493,7 @@ msgstr "Još nema ocjena"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "No Subject"
 msgstr "Bez naslova"
@@ -3551,7 +3551,7 @@ msgstr "Nisu pronađena ažuriranja. Kreirajmo jedno!"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "None"
 msgstr "Ništa"
@@ -3569,7 +3569,7 @@ msgstr "Ne blokira"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Not Implemented."
 msgstr "Nije implementirano."
@@ -3625,13 +3625,13 @@ msgstr "Broj grešaka"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_milestone__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "Prognoza"
+msgstr "Broj poruka koje zahtijevaju akciju"
 
 # taken from hr.po
 #. module: project
 #: model:ir.model.fields,help:project.field_project_milestone__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Broj poruka sa greškama pri isporuci"
+msgstr "Broj poruka sa greškom pri dostavi"
 
 # taken from hr.po
 #. module: project
@@ -3648,9 +3648,9 @@ msgstr ""
 "dostigne ovaj korak."
 
 #. module: project
-#: model:project.project,name:project.project_project_1
+#: model:account.analytic.account,name:project.analytic_office_design
 msgid "Office Design"
-msgstr "Dizajn kancelarije"
+msgstr "Dizajn ureda"
 
 # taken from hr.po
 #. module: project
@@ -3660,7 +3660,7 @@ msgstr "U redu"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Old Completed Sprint"
 msgstr "Stari završeni sprint"
@@ -3678,13 +3678,13 @@ msgstr "Broj radnih dana za zatvaranje zadatka"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields.selection,name:project.selection__project_project__rating_status_period__monthly
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status_period__monthly
 msgid "Once a Month"
 msgstr "Jednom mjesečno"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml:0
 #, python-format
 msgid "Oops! Something went wrong. Try to reload the page and log in."
 msgstr ""
@@ -3693,7 +3693,7 @@ msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
+#: model_terms:ir.ui.view,arch_db:project.view_task_search_form_base
 msgid "Open"
 msgstr "Otvori"
 
@@ -3705,7 +3705,7 @@ msgstr "Otvoreni zadaci"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_task_burndown_chart_report_view_search
+#: model:ir.model.fields.selection,name:project.selection__project_task_burndown_chart_report__is_closed__open
 msgid "Open tasks"
 msgstr ""
 "Odoo upravljanje projektima vam omogućava da efikasno upravljate protokom vaših zadataka.<br>\n"
@@ -3713,7 +3713,7 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Operation should be = or != (not %s)"
 msgstr "Operacija treba biti = ili != (ne %s)"
@@ -3742,14 +3742,14 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Others"
 msgstr "Ostali"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/report/project_task_burndown_chart_report.py
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Output name %r is used twice."
 msgstr "Naziv izlaza %r se koristi dvaput."
@@ -3768,7 +3768,7 @@ msgstr "Vlasnik"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Page Ideas"
 msgstr "Ideje za stranicu"
@@ -3788,7 +3788,7 @@ msgstr "Nadređeni zapis (ID niza)"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Parent Task"
 msgstr "Nadređeni zadatak"
@@ -3850,7 +3850,7 @@ msgid "Periodic rating"
 msgstr "Periodično ocenjivanje"
 
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_task__personal_stage_type_ids
+#: model:ir.model.fields,field_description:project.field_project_task__personal_stage_type_id
 msgid "Personal Stage"
 msgstr "Lična faza"
 
@@ -3898,7 +3898,7 @@ msgstr "Planiranje"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/analytic_account.py
+#: code:addons/project/models/analytic_account.py:0
 #, python-format
 msgid ""
 "Please remove existing tasks in the project linked to the accounts you want "
@@ -3909,7 +3909,7 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Podcast and Video Production"
 msgstr ""
@@ -3938,14 +3938,14 @@ msgstr "URL za pristup portalu"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Portal Parent Task"
 msgstr "Periodično ocjenjivanje"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Portal Sub-tasks"
 msgstr "Portal podzadaci"
@@ -3957,7 +3957,7 @@ msgstr "Imena portal korisnika"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid ""
 "Portal users will be removed from the followers of the project and its "
@@ -3969,14 +3969,14 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_pager.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_pager.xml:0
 #, python-format
 msgid "Previous"
 msgstr "Prethodni"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "Prioritize Tasks by using the"
 msgstr "Postavite prioritete zadataka koristeći"
@@ -3984,7 +3984,7 @@ msgstr "Postavite prioritete zadataka koristeći"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Priority"
 msgstr "Prioritet"
@@ -4002,7 +4002,7 @@ msgstr "Upozorenje o vidljivosti privatnosti"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_private_task_many2one_field/project_private_task_many2one_field.xml
+#: code:addons/project/static/src/components/project_many2one_field/project_many2one_field.js:0
 #, python-format
 msgid "Private"
 msgstr "Privatno"
@@ -4010,7 +4010,7 @@ msgstr "Privatno"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.js
+#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.js:0
 #, python-format
 msgid "Profitability"
 msgstr "Profitabilnost"
@@ -4031,7 +4031,7 @@ msgstr "Postotak napretka"
 #. module: project
 #. odoo-javascript
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Project"
 msgstr "Projekti"
@@ -4072,7 +4072,7 @@ msgstr "Radni teret"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_view_kanban
+#: model_terms:ir.ui.view,arch_db:project.project_project_view_activity
 msgid "Project Name"
 msgstr "Ime projekta"
 
@@ -4109,7 +4109,7 @@ msgid "Project Stage Changed"
 msgstr "Projekti i zadaci"
 
 #. module: project
-#: model:ir.model,name:project.model_project_task_type_delete_wizard
+#: model:ir.model,name:project.model_project_project_stage_delete_wizard
 msgid "Project Stage Delete Wizard"
 msgstr "Čarobnjak za brisanje faze projekta"
 
@@ -4172,62 +4172,7 @@ msgstr "Projekt: Kreiraj ponavljajuće zadatke"
 #. module: project
 #: model:mail.template,name:project.project_done_email_template
 msgid "Project: Project Completed"
-msgstr ""
-"<div>\n"
-"    % set access_token = object.rating_get_access_token()\n"
-"    % set partner = object.rating_get_partner_id()\n"
-"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"width:100%; margin:0px auto;\">\n"
-"    <tbody>\n"
-"        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
-"            Zdravo ${partner.name},<br/>\n"
-"            Molimo odvojite trenutak da ocijnite naše usluge vezane za zadatak \"<strong>${object.name}</strong>\"\n"
-"            % if object.rating_get_rated_partner_id().name:\n"
-"                dodijeljen ${object.rating_get_rated_partner_id().name}.<br/>\n"
-"            % else:\n"
-"                .<br/>\n"
-"            % endif\n"
-"        </td></tr>\n"
-"        <tr><td style=\"text-align: center;\">\n"
-"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" summary=\"o_mail_notification\" style=\"width:100%; margin: 32px 0px 32px 0px;\">\n"
-"                <tr><td style=\"font-size: 13px;\">\n"
-"                    <strong>Recite nam kako se osjećate o našoj usluzi</strong><br/>\n"
-"                    <span style=\"text-color: #888888\">(kliknite na jedan od ovih smajlova)</span>\n"
-"                </td></tr>\n"
-"                <tr><td style=\"font-size: 13px;\">\n"
-"                    <table style=\"width:100%;text-align:center;\">\n"
-"                        <tr>\n"
-"                            <td>\n"
-"                                <a href=\"/rating/${access_token}/10\">\n"
-"                                    <img alt=\"Zadovoljan\" src=\"/rating/static/src/img/rating_10.png\" title=\"Zadovoljan\"/>\n"
-"                                </a>\n"
-"                            </td>\n"
-"                            <td>\n"
-"                                <a href=\"/rating/${access_token}/5\">\n"
-"                                    <img alt=\"Nezadovoljan\" src=\"/rating/static/src/img/rating_5.png\" title=\"Nezadovoljan\"/>\n"
-"                                </a>\n"
-"                            </td>\n"
-"                            <td>\n"
-"                                <a href=\"/rating/${access_token}/1\">\n"
-"                                    <img alt=\"Veoma nezadovoljan\" src=\"/rating/static/src/img/rating_1.png\" title=\"Veoma nezadovoljan\"/>\n"
-"                                </a>\n"
-"                            </td>\n"
-"                        </tr>\n"
-"                    </table>\n"
-"                </td></tr>\n"
-"            </table>\n"
-"        </td></tr>\n"
-"        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
-"            Cijenimo vašu povratnu informaciju. Pomaže nam da se kontinuirano poboljšavamo.\n"
-"            % if object.project_id.rating_status == 'stage':\n"
-"                <br/><span style=\"margin: 0px 0px 0px 0px; font-size: 12px; opacity: 0.5; color: #454748;\">Ova klijentska anketa je poslana jer je vaš zadatak prebačen u fazu <b>${object.stage_id.name}</b></span>\n"
-"            % endif\n"
-"            % if object.project_id.rating_status == 'periodic':\n"
-"                <br/><span style=\"margin: 0px 0px 0px 0px; font-size: 12px; opacity: 0.5; color: #454748;\">Ova klijentska anketa se šalje <b>${object.project_id.rating_status_period}</b> dokle god je zadatak u fazi <b>${object.stage_id.name}</b>.</span>\n"
-"            % endif\n"
-"        </td></tr>\n"
-"    </tbody>\n"
-"    </table>\n"
-"</div>"
+msgstr "Projekt: Projekt završen"
 
 #. module: project
 #: model:mail.template,name:project.mail_template_data_project_task
@@ -4247,7 +4192,7 @@ msgstr "Projekat: Zahtev za ocenjivanje zadatka"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/analytic_account.py
+#: code:addons/project/models/account_analytic_account.py:0
 #, python-format
 msgid "Projects"
 msgstr "Projekti"
@@ -4279,7 +4224,7 @@ msgstr "Svojstva"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Published"
 msgstr "Objavljeno"
@@ -4287,28 +4232,28 @@ msgstr "Objavljeno"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_container.js
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_container.js:0
 #, python-format
 msgid "Published on %s"
-msgstr "Published on %s"
+msgstr ""
 
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Publishing"
 msgstr "Objavljivanje"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields.selection,name:project.selection__project_project__rating_status_period__quarterly
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status_period__quarterly
 msgid "Quarterly"
 msgstr "Kvartalno"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_task__rating_ids
+#: model_terms:ir.ui.view,arch_db:project.project_task_view_tree_base
 msgid "Rating"
 msgstr "Ocjena"
 
@@ -4330,7 +4275,7 @@ msgstr "Automatski kanban status"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_project__rating_status_period
+#: model:ir.model.fields,field_description:project.field_project_task_type__rating_status_period
 msgid "Rating Frequency"
 msgstr "Učestalost ocjenjivanja"
 
@@ -4372,7 +4317,7 @@ msgstr "Tekst ocjenjivanja"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_rating_graph_view.js
+#: code:addons/project/static/src/js/project_rating_graph_view.js:0
 #, python-format
 msgid "Rating Value (/5)"
 msgstr "Vrijednost ocjene (/5)"
@@ -4416,7 +4361,7 @@ msgstr "Samo za čitanje"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Ready"
 msgstr "Spremno"
@@ -4452,7 +4397,7 @@ msgstr "ID niti zapisa"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Recording"
 msgstr "Zabilježavanje"
@@ -4489,7 +4434,7 @@ msgstr "Crvena Kanban oznaka"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Refused"
 msgstr "Ocijenjeni partner"
@@ -4512,7 +4457,7 @@ msgid "Related Document Model"
 msgstr "Povezani model dokumenta"
 
 #. module: project
-#: model:project.project,name:project.project_project_3
+#: model:account.analytic.account,name:project.analytic_renovations
 msgid "Renovations"
 msgstr "Renoviranje"
 
@@ -4591,27 +4536,27 @@ msgstr "Izvještavanje"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Research"
-msgstr "Research"
+msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model:project.project,name:project.project_project_2
+#: model:account.analytic.account,name:project.analytic_research_development
 msgid "Research & Development"
-msgstr "Prijem ${object.name}"
+msgstr "Istraživanje i razvoj"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Research Project"
 msgstr "Istraživački projekat"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Researching"
 msgstr "Istraživanje"
@@ -4619,7 +4564,7 @@ msgstr "Istraživanje"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Resources Allocation"
 msgstr "Alokacija resursa"
@@ -4633,7 +4578,7 @@ msgstr "Odgovorni korisnik"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
 #, python-format
 msgid "Revenues"
 msgstr "Prihodi"
@@ -4642,7 +4587,7 @@ msgstr "Prihodi"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr "Greška u slanju SMSa"
+msgstr "Greška u dostavi SMS-a"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
@@ -4657,7 +4602,7 @@ msgstr "Sub"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Satisfaction"
 msgstr "Zadovoljstvo"
@@ -4676,7 +4621,7 @@ msgstr "Subota"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid "Schedule your activity once it is ready."
 msgstr "Zakažite aktivnost kada bude spremna."
@@ -4684,7 +4629,7 @@ msgstr "Zakažite aktivnost kada bude spremna."
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Script"
 msgstr "Skripta"
@@ -4692,7 +4637,7 @@ msgstr "Skripta"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search <span class=\"nolabel\"> (in Content)</span>"
 msgstr "Traži <span class=\"nolabel\"> (U sadržaju)</span>"
@@ -4711,7 +4656,7 @@ msgstr "Pretraži ažuriranje"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in All"
 msgstr "Traži svuda"
@@ -4719,7 +4664,7 @@ msgstr "Traži svuda"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Assignees"
 msgstr "Planirajte vaše timove kroz projekte i procjenite rokove tačnije."
@@ -4727,14 +4672,14 @@ msgstr "Planirajte vaše timove kroz projekte i procjenite rokove tačnije."
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Messages"
 msgstr "Traži u porukama"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Milestone"
 msgstr "Pretraži u prekretnici"
@@ -4742,7 +4687,7 @@ msgstr "Pretraži u prekretnici"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Priority"
 msgstr "Pretraži prioritete"
@@ -4750,7 +4695,7 @@ msgstr "Pretraži prioritete"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Project"
 msgstr "Pretraži projekte"
@@ -4758,7 +4703,7 @@ msgstr "Pretraži projekte"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Ref"
 msgstr "Tretraži reference"
@@ -4766,7 +4711,7 @@ msgstr "Tretraži reference"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Stages"
 msgstr "Pretraži u klijentu"
@@ -4774,7 +4719,7 @@ msgstr "Pretraži u klijentu"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Status"
 msgstr "Ptretraži po statusu"
@@ -4794,7 +4739,7 @@ msgstr "Sigurnosni token"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml:0
 #, python-format
 msgid "Send"
 msgstr "Pošalji"
@@ -4813,9 +4758,9 @@ msgstr "Rujan"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_project__sequence
+#: model:ir.model.fields,field_description:project.field_project_milestone__sequence
 msgid "Sequence"
-msgstr "Sekvenca"
+msgstr "Redoslijed"
 
 # taken from hr.po
 #. module: project
@@ -4826,7 +4771,7 @@ msgstr "Postavi naslovnu sliku"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "Set Status"
 msgstr "Broj radnih dana za otvaranje zadatka"
@@ -4842,7 +4787,7 @@ msgid ""
 "Set on project's stages to inform customers when a project reaches that "
 "stage"
 msgstr ""
-"Postavite na faze projekta da obavestite korisnike kada projekat dosegne tu "
+"Postavite na faze projekta za obavještavanje kupaca kada projekt dosegne tu "
 "fazu"
 
 #. module: project
@@ -4883,7 +4828,7 @@ msgstr "Dijeli za uređivanje"
 
 # taken from hr.po
 #. module: project
-#: model:ir.actions.act_window,name:project.project_share_wizard_action
+#: code:addons/project/models/project_project.py:0
 msgid "Share Project"
 msgstr "Dijeli projekt"
 
@@ -4896,7 +4841,7 @@ msgstr "Dijeli samo za čitanje"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project_task_recurrence.py
+#: code:addons/project/models/project_task_recurrence.py:0
 #, python-format
 msgid "Should repeat at least once"
 msgstr "Postavi email aliase"
@@ -4921,14 +4866,14 @@ msgstr "Od"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Software Development"
 msgstr "Razvoj softvera"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Sorry. You can't set a task as its parent task."
 msgstr "Žao nam je. Ne možete postaviti zadatak kao njegov nadređeni zadatak."
@@ -4936,7 +4881,7 @@ msgstr "Žao nam je. Ne možete postaviti zadatak kao njegov nadređeni zadatak.
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Specifications"
 msgstr "Specifikacije"
@@ -4949,21 +4894,21 @@ msgstr "Raspodijeli zadatke kako biste pratili projekt putem sub-milestones"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Sprint Backlog"
 msgstr "Backlog sprinta"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Sprint Complete"
 msgstr "Sprint završen"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Sprint in Progress"
 msgstr "Sprint u toku"
@@ -4972,7 +4917,7 @@ msgstr "Sprint u toku"
 #. module: project
 #. odoo-javascript
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Stage"
 msgstr "Faza"
@@ -5019,18 +4964,18 @@ msgstr "Zastoj 30+ dana"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__date_start
 msgid "Start Date"
-msgstr "Datum početka"
+msgstr "Početni Datum"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Status"
-msgstr "Status"
+msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Status Update - "
 msgstr "Ažuriranje statusa - "
@@ -5044,14 +4989,14 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Status baziran na aktivnostima\n"
-"Zakašnjelo: Rok je već prošao\n"
+"Status na osnovu aktivnosti\n"
+"Isteklo: Rok je već prošao\n"
 "Danas: Datum aktivnosti je danas\n"
 "Planirano: Buduće aktivnosti."
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_stop_recurrence_confirmation_dialog/project_stop_recurrence_confirmation_dialog.xml
+#: code:addons/project/static/src/components/project_stop_recurrence_confirmation_dialog/project_stop_recurrence_confirmation_dialog.xml:0
 #, python-format
 msgid "Stop Recurrence"
 msgstr "Zaustavi ponavljanje"
@@ -5079,7 +5024,7 @@ msgid "Submitted On"
 msgstr "Podneseno"
 
 #. module: project
-#: model:ir.model.fields,help:project.field_project_task__subtask_planned_hours
+#: model:ir.model.fields,help:project.field_project_task__subtask_allocated_hours
 msgid ""
 "Sum of the hours allocated for all the sub-tasks (and their own sub-tasks) "
 "linked to this task. Usually less than or equal to the allocated hours of "
@@ -5109,7 +5054,7 @@ msgstr "Nedjelja"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "T-shirt Printing"
 msgstr "Štampanje majica"
@@ -5123,7 +5068,7 @@ msgstr "Oznake"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_rating_graph_view.js
+#: model:ir.model,name:project.model_project_task
 #, python-format
 msgid "Task"
 msgstr "Zadatak"
@@ -5151,7 +5096,7 @@ msgid "Task Count With Subtasks"
 msgstr "Broj zadataka s podzadacima"
 
 #. module: project
-#: model:mail.message.subtype,description:project.mt_task_new
+#: code:addons/project/models/project_task.py:0
 msgid "Task Created"
 msgstr "Zadatak kreiran"
 
@@ -5213,7 +5158,7 @@ msgstr "Faze zadatka"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_sharing_quick_create_task_form
+#: model:ir.model.fields,field_description:project.field_report_project_task_user__name
 msgid "Task Title"
 msgstr "Naslov zadatka"
 
@@ -5259,12 +5204,12 @@ msgstr "Svi zadaci"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_track_depending_tasks
 msgid "Task:"
-msgstr "Task:"
+msgstr ""
 
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "Tasks"
 msgstr "Zadaci"
@@ -5288,13 +5233,13 @@ msgstr "Upravljanje zadacima"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_project__type_ids
+#: model_terms:ir.ui.view,arch_db:project.task_type_search
 msgid "Tasks Stages"
 msgstr "Faze zadatka"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Tasks in Recurrence"
 msgstr "Zadaci u ponavljanju"
@@ -5302,14 +5247,14 @@ msgstr "Zadaci u ponavljanju"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Tests"
 msgstr "Testovi"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/views/burndown_chart/burndown_chart_search_model.js
+#: code:addons/project/static/src/views/burndown_chart/burndown_chart_search_model.js:0
 #, python-format
 msgid "The Burndown Chart must be grouped by"
 msgstr "Burndown grafikon mora biti grupisan po"
@@ -5328,7 +5273,7 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project_task_recurrence.py
+#: code:addons/project/models/project_task_recurrence.py:0
 #, python-format
 msgid ""
 "The end date should be after the day of the month or the last day of the "
@@ -5339,7 +5284,7 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project_task_recurrence.py
+#: code:addons/project/models/project_task_recurrence.py:0
 #, python-format
 msgid "The end date should be in the future"
 msgstr "Datum završetka treba biti u budućnosti"
@@ -5356,7 +5301,7 @@ msgstr "Dodane su sljedeće prekretnice:"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project_task_recurrence.py
+#: code:addons/project/models/project_task_recurrence.py:0
 #, python-format
 msgid "The interval should be greater than 0"
 msgstr "Interval treba biti veći od 0"
@@ -5399,7 +5344,7 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid ""
 "The project cannot be shared with the recipient(s) because the privacy of "
@@ -5417,14 +5362,14 @@ msgstr "Datum početka projekta mora biti prije datuma završetka."
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "The search does not support the %s operator or %s value."
 msgstr "Pretraga ne podržava operator %s ili vrijednost %s."
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid ""
 "The task cannot be shared with the recipient(s) because the privacy of the "
@@ -5437,7 +5382,7 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/report/project_task_burndown_chart_report.py
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "The view must be grouped by date and by stage_id"
 msgstr "Prikaz mora biti grupisan po datumu i po stage_id"
@@ -5445,14 +5390,14 @@ msgstr "Prikaz mora biti grupisan po datumu i po stage_id"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_message_counter.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_message_counter.xml:0
 #, python-format
 msgid "There are no comments for now."
 msgstr "Za sada nema komentara."
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "There are no more occurrences."
 msgstr "Nema više pojavljivanja."
@@ -5476,7 +5421,7 @@ msgstr "Nema zadataka."
 
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "There is nothing to report."
 msgstr "Nema šta za prijaviti."
@@ -5496,7 +5441,7 @@ msgstr "Treći"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "This Month"
 msgstr "Ovaj mjesec"
@@ -5504,7 +5449,7 @@ msgstr "Ovaj mjesec"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "This Week"
 msgstr "Ove sedmice"
@@ -5572,14 +5517,14 @@ msgstr "Savjet: Prilagodite zadatke i faze prema projektu"
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/controllers/portal.py
+#: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Title"
 msgstr "Naslov"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
 #, python-format
 msgid "To Bill"
 msgstr "Za fakturisanje"
@@ -5593,20 +5538,20 @@ msgstr "Za uraditi"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
 #, python-format
 msgid "To Invoice"
 msgstr "Za izdavanje računa"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "To Print"
 msgstr "Ovo će kreirati novi projekt i preusmjeriti nas na njegove faze."
 
 #. module: project
-#: model_terms:ir.actions.act_window,help:project.project_sharing_project_task_action_sub_task
+#: model_terms:ir.actions.act_window,help:project.project_sharing_project_task_action_blocking_tasks
 msgid ""
 "To get things done, use activities and status on tasks.<br>\n"
 "                Chat in real time or by email to collaborate efficiently."
@@ -5617,21 +5562,21 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Today"
 msgstr "Danas"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_search
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
 msgid "Today Activities"
 msgstr "Današnje aktivnosti"
 
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
 #, python-format
 msgid "Total"
 msgstr "Ukupno"
@@ -5651,7 +5596,7 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.xml
+#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.xml:0
 #, python-format
 msgid "Track major progress points that must be reached to achieve success."
 msgstr ""
@@ -5702,13 +5647,13 @@ msgstr "Utorak"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields.selection,name:project.selection__project_project__rating_status_period__bimonthly
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status_period__bimonthly
 msgid "Twice a Month"
 msgstr "Dva puta mjesečno"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "Two tasks cannot depend on each other."
 msgstr "Dva zadatka ne mogu zavisiti jedan od drugog."
@@ -5717,19 +5662,19 @@ msgstr "Dva zadatka ne mogu zavisiti jedan od drugog."
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Vrsta aktivnosti iznimke na zapisu."
+msgstr "Tip izuzetne aktivnosti na zapisu."
 
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/views/project_task_list/project_task_list_controller.js
+#: code:addons/project/static/src/views/project_task_list/project_task_list_controller.js:0
 #, python-format
 msgid "Unarchive"
 msgstr "Vrati iz arhive"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task_type.py:0
 #, python-format
 msgid "Unarchive Tasks"
 msgstr "De-arhiviraj zadatke"
@@ -5741,21 +5686,21 @@ msgstr "Ukloni mene"
 
 # taken from hr.po
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_search
+#: model_terms:ir.ui.view,arch_db:project.project_task_burndown_chart_report_view_search
 msgid "Unassigned"
 msgstr "Nedodeljen"
 
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_project.py:0
 #, python-format
 msgid "Unknown Analytic Account"
 msgstr "Nepoznat Analitički konto"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/report/project_task_burndown_chart_report.py
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Unknown field %r in 'groupby'"
 msgstr "Nepoznato polje %r u 'groupby'"
@@ -5791,7 +5736,7 @@ msgstr "Upotrebljivost"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "Use"
 msgstr "Upotreba"
@@ -5842,7 +5787,7 @@ msgstr "Koristi zadatke kao"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Use This For My Project"
 msgstr "Koristi ovo za moj projekat"
@@ -5854,14 +5799,14 @@ msgstr "Koristite oznake da kategorizujete svoje zadatke."
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "Use the"
 msgstr "Koristite"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid ""
 "Use the chatter to <b>send emails</b> and communicate efficiently with your customers. \n"
@@ -5872,13 +5817,13 @@ msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields,field_description:project.field_project_task_stage_personal__user_id
+#: model:ir.model,name:project.model_res_users
 msgid "User"
 msgstr "Korisnik"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "Value should be True or False (not %s)"
 msgstr "Vrijednost treba biti True ili False (ne %s)"
@@ -5887,7 +5832,7 @@ msgstr "Vrijednost treba biti True ili False (ne %s)"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
 msgid "View"
-msgstr "Koristi kolaborativne rich text padove na zadacima"
+msgstr "Pregled"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
@@ -5895,7 +5840,7 @@ msgid "View Task"
 msgstr "Pogledaj zadatak"
 
 #. module: project
-#: model_terms:ir.ui.view,arch_db:project.project_milestone_view_tree
+#: code:addons/project/static/src/views/project_project_calendar/common/project_common_calendar_popover.xml:0
 msgid "View Tasks"
 msgstr "Pogledaj zadatke"
 
@@ -5908,7 +5853,7 @@ msgstr "Vidljivost"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml:0
 #, python-format
 msgid "Visible"
 msgstr "Koristite breadcrumbs da se <b>vratite na vaš protokol zadataka</b>."
@@ -5916,7 +5861,7 @@ msgstr "Koristite breadcrumbs da se <b>vratite na vaš protokol zadataka</b>."
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid ""
 "Want a better way to <b>manage your projects</b>? <i>It starts here.</i>"
@@ -5926,11 +5871,11 @@ msgstr "Želite bolje <b>voditi projekte</b>? <i>Započnite ovdje.</i>"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__website_message_ids
 msgid "Website Messages"
-msgstr "Poruke sa website-a"
+msgstr "Poruke web stranice"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Website Redesign"
 msgstr "Redizajn web stranice"
@@ -5939,7 +5884,7 @@ msgstr "Redizajn web stranice"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_milestone__website_message_ids
 msgid "Website communication history"
-msgstr "Povijest komunikacije Web stranice"
+msgstr "Historija komunikacije web stranice"
 
 # taken from hr.po
 #. module: project
@@ -5955,7 +5900,7 @@ msgstr "Srijeda"
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields.selection,name:project.selection__project_project__rating_status_period__weekly
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status_period__weekly
 msgid "Weekly"
 msgstr "Sedmično"
 
@@ -6014,14 +5959,14 @@ msgstr "Da li želite de-arhivirati i sve zadatke sadržane u ovim fazama?"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/project_task_kanban_examples.js
+#: code:addons/project/static/src/views/project_task_kanban/project_task_kanban_examples.js:0
 #, python-format
 msgid "Writing"
-msgstr "Writing"
+msgstr ""
 
 # taken from hr.po
 #. module: project
-#: model:ir.model.fields.selection,name:project.selection__project_project__rating_status_period__yearly
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status_period__yearly
 msgid "Yearly"
 msgstr "Godišnje"
 
@@ -6054,14 +5999,14 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "You can only set a personal stage on a private task."
 msgstr "Ličnu fazu možete postaviti samo na privatnom zadatku."
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/analytic_account.py
+#: code:addons/project/models/analytic_account.py:0
 #, python-format
 msgid ""
 "You cannot change the company of an analytic account if it is related to a "
@@ -6072,7 +6017,7 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid ""
 "You cannot delete recurring tasks. Please disable the recurrence first."
@@ -6099,14 +6044,14 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "You cannot read %s fields in task."
 msgstr "Ne možete čitati polja %s u zadatku."
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "You cannot write on %s fields in task."
 msgstr "Ne možete pisati u polja %s u zadatku."
@@ -6114,10 +6059,10 @@ msgstr "Ne možete pisati u polja %s u zadatku."
 # taken from hr.po
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "You have been assigned to %s"
-msgstr "You have been assigned to %s"
+msgstr ""
 
 # taken from hr.po
 #. module: project
@@ -6127,14 +6072,14 @@ msgstr "Dodijeljen Vam je"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid "You have not write access of %s field."
 msgstr "Nemate pravo pisanja na polju %s."
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/js/tours/project.js
+#: code:addons/project/static/src/js/tours/project.js:0
 #, python-format
 msgid ""
 "You have unsaved changes - no worries! Odoo will automatically save it as "
@@ -6148,14 +6093,14 @@ msgstr ""
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml:0
 #, python-format
 msgid "You must be"
 msgstr "Morate biti"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project.py:0
 #, python-format
 msgid ""
 "You should at least have one personal stage. Create a new stage to which the"
@@ -6166,7 +6111,7 @@ msgstr ""
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project_task_recurrence.py
+#: code:addons/project/models/project_task_recurrence.py:0
 #, python-format
 msgid "You should select a least one day"
 msgstr "Trebate odabrati barem jedan dan"
@@ -6174,14 +6119,14 @@ msgstr "Trebate odabrati barem jedan dan"
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "and"
 msgstr "i"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid ""
 "and which feedback is\n"
@@ -6203,21 +6148,21 @@ msgstr "odgovoran"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_messages.xml:0
 #, python-format
 msgid "avatar"
-msgstr "avatar"
+msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "bullets to indicate the status of a task."
 msgstr "tačke koje označavaju status zadatka."
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid ""
 "button to inform your colleagues that a task is ready for the next stage."
@@ -6226,7 +6171,7 @@ msgstr "dugme da obavijestite kolege da je zadatak spreman za sljedeću fazu."
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_message_counter.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_message_counter.xml:0
 #, python-format
 msgid "comments"
 msgstr "komentari"
@@ -6264,14 +6209,14 @@ msgstr "npr: Lansiranje proizvoda"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "icon to organize your daily activities."
 msgstr "ikona za organizaciju vaših dnevnih aktivnosti."
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "icon."
 msgstr "ikona."
@@ -6279,7 +6224,7 @@ msgstr "ikona."
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml:0
 #, python-format
 msgid "logged in"
 msgstr "prijavljeni"
@@ -6296,7 +6241,7 @@ msgstr "spremno za označavanje kao dostignuto"
 
 #. module: project
 #. odoo-python
-#: code:addons/project/models/project.py
+#: code:addons/project/models/project_task.py:0
 #, python-format
 msgid "task"
 msgstr "zadatak"
@@ -6313,7 +6258,7 @@ msgstr "rok za sljedeće prekretnice je ažuriran:"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid ""
 "to define if the project is\n"
@@ -6324,7 +6269,7 @@ msgstr ""
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "to indicate a problem or a need for discussion on a task."
 msgstr "da se ukaže na problem ili potrebu za diskusijom o zadatku."
@@ -6332,14 +6277,14 @@ msgstr "da se ukaže na problem ili potrebu za diskusijom o zadatku."
 # taken from hr.po
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml
+#: code:addons/project/static/src/project_sharing/components/chatter/chatter_composer.xml:0
 #, python-format
 msgid "to post a comment."
 msgstr "objaviti komentar"
 
 #. module: project
 #. odoo-javascript
-#: code:addons/project/static/src/xml/project_task_kanban_examples.xml
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "to signalize what is the current status of your Idea."
 msgstr "da se signalizira trenutni status vaše ideje."
@@ -6353,3 +6298,2264 @@ msgstr "će generisati zadatke u vašem"
 #: model:mail.template,subject:project.rating_project_request_email_template
 msgid "{{ object.project_id.company_id.name }}: Satisfaction Survey"
 msgstr "{{ object.project_id.company_id.name }}: Anketa zadovoljstva"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__portal
+msgid " All internal users and invited portal users"
+msgstr " Svi interni korisnici i pozvani korisnici portala"
+
+#. module: project
+#: code:addons/project/static/src/views/widget/subtask_counter.js:0
+msgid "%(closedCount)s sub-tasks closed out of %(totalCount)s"
+msgstr "%(closedCount)s zatvorenih podzadataka od %(totalCount)s"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "%(closed_task_count)s / %(task_count)s"
+msgstr "%(closed_task_count)s / %(task_count)s"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "%(closed_task_count)s / %(task_count)s (%(closed_rate)s%%)"
+msgstr "%(closed_task_count)s / %(task_count)s (%(closed_rate)s%%)"
+
+#. module: project
+#: code:addons/project/static/src/views/widget/subtask_counter.js:0
+msgid "%(count1)s/%(count2)s"
+msgstr "%(count1)s/%(count2)s"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "%(name)s Dashboard"
+msgstr "%(name)s nadzorna ploča"
+
+#. module: project
+#: code:addons/project/models/res_partner.py:0
+msgid "%(partner_name)s's Tasks"
+msgstr "Zadaci za %(partner_name)s"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid ""
+"%(warning_messages)s\n"
+"Are you sure you want to continue?"
+msgstr ""
+"%(warning_messages)s\n"
+"Jeste li sigurni da želite nastaviti?"
+
+#. module: project
+#: code:addons/project/static/src/components/notebook_task_one2many_field/notebook_task_list_renderer.js:0
+msgid "%s closed tasks"
+msgstr "%s zatvorenih zadataka"
+
+#. module: project
+#: code:addons/project/static/src/project_sharing/components/depend_on_ids_one2many/depend_on_ids_list_renderer.xml:0
+msgid "(other) tasks to which you do not have access."
+msgstr "(ostali) zadaci kojima nemate pristup."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_message_user_assigned
+msgid ""
+",\n"
+"    <br/><br/>"
+msgstr ""
+",\n"
+"    <br/><br/>"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid ""
+"<b>Log internal notes</b> and use @<b>mentions</b> to notify your "
+"colleagues."
+msgstr ""
+"<b>Zabilježite interne bilješke</b> i koristite @<b>spominjanja</b> za "
+"obavještavanje kolega."
+
+#. module: project
+#: model:mail.template,body_html:project.rating_project_request_email_template
+msgid ""
+"<div>\n"
+"    <t t-set=\"access_token\" t-value=\"object._rating_get_access_token()\"/>\n"
+"    <t t-set=\"partner\" t-value=\"object._rating_get_partner()\"/>\n"
+"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"width:100%; margin:0px auto;\">\n"
+"    <tbody>\n"
+"        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"            <t t-if=\"partner.name\">\n"
+"                Hello <t t-out=\"partner.name or ''\">Brandon Freeman</t>,<br/><br/>\n"
+"            </t>\n"
+"            <t t-else=\"\">\n"
+"                Hello,<br/><br/>\n"
+"            </t>\n"
+"            Please take a moment to rate our services related to the <strong t-out=\"object.name or ''\">Planning and budget</strong> task\n"
+"            <t t-if=\"object._rating_get_operator().name\">\n"
+"                assigned to <strong t-out=\"object._rating_get_operator().name or ''\">Mitchell Admin</strong>.<br/>\n"
+"            </t>\n"
+"            <t t-else=\"\">\n"
+"                .<br/>\n"
+"            </t>\n"
+"        </td></tr>\n"
+"        <tr><td style=\"text-align: center;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"width:100%; margin: 32px 0px 32px 0px; display: inline-table;\">\n"
+"                <tr><td style=\"font-size: 13px;text-align:center;\">\n"
+"                    <strong>Tell us how you feel about our services</strong><br/>\n"
+"                    <span style=\"font-size: 12px; opacity: 0.5; color: #454748;\">(click on one of these smileys)</span>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"font-size: 13px;\">\n"
+"                    <table style=\"width:100%;text-align:center;margin-top:2rem;\">\n"
+"                        <tr>\n"
+"                            <td>\n"
+"                                <a t-attf-href=\"/rate/{{ access_token }}/5\" t-att-class=\"'pe-none' if object._rating_get_operator() else ''\">\n"
+"                                    <img alt=\"Happy\" src=\"/rating/static/src/img/rating_5.png\" title=\"Happy\"/>\n"
+"                                </a>\n"
+"                            </td>\n"
+"                            <td>\n"
+"                                <a t-attf-href=\"/rate/{{ access_token }}/3\" t-att-class=\"'pe-none' if object._rating_get_operator() else ''\">\n"
+"                                    <img alt=\"Neutral\" src=\"/rating/static/src/img/rating_3.png\" title=\"Neutral\"/>\n"
+"                                </a>\n"
+"                            </td>\n"
+"                            <td>\n"
+"                                <a t-attf-href=\"/rate/{{ access_token }}/1\" t-att-class=\"'pe-none' if object._rating_get_operator() else ''\">\n"
+"                                    <img alt=\"Unhappy\" src=\"/rating/static/src/img/rating_1.png\" title=\"Unhappy\"/>\n"
+"                                </a>\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                    </table>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td></tr>\n"
+"        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"            We appreciate your feedback. It helps us improve continuously.\n"
+"            <t t-if=\"object.stage_id.rating_status == 'stage'\">\n"
+"                <br/><span style=\"margin: 0; font-size: 12px; opacity: 0.5; color: #454748;\">This satisfaction survey has been sent because your task has been moved to the <b t-out=\"object.stage_id.name or ''\">In progress</b> stage</span>\n"
+"            </t>\n"
+"            <t t-if=\"object.stage_id.rating_status == 'periodic'\">\n"
+"                <br/><span style=\"margin: 0; font-size: 12px; opacity: 0.5; color: #454748;\">This satisfaction survey is sent <b t-out=\"object.stage_id.rating_status_period or ''\">weekly</b> as long as the task is in the <b t-out=\"object.stage_id.name or ''\">In progress</b> stage.</span>\n"
+"            </t>\n"
+"        </td></tr>\n"
+"        <tr><td><br/>Best regards,</td></tr>\n"
+"        <tr><td>\n"
+"           <t t-out=\"object.project_id.company_id.name or ''\">YourCompany</t>\n"
+"        </td></tr>\n"
+"        <tr><td style=\"opacity: 0.5;\">\n"
+"            <t t-out=\"object.project_id.company_id.phone or ''\">1 650-123-4567</t>\n"
+"            <t t-if=\"object.project_id.company_id.email\">\n"
+"                | <a t-attf-href=\"mailto:{{ object.project_id.company_id.email }}\" style=\"text-decoration:none; color: #454748;\" t-out=\"object.project_id.company_id.email or ''\">info@yourcompany.com</a>\n"
+"            </t>\n"
+"            <t t-if=\"object.project_id.company_id.website\">\n"
+"                | <a t-attf-href=\"{{ object.project_id.company_id.website }}\" style=\"text-decoration:none; color: #454748;\" t-out=\"object.project_id.company_id.website or ''\">http://www.example.com</a>\n"
+"            </t>\n"
+"        </td></tr>\n"
+"    </tbody>\n"
+"    </table>\n"
+"</div>\n"
+"            "
+msgstr ""
+"<div>\n"
+"    <t t-set=\"access_token\" t-value=\"object._rating_get_access_token()\"/>\n"
+"    <t t-set=\"partner\" t-value=\"object._rating_get_partner()\"/>\n"
+"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"width:100%; margin:0px auto;\">\n"
+"    <tbody>\n"
+"        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"            <t t-if=\"partner.name\">\n"
+"                Zdravo <t t-out=\"partner.name or ''\">Brandon Freeman</t>,<br/><br/>\n"
+"            </t>\n"
+"            <t t-else=\"\">\n"
+"                Zdravo,<br/><br/>\n"
+"            </t>\n"
+"            Molimo vas odvojite trenutak da ocijenite nau0161e usluge vezane za <strong t-out=\"object.name or ''\">Planning and budget</strong> zadatak\n"
+"            <t t-if=\"object._rating_get_operator().name\">\n"
+"                dodijeljeni osobi <strong t-out=\"object._rating_get_operator().name or ''\">Mitchell Admin</strong>.<br/>\n"
+"            </t>\n"
+"            <t t-else=\"\">\n"
+"                .<br/>\n"
+"            </t>\n"
+"        </td></tr>\n"
+"        <tr><td style=\"text-align: center;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"width:100%; margin: 32px 0px 32px 0px; display: inline-table;\">\n"
+"                <tr><td style=\"font-size: 13px;text-align:center;\">\n"
+"                    <strong>Recite nam kako se osu006aeu0107ate u vezi nau0161ih usluga</strong><br/>\n"
+"                    <span style=\"font-size: 12px; opacity: 0.5; color: #454748;\">(kliknite na jedan od smajliu0107a)</span>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"font-size: 13px;\">\n"
+"                    <table style=\"width:100%;text-align:center;margin-top:2rem;\">\n"
+"                        <tr>\n"
+"                            <td>\n"
+"                                <a t-attf-href=\"/rate/{{ access_token }}/5\" t-att-class=\"'pe-none' if object._rating_get_operator() else ''\">\n"
+"                                    <img alt=\"Zadovoljan\" src=\"/rating/static/src/img/rating_5.png\" title=\"Zadovoljan\"/>\n"
+"                                </a>\n"
+"                            </td>\n"
+"                            <td>\n"
+"                                <a t-attf-href=\"/rate/{{ access_token }}/3\" t-att-class=\"'pe-none' if object._rating_get_operator() else ''\">\n"
+"                                    <img alt=\"Neutralan\" src=\"/rating/static/src/img/rating_3.png\" title=\"Neutralan\"/>\n"
+"                                </a>\n"
+"                            </td>\n"
+"                            <td>\n"
+"                                <a t-attf-href=\"/rate/{{ access_token }}/1\" t-att-class=\"'pe-none' if object._rating_get_operator() else ''\">\n"
+"                                    <img alt=\"Nezadovoljan\" src=\"/rating/static/src/img/rating_1.png\" title=\"Nezadovoljan\"/>\n"
+"                                </a>\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                    </table>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td></tr>\n"
+"        <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"            Cijenimo vau0161e povratne informacije. Pomau017eu nam da se kontinuirano pobolju0161avamo.\n"
+"            <t t-if=\"object.stage_id.rating_status == 'stage'\">\n"
+"                <br/><span style=\"margin: 0; font-size: 12px; opacity: 0.5; color: #454748;\">Ova anketa zadovoljstva je poslana jer je vau0161 zadatak premjeu0161ten u fazu <b t-out=\"object.stage_id.name or ''\">In progress</b> </span>\n"
+"            </t>\n"
+"            <t t-if=\"object.stage_id.rating_status == 'periodic'\">\n"
+"                <br/><span style=\"margin: 0; font-size: 12px; opacity: 0.5; color: #454748;\">Ova anketa zadovoljstva se u0161alje <b t-out=\"object.stage_id.rating_status_period or ''\">weekly</b> dok god je zadatak u fazi <b t-out=\"object.stage_id.name or ''\">In progress</b>.</span>\n"
+"            </t>\n"
+"        </td></tr>\n"
+"        <tr><td><br/>Srdačan pozdrav,</td></tr>\n"
+"        <tr><td>\n"
+"           <t t-out=\"object.project_id.company_id.name or ''\">YourCompany</t>\n"
+"        </td></tr>\n"
+"        <tr><td style=\"opacity: 0.5;\">\n"
+"            <t t-out=\"object.project_id.company_id.phone or ''\">1 650-123-4567</t>\n"
+"            <t t-if=\"object.project_id.company_id.email\">\n"
+"                | <a t-attf-href=\"mailto:{{ object.project_id.company_id.email }}\" style=\"text-decoration:none; color: #454748;\" t-out=\"object.project_id.company_id.email or ''\">info@yourcompany.com</a>\n"
+"            </t>\n"
+"            <t t-if=\"object.project_id.company_id.website\">\n"
+"                | <a t-attf-href=\"{{ object.project_id.company_id.website }}\" style=\"text-decoration:none; color: #454748;\" t-out=\"object.project_id.company_id.website or ''\">http://www.example.com</a>\n"
+"            </t>\n"
+"        </td></tr>\n"
+"    </tbody>\n"
+"    </table>\n"
+"</div>\n"
+"            "
+
+#. module: project
+#: model:mail.template,body_html:project.project_done_email_template
+msgid ""
+"<div>\n"
+"    Dear <t t-out=\"object.partner_id.name or 'customer'\">Brandon Freeman</t>,<br/>\n"
+"    It is my pleasure to let you know that we have successfully completed the project \"<strong t-out=\"object.name or ''\">Renovations</strong>\".\n"
+"    <t t-if=\"user.signature\" data-o-mail-quote-container=\"1\">\n"
+"        <br/>\n"
+"        <div data-o-mail-quote=\"1\">--<br data-o-mail-quote=\"1\"/><t t-out=\"user.signature or ''\" data-o-mail-quote=\"1\">Mitchell Admin</t></div>\n"
+"    </t>\n"
+"</div>\n"
+"<br/><span style=\"margin: 0px 0px 0px 0px; font-size: 12px; opacity: 0.5; color: #454748;\" groups=\"project.group_project_stages\">You are receiving this email because your project has been moved to the stage <b t-out=\"object.stage_id.name or ''\">Done</b></span>\n"
+"            "
+msgstr ""
+"<div>\n"
+"    Pou0161tovani/a <t t-out=\"object.partner_id.name or 'kupac'\">Brandon Freeman</t>,<br/>\n"
+"    Zadovoljstvo mi je obavijestiti vas da smo uspjeu0161no zavru0161ili projekt \"<strong t-out=\"object.name or ''\">Renovations</strong>\".\n"
+"    <t t-if=\"user.signature\" data-o-mail-quote-container=\"1\">\n"
+"        <br/>\n"
+"        <div data-o-mail-quote=\"1\">--<br data-o-mail-quote=\"1\"/><t t-out=\"user.signature or ''\" data-o-mail-quote=\"1\">Mitchell Admin</t></div>\n"
+"    </t>\n"
+"</div>\n"
+"<br/><span style=\"margin: 0px 0px 0px 0px; font-size: 12px; opacity: 0.5; color: #454748;\" groups=\"project.group_project_stages\">Primate ovaj email jer je vau0161 projekt premjeu0161ten u fazu <b t-out=\"object.stage_id.name or ''\">Done</b></span>\n"
+"            "
+
+#. module: project
+#: model:mail.template,body_html:project.mail_template_data_project_task
+msgid ""
+"<div>\n"
+"    Dear <t t-out=\"object.partner_id.name or 'customer'\">Brandon Freeman</t>,<br/><br/>\n"
+"    Thank you for contacting us. We appreciate your interest in our products/services.<br/>\n"
+"    Our team is currently reviewing your inquiry and will respond to your email as soon as possible.<br/>\n"
+"    If you have any further questions or concerns in the meantime, please do not hesitate to let us know. We are here to help.<br/><br/>\n"
+"    Thank you for your patience.<br/>\n"
+"    Best regards,\n"
+"    <t t-if=\"user.signature\" data-o-mail-quote-container=\"1\">\n"
+"        <br/>\n"
+"        <div data-o-mail-quote=\"1\">--<br data-o-mail-quote=\"1\"/><t t-out=\"user.signature or ''\" data-o-mail-quote=\"1\">Mitchell Admin</t></div>\n"
+"    </t>\n"
+"</div>\n"
+"        "
+msgstr ""
+"<div>\n"
+"    Pou0161tovani/a <t t-out=\"object.partner_id.name or 'kupac'\">Brandon Freeman</t>,<br/><br/>\n"
+"    Hvala vam u0161to ste nas kontaktirali. Cijenimo vau0161e interesovanje za nau0161e proizvode/usluge.<br/>\n"
+"    Nau0161 tim trenutno pregledava vau0161 upit i odgovorit u0107e na vau0161 email u najkrau0107em moguu0107em roku.<br/>\n"
+"    Ako u meu0111uvremenu imate bilo kakvih dodatnih pitanja ili nedoumica, slobodno nas obavijestite. Tu smo da pomognemo.<br/><br/>\n"
+"    Hvala vam na strpljenju.<br/>\n"
+"    Srdačan pozdrav,\n"
+"    <t t-if=\"user.signature\" data-o-mail-quote-container=\"1\">\n"
+"        <br/>\n"
+"        <div data-o-mail-quote=\"1\">--<br data-o-mail-quote=\"1\"/><t t-out=\"user.signature or ''\" data-o-mail-quote=\"1\">Mitchell Admin</t></div>\n"
+"    </t>\n"
+"</div>\n"
+"        "
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_form2
+msgid ""
+"<i class=\"fa fa-fw o_button_icon fa-smile-o text-success\" invisible=\"rating_avg &lt; 3.66\" title=\"Happy\"/>\n"
+"                            <i class=\"fa fa-fw o_button_icon fa-meh-o text-warning\" invisible=\"rating_avg &lt; 2.33 or rating_avg &gt;= 3.66\" title=\"Neutral\"/>\n"
+"                            <i class=\"fa fa-fw o_button_icon fa-frown-o text-danger\" invisible=\"rating_avg &gt;= 2.33\" title=\"Unhappy\"/>"
+msgstr ""
+"<i class=\"fa fa-fw o_button_icon fa-smile-o text-success\" invisible=\"rating_avg &lt; 3.66\" title=\"Zadovoljan\"/>\n"
+"                            <i class=\"fa fa-fw o_button_icon fa-meh-o text-warning\" invisible=\"rating_avg &lt; 2.33 or rating_avg &gt;= 3.66\" title=\"Neutralan\"/>\n"
+"                            <i class=\"fa fa-fw o_button_icon fa-frown-o text-danger\" invisible=\"rating_avg &gt;= 2.33\" title=\"Nezadovoljan\"/>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<i class=\"fa fa-lightbulb-o pe-2\" title=\"Info\"/>"
+msgstr "<i class=\"fa fa-lightbulb-o pe-2\" title=\"Informacije\"/>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<i class=\"fa fa-warning pe-2\" title=\"Warning\"/>"
+msgstr "<i class=\"fa fa-warning pe-2\" title=\"Upozorenje\"/>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
+msgid "<i class=\"oi oi-arrow-right me-1\"/>Back to edit mode"
+msgstr "<i class=\"oi oi-arrow-right me-1\"/>Nazad na uređivanje"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_kanban
+msgid "<i title=\"Private Task\" class=\"fa fa-lock\"/>"
+msgstr "<i title=\"Privatni zadatak\" class=\"fa fa-lock\"/>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_my_task
+msgid "<small class=\"text-muted\">Assignees</small>"
+msgstr "<small class=\"text-muted\">Zaduženi</small>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_my_task
+msgid "<small class=\"text-muted\">Customer</small>"
+msgstr "<small class=\"text-muted\">Kupac</small>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_milestone_view_form
+msgid "<span class=\"fw-normal\"> Done</span>"
+msgstr "<span class=\"fw-normal\"> Završeno</span>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_milestone_view_form
+msgid "<span class=\"fw-normal\"> Tasks</span>"
+msgstr "<span class=\"fw-normal\"> Zadaci</span>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
+msgid "<span class=\"o_stat_text\">Blocked Tasks</span>"
+msgstr "<span class=\"o_stat_text\">Blokirani zadaci</span>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
+msgid "<span class=\"o_stat_text\">Parent Task</span>"
+msgstr "<span class=\"o_stat_text\">Nadređeni zadatak</span>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.task_type_edit
+msgid ""
+"<span colspan=\"2\" class=\"text-muted o_row ps-1\">\n"
+"                                            <i class=\"fa fa-lightbulb-o pe-2\"/>\n"
+"                                            <span name=\"rating_status_helper\">\n"
+"                                                <span invisible=\"rating_status == 'periodic'\">A rating request will be sent as soon as a task reaches this stage.</span>\n"
+"                                                <span invisible=\"rating_status == 'stage'\">Rating requests will be sent as long as the task remains in this stage.</span>\n"
+"                                            </span>\n"
+"                                        </span>"
+msgstr ""
+"<span colspan=\"2\" class=\"text-muted o_row ps-1\">\n"
+"                                            <i class=\"fa fa-lightbulb-o pe-2\"/>\n"
+"                                            <span name=\"rating_status_helper\">\n"
+"                                                <span invisible=\"rating_status == 'periodic'\">Zahtjev za ocjenu će biti poslan čim zadatak dosegne ovu fazu.</span>\n"
+"                                                <span invisible=\"rating_status == 'stage'\">Zahtjevi za ocjenu će biti slani dok god zadatak ostaje u ovoj fazi.</span>\n"
+"                                            </span>\n"
+"                                        </span>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_update_view_kanban
+msgid "<span>Progress</span>"
+msgstr "<span>Napredak</span>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_update_view_kanban
+msgid "<span>Status</span>"
+msgstr "<span>Status</span>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_my_task
+msgid "<strong>Priority:</strong>"
+msgstr "<strong>Prioritet:</strong>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_update_default_description
+msgid "<u>Profitability</u>"
+msgstr "<u>Profitabilnost</u>"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "A new task has been created and is not part of any project."
+msgstr "Novi zadatak je kreiran i nije dio nijednog projekta."
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "A new task has been created in the \"%(project_name)s\" project."
+msgstr "Novi zadatak je kreiran u projektu \"%(project_name)s\"."
+
+#. module: project
+#: model:ir.model.constraint,message:project.constraint_project_task_private_task_has_no_parent
+msgid "A private task cannot have a parent."
+msgstr "Privatni zadatak ne može imati nadređeni zadatak."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
+msgid "Activities of"
+msgstr "Aktivnosti od"
+
+#. module: project
+#: model:ir.actions.act_window,name:project.mail_activity_plan_action_config_project_task_plan
+msgid "Activity Plans"
+msgstr "Planovi aktivnosti"
+
+#. module: project
+#: model_terms:ir.actions.act_window,help:project.mail_activity_plan_action_config_project_task_plan
+msgid ""
+"Activity plans are used to assign a list of activities in just a few clicks\n"
+"                    (e.g. \"Progress Report\", \"Stand-up Meeting\", ...)"
+msgstr ""
+"Planovi aktivnosti se koriste za dodjelu liste aktivnosti u samo nekoliko klikova\n"
+"                    (npr. \"Izvještaj o napretku\", \"Stand-up sastanak\", ...)"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
+msgid "Activity type"
+msgstr "Tip aktivnosti"
+
+#. module: project
+#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.xml:0
+msgid "Add Milestones"
+msgstr "Dodaj miljokaze"
+
+#. module: project
+#: code:addons/project/static/src/components/subtask_kanban_list/subtask_kanban_list.xml:0
+msgid "Add Sub-task"
+msgstr "Dodaj podzadatak"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "Add a sub-task"
+msgstr "Dodaj podzadatak"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
+msgid "Add details about this task..."
+msgstr "Dodajte detalje o ovom zadatku..."
+
+#. module: project
+#: model_terms:digest.tip,tip_description:project.digest_tip_project_3
+msgid ""
+"Add project-specific property fields on tasks to customize your project "
+"management process."
+msgstr ""
+"Dodajte projektno-specifična polja svojstava na zadatke za prilagodbu "
+"procesa upravljanja projektom."
+
+#. module: project
+#: model:ir.actions.act_window,name:project.mail_followers_edit_action_from_task
+msgid "Add/Remove Followers"
+msgstr "Dodaj/Ukloni pratioce"
+
+#. module: project
+#: model:res.groups,comment:project.group_project_manager
+msgid "Administrator can manage the employees' schedule"
+msgstr "Administrator može upravljati rasporedom zaposlenika"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__alias_domain_id
+msgid "Alias Domain"
+msgstr "Domen aliasa"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__alias_domain
+msgid "Alias Domain Name"
+msgstr "Naziv domena aliasa"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__alias_full_name
+msgid "Alias Email"
+msgstr "Email alias"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__alias_status
+msgid "Alias Status"
+msgstr "Status aliasa"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_project__alias_status
+msgid "Alias status assessed on the last message received."
+msgstr "Status aliasa procijenjen na osnovu posljednje primljene poruke."
+
+#. module: project
+#: model:ir.actions.act_window,name:project.action_view_all_task
+msgid "All Tasks"
+msgstr "Svi zadaci"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task__allocated_hours
+msgid "Allocated Time"
+msgstr "Dodijeljeno vrijeme"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_my_task
+msgid "Allocated Time:"
+msgstr "Dodijeljeno vrijeme:"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_share_wizard__share_link
+msgid "Anyone with this link can access the project in read mode."
+msgstr "Svako s ovim linkom može pristupiti projektu u načinu čitanja."
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task__state__03_approved
+msgid "Approved"
+msgstr "Odobreno"
+
+#. module: project
+#: model:project.tags,name:project.project_tags_07
+msgid "Architecture"
+msgstr "Arhitektura"
+
+#. module: project
+#: code:addons/project/static/src/views/analytic_account_form/analytic_account_form_controller.js:0
+msgid "Archive Account"
+msgstr "Arhiviraj konto"
+
+#. module: project
+#: code:addons/project/static/src/views/analytic_account_list/analytic_account_list_controller.js:0
+msgid "Archive Accounts"
+msgstr "Arhiviraj konta"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_stage_delete_wizard
+msgid "Are you sure you want to delete these stages?"
+msgstr "Jeste li sigurni da želite obrisati ove faze?"
+
+#. module: project
+#: code:addons/project/static/src/components/subtask_one2many_field/subtask_list_renderer.js:0
+msgid "Are you sure you want to delete this record?"
+msgstr "Jeste li sigurni da želite obrisati ovaj zapis?"
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_form/project_task_form_controller.js:0
+msgid "Are you sure you want to restore this version ?"
+msgstr "Jeste li sigurni da želite vratiti ovu verziju?"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_form2
+msgid "Assign at project creation"
+msgstr "Dodijelite pri kreiranju projekta"
+
+#. module: project
+#: model_terms:ir.actions.act_window,help:project.project_roles_action
+msgid ""
+"Assign roles to tasks in your project templates.\n"
+"                When creating a new project from the template, choose who will take on each role."
+msgstr ""
+"Dodijelite uloge zadacima u predlošcima projekta.\n"
+"                Prilikom kreiranja novog projekta iz predloška, odaberite tko će preuzeti svaku ulogu."
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid ""
+"Attach all documents or links to the task directly, to have all research "
+"information centralized."
+msgstr ""
+"Priložite sve dokumente ili linkove direktno na zadatak, kako biste "
+"centralizirali sve informacije."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_my_task
+msgid "Attachments"
+msgstr "Privici"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_task__attachment_ids
+msgid "Attachments that don't come from a message"
+msgstr "Privici koji ne dolaze iz poruke"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_task_type__auto_validation_state
+msgid ""
+"Automatically modify the state when the customer replies to the feedback for this stage.\n"
+" * Good feedback from the customer will update the state to 'Approved' (green bullet).\n"
+" * Neutral or bad feedback will set the kanban state to 'Changes Requested' (orange bullet).\n"
+msgstr ""
+"Automatski mijenja stanje kada kupac odgovori na povratnu informaciju za ovu fazu.\n"
+" * Dobra povratna informacija od kupca će ažurirati stanje na 'Odobreno' (zelena oznaka).\n"
+" * Neutralna ili loša povratna informacija će postaviti kanban stanje na 'Zatražene promjene' (narandžasta oznaka).\n"
+
+#. module: project
+#: model:mail.template,description:project.mail_template_data_project_task
+msgid ""
+"Automatically send an email to customers when a task reaches a specific "
+"stage in a project by setting this template on that stage"
+msgstr ""
+"Automatski pošaljite email kupcima kada zadatak dosegne određenu fazu u "
+"projektu postavljanjem ovog predloška na tu fazu"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_report_project_task_user__rating_avg
+msgid "Average Rating (1-5)"
+msgstr "Prosječna ocjena (1-5)"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_kanban
+msgid "Average Rating: Happy"
+msgstr "Prosječna ocjena: Zadovoljan"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_kanban
+msgid "Average Rating: Neutral"
+msgstr "Prosječna ocjena: Neutralan"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_kanban
+msgid "Average Rating: Unhappy"
+msgstr "Prosječna ocjena: Nezadovoljan"
+
+#. module: project
+#: code:addons/project/models/account_analytic_account.py:0
+msgid ""
+"Before we can bid farewell to these accounts, you need to tidy up the "
+"projects linked to them by removing their existing tasks!"
+msgstr ""
+"Prije nego što se možemo oprostiti od ovih konta, morate srediti projekte "
+"povezane s njima uklanjanjem postojećih zadataka!"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_form2
+msgid "Blocked Tasks"
+msgstr "Blokirani zadaci"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Cancelled"
+msgstr "Otkazano"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task__state__02_changes_requested
+msgid "Changes Requested"
+msgstr "Zatražene promjene"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid ""
+"Choose a <b>name</b> for your project. <i>It can be anything you want: the "
+"name of a customer, of a product, of a team, of a construction site, "
+"etc.</i>"
+msgstr ""
+"Odaberite <b>naziv</b> za svoj projekt. <i>Može biti bilo što: naziv kupca, "
+"proizvoda, tima, gradilišta, itd.</i>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_share_wizard_view_form
+msgid "Choose one of the following access modes for your collaborators:"
+msgstr "Odaberite jedan od sljedećih načina pristupa za vaše suradnike:"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "Close the sub-tasks list"
+msgstr "Zatvori listu podzadataka"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task__closed_depend_on_count
+msgid "Closed Depending on Tasks"
+msgstr "Zatvoreno u zavisnosti od zadataka"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_search_form_base
+msgid "Closed On"
+msgstr "Zatvoreno"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task__is_closed
+msgid "Closed state"
+msgstr "Zatvoreno stanje"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task_burndown_chart_report__is_closed__closed
+msgid "Closed tasks"
+msgstr "Zatvoreni zadaci"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_task_type__rating_status
+msgid ""
+"Collect feedback from your customers by sending them a rating request when a task enters a certain stage. To do so, define a rating email template on the stage.\n"
+"Rating when changing stage: an email will be automatically sent when a task reaches the stage.\n"
+"Periodic rating: an email will be automatically sent at regular intervals as long as the task remains in the stage."
+msgstr ""
+"Prikupljajte povratne informacije od kupaca slanjem zahtjeva za ocjenu kada zadatak uđe u određenu fazu. Za to definirajte predložak emaila za ocjenu na fazi.\n"
+"Ocjena pri promjeni faze: email će biti automatski poslan kada zadatak dosegne fazu.\n"
+"Periodična ocjena: email će biti automatski slat u redovnim intervalima dok god zadatak ostaje u fazi."
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid ""
+"Communicate with customers on the task using the email gateway. Attach logo designs to the task, so that information flows from\n"
+"      designers to the workers who print the t-shirt."
+msgstr ""
+"Komunicirajte s kupcima na zadatku koristeći email. Priložite dizajne logotipa zadatku, tako da informacije teku od\n"
+"      dizajnera do radnika koji štampaju majice."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_my_task
+msgid "Communication history"
+msgstr "Historija komunikacije"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_project__last_update_status__done
+msgid "Complete"
+msgstr "Završi"
+
+#. module: project
+#: model:project.tags,name:project.project_tags_06
+msgid "Construction"
+msgstr "Građevina"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task__partner_phone
+msgid "Contact Number"
+msgstr "Kontakt broj"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_task_convert_to_subtask_view_form
+msgid "Convert Task"
+msgstr "Konvertuj zadatak"
+
+#. module: project
+#: code:addons/project/static/src/actions/client_actions.js:0
+msgid "Convert to Task"
+msgstr "Konvertuj u zadatak"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Convert to Task/Sub-Task"
+msgstr "Konvertuj u zadatak/podzadatak"
+
+#. module: project
+#: model:ir.actions.server,name:project.action_server_convert_project_to_template
+msgid "Convert to Template"
+msgstr "Konvertuj u predložak"
+
+#. module: project
+#: model:ir.model,website_form_label:project.model_res_partner
+msgid "Create a Customer"
+msgstr "Kreiraj kupca"
+
+#. module: project
+#: code:addons/project/wizard/project_template_create_wizard.py:0
+msgid "Create a Project from Template %s"
+msgstr "Kreiraj projekt iz predloška %s"
+
+#. module: project
+#: model:ir.model,website_form_label:project.model_project_task
+msgid "Create a Task"
+msgstr "Kreiraj zadatak"
+
+#. module: project
+#: model_terms:ir.actions.act_window,help:project.mail_activity_plan_action_config_project_task_plan
+msgid "Create a Task Activity Plan"
+msgstr "Kreiraj plan aktivnosti zadatka"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "Create a new sub-task"
+msgstr "Kreiraj novi podzadatak"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_view_form_simplified
+msgid "Create tasks by email:"
+msgstr "Kreirajte zadatke putem emaila:"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.task_type_edit
+msgid "Customer Rating"
+msgstr "Ocjena kupca"
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid ""
+"Customers propose feedbacks by email; Odoo creates tasks automatically, and you can\n"
+"      communicate on the task directly."
+msgstr ""
+"Kupci šalju povratne informacije emailom; Odoo automatski kreira zadatke, a vi možete\n"
+"      komunicirati direktno na zadatku."
+
+#. module: project
+#: model:ir.actions.act_window,name:project.project_update_all_action
+msgid "Dashboard"
+msgstr "Nadzorna ploča"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_task__date_last_stage_update
+msgid ""
+"Date on which the state of your task has last been modified.\n"
+"Based on this information you can identify tasks that are stalling and get statistics on the time it usually takes to move tasks from one stage/state to another."
+msgstr ""
+"Datum posljednje izmjene stanja zadatka.\n"
+"Na osnovu ove informacije možete identificirati zadatke koji stagniraju i dobiti statistiku o tome koliko obično traje premještanje zadataka iz jedne faze/stanja u drugu."
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_task_type__rotting_threshold_days
+msgid ""
+"Day count before tasks in this stage become stale. Set to 0 to disable"
+"         Changing this parameter will not affect the rotting status/date of "
+"resources last updated before this change."
+msgstr ""
+"Broj dana prije nego što zadaci u ovoj fazi postanu zastarjeli. Postavite na"
+" 0 za deaktiviranje.         Promjena ovog parametra neće utjecati na "
+"status/datum zastarijevanja resursa koji su posljednji put ažurirani prije "
+"ove promjene."
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_project__rotting_days
+msgid "Day count since this resource was last updated"
+msgstr "Broj dana od posljednjeg ažuriranja ovog resursa"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__rotting_days
+msgid "Days Rotting"
+msgstr "Dani zastarijevanja"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task_type__rotting_threshold_days
+msgid "Days to rot"
+msgstr "Dani do zastarijevanja"
+
+#. module: project
+#: code:addons/project/models/project_project_stage.py:0
+msgid "Delete Project Stage"
+msgstr "Obriši fazu projekta"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task__depend_on_count
+msgid "Depending on Tasks"
+msgstr "Zavisi od zadataka"
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_calendar/project_task_calendar_list_to_plan/project_task_calendar_list_to_plan.xml:0
+msgid "Drag Tasks to Schedule"
+msgstr "Prevucite zadatke za zakazivanje"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_kanban
+msgid "Duplicate"
+msgstr "Dupliciraj"
+
+#. module: project
+#: code:addons/project/models/project_task_type.py:0
+msgid ""
+"Each user should have at least one personal stage. Create a new stage to "
+"which the tasks can be transferred after the selected ones are deleted."
+msgstr ""
+"Svaki korisnik bi trebao imati barem jednu osobnu fazu. Kreirajte novu fazu "
+"u koju se zadaci mogu prebaciti nakon brisanja odabranih."
+
+#. module: project
+#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.xml:0
+msgid "Edit Milestones"
+msgstr "Uredi miljokaze"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_share_collaborator_wizard__access_mode__edit_limited
+msgid "Edit with limited access"
+msgstr "Uređivanje s ograničenim pristupom"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_share_wizard_view_form
+msgid ""
+"Edit with limited access: collaborators can view and edit tasks they follow "
+"in the Kanban view."
+msgstr ""
+"Uređivanje s ograničenim pristupom: suradnici mogu pregledati i uređivati "
+"zadatke koje prate u Kanban pregledu."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_share_wizard_view_form
+msgid ""
+"Edit: collaborators can view and edit all tasks in the Kanban view. "
+"Additionally, they can choose which tasks they want to follow."
+msgstr ""
+"Uređivanje: suradnici mogu pregledati i uređivati sve zadatke u Kanban "
+"pregledu. Dodatno, mogu odabrati koje zadatke žele pratiti."
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__alias_email
+msgid "Email Alias"
+msgstr "Email alias"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_project__alias_domain
+msgid "Email domain e.g. 'example.com' in 'odoo@example.com'"
+msgstr "Email domen npr. 'example.com' u 'odoo@example.com'"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_search_form_base
+msgid "Favorite Projects"
+msgstr "Favorit projekti"
+
+#. module: project
+#: model:project.tags,name:project.project_tags_11
+msgid "Finance"
+msgstr "Finansije"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project_stage__fold
+msgid "Folded"
+msgstr "Sklopljeno"
+
+#. module: project
+#: code:addons/project/static/src/project_sharing/chatter/portal_chatter_patch.xml:0
+msgid "Follow"
+msgstr "Prati"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_my_home
+msgid "Follow and comment on tasks in your projects"
+msgstr "Pratite i komentirajte zadatke u vašim projektima"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_my_home
+msgid "Follow the evolution of your projects"
+msgstr "Pratite razvoj vaših projekata"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_search
+msgid "Future"
+msgstr "Buduće"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "Give the sub-task a <b>name</b>"
+msgstr "Dajte podzadatku <b>naziv</b>"
+
+#. module: project
+#: code:addons/project/static/src/project_sharing/search/control_panel/control_panel.xml:0
+msgid "Go back to 'My Projects'"
+msgstr "Vrati se na 'Moji projekti'"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_share_wizard_confirm_form
+msgid "Grant Portal Access"
+msgstr "Dodjeli pristup portalu"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid ""
+"Grant employees access to your project or tasks by adding them as followers."
+" Employees automatically get access to the tasks they are assigned to."
+msgstr ""
+"Dodijelite zaposlenicima pristup projektu ili zadacima dodavanjem kao "
+"pratioce. Zaposlenici automatski dobijaju pristup zadacima koji su im "
+"dodijeljeni."
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid ""
+"Grant users access by adding them as followers — either to the project or "
+"individual tasks. Internal users automatically gain access to tasks they are"
+" assigned to."
+msgstr ""
+"Dodijelite korisnicima pristup dodavanjem kao pratioce — bilo projektu ili "
+"pojedinačnim zadacima. Interni korisnici automatski dobijaju pristup "
+"zadacima koji su im dodijeljeni."
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid ""
+"Handle your idea gathering within Tasks of your new Project and discuss them"
+" in the chatter of the tasks."
+msgstr ""
+"Upravljajte prikupljanjem ideja unutar zadataka vašeg novog projekta i "
+"raspravljajte o njima u chatu zadataka."
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_report_project_task_user__has_template_ancestor
+msgid "Has Template Ancestor"
+msgstr "Ima predložak pretka"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.task_invitation_follower
+msgid "Hello"
+msgstr "Zdravo"
+
+#. module: project
+#: code:addons/project/static/src/components/notebook_task_one2many_field/notebook_task_list_renderer.js:0
+msgid "Hide closed tasks"
+msgstr "Sakrij zatvorene zadatke"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task__priority__2
+msgid "High priority"
+msgstr "Visoki prioritet"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task__html_field_history
+msgid "History data"
+msgstr "Podaci historije"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task__html_field_history_metadata
+msgid "History metadata"
+msgstr "Metapodaci historije"
+
+#. module: project
+#: model:project.tags,name:project.project_tags_13
+msgid "Home"
+msgstr "Početna"
+
+#. module: project
+#: model:account.analytic.account,name:project.analytic_construction
+msgid "Home Construction"
+msgstr "Kućna gradnja"
+
+#. module: project
+#: model:project.project,name:project.project_project_4
+msgid "Home Make Over"
+msgstr "Renovacija doma"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_project_stage__fold
+msgid ""
+"If enabled, this stage will be displayed as folded in the Kanban and List "
+"views of your projects. Projects in a folded stage are considered as closed."
+msgstr ""
+"Ako je omogućeno, ova faza će biti prikazana kao sklopljena u Kanban i List "
+"pregledima vaših projekata. Projekti u sklopljenoj fazi se smatraju "
+"zatvorenim."
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_task_type__rating_template_id
+msgid ""
+"If set, a rating request will automatically be sent by email to the customer when the task reaches this stage. \n"
+"Alternatively, it will be sent at a regular interval as long as the task remains in this stage."
+msgstr ""
+"Ako je postavljeno, zahtjev za ocjenu će automatski biti poslan emailom kupcu kada zadatak dosegne ovu fazu. \n"
+"Alternativno, bit će slat u redovnim intervalima dok god zadatak ostaje u ovoj fazi."
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Import Template for Tasks"
+msgstr "Predložak uvoza za zadatke"
+
+#. module: project
+#: model:project.tags,name:project.project_tags_09
+msgid "Interior"
+msgstr "Interijer"
+
+#. module: project
+#: code:addons/project/static/src/components/subtask_kanban_list/subtask_kanban_list.js:0
+msgid "Invalid Display Name"
+msgstr "Nevažeći naziv za prikaz"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__invited_users
+msgid "Invited internal and portal users"
+msgstr "Pozvani interni i portal korisnici"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_task_burndown_chart_report_view_search
+msgid "Is Closed (Burn-up Chart)"
+msgstr "Zatvoreno (Burn-up grafikon)"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_report_project_task_user__is_template
+msgid "Is Template"
+msgstr "Je predložak"
+
+#. module: project
+#: code:addons/project/static/src/components/project_task_state_selection/project_task_state_selection.js:0
+msgid "Is toggle mode"
+msgstr "Način prebacivanja"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_project__duration_tracking
+msgid "JSON that maps ids from a many2one field to seconds spent"
+msgstr "JSON koji mapira ID-ove iz many2one polja u utrošene sekunde"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_search_form_base
+msgid "Last 30 Days"
+msgstr "Posljednjih 30 dana"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_search_form_base
+msgid "Last 365 Days"
+msgstr "Posljednjih 365 dana"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_report_project_task_user__rating_last_value
+msgid "Last Rating (1-5)"
+msgstr "Posljednja ocjena (1-5)"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "Let's create a regular <b>project</b>."
+msgstr "Kreirajmo obični <b>projekt</b>."
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_calendar/project_task_calendar_list_to_plan/project_task_calendar_list_to_plan.xml:0
+msgid "Load More"
+msgstr "Učitaj više"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__alias_incoming_local
+msgid "Local-part based incoming detection"
+msgstr "Detekcija dolaznih poruka na osnovu lokalnog dijela"
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid "Look for the"
+msgstr "Potražite"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task__priority__0
+msgid "Low priority"
+msgstr "Niski prioritet"
+
+#. module: project
+#: code:addons/project/static/src/components/done_checkmark/task_done_checkmark.xml:0
+msgid "Mark as done"
+msgstr "Označi kao završeno"
+
+#. module: project
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_milestone.xml:0
+msgid "Mark as incomplete"
+msgstr "Označi kao nedovršeno"
+
+#. module: project
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_milestone.xml:0
+msgid "Mark as reached"
+msgstr "Označi kao dostignut"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "Mark the task as <b>Cancelled</b>"
+msgstr "Označite zadatak kao <b>Otkazan</b>"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task__priority__1
+msgid "Medium priority"
+msgstr "Srednji prioritet"
+
+#. module: project
+#: model:project.tags,name:project.project_tags_15
+msgid "Meeting"
+msgstr "Sastanak"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
+msgid "My Activities"
+msgstr "Moje aktivnosti"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_task_view_tree_base
+msgid "My Deadline"
+msgstr "Moj rok"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "Name of the Tasks"
+msgstr "Naziv zadataka"
+
+#. module: project
+#: code:addons/project/static/src/views/components/project_template_dropdown.xml:0
+msgid "New Project"
+msgstr "Novi projekt"
+
+#. module: project
+#: code:addons/project/static/src/views/components/project_task_template_dropdown.xml:0
+msgid "New Task"
+msgstr "Novi zadatak"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_tasks_list
+msgid "No Project"
+msgstr "Nema projekta"
+
+#. module: project
+#: model_terms:ir.actions.act_window,help:project.project_milestone_action
+msgid "No milestones found. Let's create one!"
+msgstr "Nisu pronađeni miljokazi. Kreirajmo jedan!"
+
+#. module: project
+#: model_terms:ir.actions.act_window,help:project.project_roles_action
+msgid "No project role found. Let's create one!"
+msgstr "Nisu pronađene projektne uloge. Kreirajmo jednu!"
+
+#. module: project
+#: model:project.tags,name:project.project_tags_10
+msgid "Office"
+msgstr "Ured"
+
+#. module: project
+#: code:addons/project/controllers/portal.py:0
+msgid "Only jpeg, png, bmp and tiff images are allowed as attachments."
+msgstr "Samo jpeg, png, bmp i tiff slike su dozvoljene kao privici."
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "Open sub-tasks notebook section"
+msgstr "Otvori sekciju podzadataka"
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid "Organize priorities amongst orders using the"
+msgstr "Organizirajte prioritete među nalozima koristeći"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_search
+msgid "Overdue"
+msgstr "Prekoračen rok"
+
+#. module: project
+#: code:addons/project/models/res_partner.py:0
+msgid ""
+"Partner company cannot be different from its assigned projects' company"
+msgstr ""
+"Kompanija partnera ne može se razlikovati od kompanije dodijeljenih "
+"projekata"
+
+#. module: project
+#: code:addons/project/models/res_partner.py:0
+msgid "Partner company cannot be different from its assigned tasks' company"
+msgstr ""
+"Kompanija partnera ne može se razlikovati od kompanije dodijeljenih zadataka"
+
+#. module: project
+#: model:ir.actions.act_window,name:project.project_task_action_from_partner
+msgid "Partner's Tasks"
+msgstr "Zadaci partnera"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_share_wizard_confirm_form
+msgid ""
+"People invited to collaborate on the project will have portal access rights."
+msgstr ""
+"Osobe pozvane za suradnju na projektu će imati prava pristupa portalu."
+
+#. module: project
+#: model:ir.model,name:project.model_portal_share
+msgid "Portal Sharing"
+msgstr "Dijeljenje portala"
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid "Prioritize your tasks by marking important ones using the"
+msgstr "Prioritizirajte zadatke označavanjem važnih koristeći"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_search_form
+msgid "Private Tasks"
+msgstr "Privatni zadaci"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid ""
+"Private tasks cannot be converted into sub-tasks. Please set a project on "
+"the task to gain access to this feature."
+msgstr ""
+"Privatni zadaci ne mogu biti konvertirani u podzadatke. Molimo postavite "
+"projekt na zadatak za pristup ovoj funkcionalnosti."
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Private tasks cannot be converted into templates"
+msgstr "Privatni zadaci ne mogu biti konvertirani u predloške"
+
+#. module: project
+#: model:project.project,name:project.project_template_1
+msgid "Product Launch Campaign"
+msgstr "Kampanja lansiranja proizvoda"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__account_id
+msgid "Project Account"
+msgstr "Projektni konto"
+
+#. module: project
+#: model:ir.model,name:project.model_project_role
+msgid "Project Role"
+msgstr "Uloga u projektu"
+
+#. module: project
+#: model:ir.actions.act_window,name:project.project_roles_action
+msgid "Project Roles"
+msgstr "Uloge u projektu"
+
+#. module: project
+#: model:ir.model,name:project.model_project_share_collaborator_wizard
+msgid "Project Sharing Collaborator Wizard"
+msgstr "Čarobnjak za suradnike dijeljenja projekta"
+
+#. module: project
+#: model:ir.actions.act_window,name:project.project_sharing_project_task_recurring_tasks_action
+msgid "Project Sharing Recurrence"
+msgstr "Ponavljanje dijeljenja projekta"
+
+#. module: project
+#: model:ir.actions.server,name:project.ir_cron_rating_project_ir_actions_server
+msgid "Project Stage: Send rating"
+msgstr "Faza projekta: Pošalji ocjenu"
+
+#. module: project
+#: model:ir.model,name:project.model_project_task_type_delete_wizard
+msgid "Project Task Stage Delete Wizard"
+msgstr "Čarobnjak za brisanje faze zadatka projekta"
+
+#. module: project
+#: model:ir.model,name:project.model_project_template_create_wizard
+msgid "Project Template create Wizard"
+msgstr "Čarobnjak za kreiranje predloška projekta"
+
+#. module: project
+#: code:addons/project/static/src/views/components/project_template_dropdown.xml:0
+msgid "Project Templates"
+msgstr "Predlošci projekata"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.quick_create_project_form
+msgid "Project Title"
+msgstr "Naslov projekta"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_project__privacy_visibility
+msgid ""
+"Project and Task Visibility:\n"
+"- Invited internal users: Can access only the project or tasks they follow. Assignees automatically get access.\n"
+"- Invited internal and portal users: Same as above, extended to portal users.\n"
+"- All internal users: Full access to the project and all its tasks.\n"
+"- All internal and invited portal users: Internal users get full access. Portal users can access only the project or tasks they follow.\n"
+"\n"
+"Portal Access Levels:\n"
+"- Read-only: Portal users see tasks via their portal but can’t edit them.\n"
+"- Edit (limited): Portal users access kanban/list views and can edit limited fields on followed tasks.\n"
+"- Edit: Same as above, with access to all tasks.\n"
+"\n"
+"Other Rules:\n"
+"- Internal users can open a task from a direct link, even without project access.\n"
+"- Project admins have access to private projects, even if not followers.\n"
+msgstr ""
+"Vidljivost projekta i zadataka:\n"
+"- Pozvani interni korisnici: Mogu pristupiti samo projektima ili zadacima koje prate. Zaduženi automatski dobijaju pristup.\n"
+"- Pozvani interni i portal korisnici: Isto kao gore, prošireno na portal korisnike.\n"
+"- Svi interni korisnici: Puni pristup projektu i svim njegovim zadacima.\n"
+"- Svi interni i pozvani portal korisnici: Interni korisnici imaju puni pristup. Portal korisnici mogu pristupiti samo projektima ili zadacima koje prate.\n"
+"\n"
+"Nivoi pristupa portalu:\n"
+"- Samo čitanje: Portal korisnici vide zadatke putem portala ali ih ne mogu uređivati.\n"
+"- Uređivanje (ograničeno): Portal korisnici pristupaju kanban/list pregledima i mogu uređivati ograničena polja na praćenim zadacima.\n"
+"- Uređivanje: Isto kao gore, s pristupom svim zadacima.\n"
+"\n"
+"Ostala pravila:\n"
+"- Interni korisnici mogu otvoriti zadatak putem direktnog linka, čak i bez pristupa projektu.\n"
+"- Administratori projekta imaju pristup privatnim projektima, čak i ako nisu pratioci.\n"
+
+#. module: project
+#: code:addons/project/static/src/actions/client_actions.js:0
+msgid "Project converted to template."
+msgstr "Projekt konvertiran u predložak."
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "Project created from template %(name)s."
+msgstr "Projekt kreiran iz predloška %(name)s."
+
+#. module: project
+#: model:ir.model,name:project.model_project_template_role_to_users_map
+msgid "Project role to users mapping"
+msgstr "Mapiranje uloga projekta na korisnike"
+
+#. module: project
+#: code:addons/project/wizard/project_share_wizard.py:0
+msgid "Project shared with your collaborators."
+msgstr "Projekt podijeljen s vašim suradnicima."
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Project: %(project_name)s"
+msgstr "Projekt: %(project_name)s"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Project: %(project_name)s, Stage: %(stage_name)s"
+msgstr "Projekt: %(project_name)s, Faza: %(stage_name)s"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_share_wizard__share_link
+msgid "Public Link"
+msgstr "Javni link"
+
+#. module: project
+#: model_terms:digest.tip,tip_description:project.digest_tip_project_0
+msgid ""
+"Quickly check the status of tasks for approvals or change requests and "
+"identify those on hold until dependencies are resolved with the hourglass "
+"icon."
+msgstr ""
+"Brzo provjerite status zadataka za odobrenja ili zahtjeve za promjene i "
+"identificirajte one na čekanju dok se zavisnosti ne razriješe pomoću ikone "
+"pješčanog sata."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.rating_rating_view_graph
+msgid "Rating (1-5)"
+msgstr "Ocjena (1-5)"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_share_collaborator_wizard__access_mode__read
+msgid "Read"
+msgstr "Čitanje"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_share_wizard_view_form
+msgid "Read: collaborators can view tasks but cannot edit them."
+msgstr "Čitanje: suradnici mogu pregledati zadatke ali ih ne mogu uređivati."
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_share_collaborator_wizard__access_mode
+msgid ""
+"Read: collaborators can view tasks but cannot edit them.\n"
+"Edit with limited access: collaborators can view and edit tasks they follow in the Kanban view.\n"
+"Edit: collaborators can view and edit all tasks in the Kanban view. Additionally, they can choose which tasks they want to follow."
+msgstr ""
+"Čitanje: suradnici mogu pregledati zadatke ali ih ne mogu uređivati.\n"
+"Uređivanje s ograničenim pristupom: suradnici mogu pregledati i uređivati zadatke koje prate u Kanban pregledu.\n"
+"Uređivanje: suradnici mogu pregledati i uređivati sve zadatke u Kanban pregledu. Dodatno, mogu odabrati koje zadatke žele pratiti."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_layout
+msgid "Recurrent tasks"
+msgstr "Ponavljajući zadaci"
+
+#. module: project
+#: code:addons/project/static/src/core/web/follower_list_patch.js:0
+msgid "Remove Collaborator"
+msgstr "Ukloni suradnika"
+
+#. module: project
+#: code:addons/project/static/src/components/subtask_kanban_list/subtask_kanban_create/subtask_kanban_create.xml:0
+msgid "Rename"
+msgstr "Preimenuj"
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_form/project_task_form_controller.js:0
+msgid "Restore"
+msgstr "Vrati"
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_form/project_task_form_controller.js:0
+msgid ""
+"Restoring will replace the current content with the selected version. Any "
+"unsaved changes will be lost."
+msgstr ""
+"Vraćanje će zamijeniti trenutni sadržaj odabranom verzijom. Sve nespremljene"
+" promjene će biti izgubljene."
+
+#. module: project
+#: code:addons/project/static/src/actions/client_actions.js:0
+msgid "Revert to Project"
+msgstr "Vrati u projekt"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_template_create_wizard__role_to_users_ids
+msgid "Role To Users"
+msgstr "Uloga na korisnike"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__is_rotting
+msgid "Rotting"
+msgstr "Zastarijevanje"
+
+#. module: project
+#: code:addons/project/static/src/components/subtask_kanban_list/subtask_kanban_create/subtask_kanban_create.xml:0
+msgid "SAVE"
+msgstr "SPREMI"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_share_wizard_view_form
+msgid "Save"
+msgstr "Sačuvaj"
+
+#. module: project
+#: code:addons/project/static/src/project_sharing/views/form/project_sharing_form_controller.js:0
+msgid "Save the task to be able to drag images in description"
+msgstr "Spremite zadatak da biste mogli prevlačiti slike u opis"
+
+#. module: project
+#: code:addons/project/static/src/project_sharing/views/form/project_sharing_form_controller.js:0
+msgid "Save the task to be able to paste images in description"
+msgstr "Spremite zadatak da biste mogli zalijepiti slike u opis"
+
+#. module: project
+#: code:addons/project/controllers/portal.py:0
+msgid "Search in Customer"
+msgstr "Pretraži u kupcima"
+
+#. module: project
+#: code:addons/project/controllers/portal.py:0
+msgid "Search%(left)s Tasks%(right)s"
+msgstr "Pretraži%(left)s zadatke%(right)s"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "Select an assignee from the menu"
+msgstr "Odaberite zaduženu osobu iz menija"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_share_collaborator_wizard__send_invitation
+msgid "Send Invitation"
+msgstr "Pošalji pozivnicu"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task_type__rating_active
+msgid "Send a customer rating request"
+msgstr "Pošalji zahtjev za ocjenu kupca"
+
+#. module: project
+#: code:addons/project/static/src/components/project_task_priority_switch_field/project_task_priority_switch_field.js:0
+msgid "Set priority as %s"
+msgstr "Postavi prioritet kao %s"
+
+#. module: project
+#: code:addons/project/static/src/components/project_task_state_selection/project_task_state_selection.js:0
+msgid "Set state as..."
+msgstr "Postavi stanje kao..."
+
+#. module: project
+#: model:ir.actions.act_window,name:project.portal_share_action
+msgid "Share Task"
+msgstr "Podijeli zadatak"
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_control_panel/project_task_control_panel.xml:0
+msgid "Show Sub-Tasks"
+msgstr "Prikaži podzadatke"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
+msgid "Show all records whose next activity date is past"
+msgstr "Prikaži sve zapise čiji je datum sljedeće aktivnosti prošao"
+
+#. module: project
+#: code:addons/project/static/src/components/notebook_task_one2many_field/notebook_task_list_renderer.js:0
+msgid "Show closed tasks"
+msgstr "Prikaži zatvorene zadatke"
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_control_panel/project_task_control_panel.js:0
+msgid "Show sub-tasks"
+msgstr "Prikaži podzadatke"
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_control_panel/project_task_control_panel.js:0
+msgid "Show sub-tasks & top menu"
+msgstr "Prikaži podzadatke i gornji meni"
+
+#. module: project
+#: model:project.tags,name:project.project_tags_12
+msgid "Social"
+msgstr "Društveno"
+
+#. module: project
+#: code:addons/project/static/src/views/analytic_account_list/analytic_account_list_controller.js:0
+msgid ""
+"Some of the selected analytic accounts are associated with a project:\n"
+"%(accountList)s\n"
+"\n"
+"Archiving these accounts will remove the option to log timesheets for their respective projects.\n"
+"\n"
+"Are you sure you want to proceed?"
+msgstr ""
+"Neki od odabranih analitičkih konta su povezani s projektom:\n"
+"%(accountList)s\n"
+"\n"
+"Arhiviranje ovih konta će ukloniti mogućnost evidentiranja radnog vremena za pripadajuće projekte.\n"
+"\n"
+"Jeste li sigurni da želite nastaviti?"
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid ""
+"Sort your tasks by sprint using milestones, tags, or a dedicated property. "
+"At the end of each sprint, just pick the remaining tasks in your list and "
+"move them all at once to the next sprint by editing the milestone, tag, or "
+"property."
+msgstr ""
+"Sortirajte zadatke po sprintu koristeći miljokaze, oznake ili namjensko "
+"svojstvo. Na kraju svakog sprinta, jednostavno odaberite preostale zadatke i"
+" premjestite ih odjednom u sljedeći sprint uređivanjem miljokaza, oznake ili"
+" svojstva."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_task_burndown_chart_report_view_search
+msgid "Stage (Burndown Chart)"
+msgstr "Faza (Burndown grafikon)"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task__rating_active
+msgid "Stage Rating Status"
+msgstr "Status ocjenjivanja faze"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Stage: %(stage_name)s"
+msgstr "Faza: %(stage_name)s"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task__state
+msgid "State"
+msgstr "Stanje"
+
+#. module: project
+#: code:addons/project/static/src/components/project_task_state_selection/project_task_stage_state_selection/project_task_stage_with_state_selection.js:0
+msgid "State readonly"
+msgstr "Stanje samo za čitanje"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "Status Update - %(date)s"
+msgstr "Ažuriranje statusa - %(date)s"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project__duration_tracking
+msgid "Status time"
+msgstr "Vrijeme statusa"
+
+#. module: project
+#: model:mail.message.subtype,name:project.mt_project_task_approved
+msgid "Task Approved"
+msgstr "Zadatak odobren"
+
+#. module: project
+#: model:mail.message.subtype,name:project.mt_project_task_canceled
+msgid "Task Canceled"
+msgstr "Zadatak otkazan"
+
+#. module: project
+#: model:mail.message.subtype,name:project.mt_task_canceled
+msgid "Task Cancelled"
+msgstr "Zadatak otkazan"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Task Converted from To-Do"
+msgstr "Zadatak konvertiran iz obaveze"
+
+#. module: project
+#: model:mail.message.subtype,name:project.mt_project_task_done
+msgid "Task Done"
+msgstr "Zadatak završen"
+
+#. module: project
+#: model:mail.message.subtype,description:project.mt_task_in_progress
+msgid "Task In Progress"
+msgstr "Zadatak u toku"
+
+#. module: project
+#: model:ir.model,name:project.model_task_share_wizard
+msgid "Task Sharing"
+msgstr "Dijeljenje zadatka"
+
+#. module: project
+#: code:addons/project/static/src/views/components/project_task_template_dropdown.xml:0
+msgid "Task Templates"
+msgstr "Predlošci zadataka"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid ""
+"Task Transferred from Project %(source_project)s to %(destination_project)s"
+msgstr ""
+"Zadatak prebačen iz projekta %(source_project)s u %(destination_project)s"
+
+#. module: project
+#: model:mail.message.subtype,description:project.mt_task_waiting
+msgid "Task Waiting"
+msgstr "Zadatak čeka"
+
+#. module: project
+#: model:mail.message.subtype,description:project.mt_task_approved
+msgid "Task approved"
+msgstr "Zadatak odobren"
+
+#. module: project
+#: model:mail.message.subtype,description:project.mt_task_canceled
+msgid "Task cancelled"
+msgstr "Zadatak otkazan"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Task converted to template"
+msgstr "Zadatak konvertiran u predložak"
+
+#. module: project
+#: model:mail.message.subtype,description:project.mt_task_done
+msgid "Task done"
+msgstr "Zadatak završen"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.task_type_edit
+msgid "Task: Rating Request"
+msgstr "Zadatak: Zahtjev za ocjenu"
+
+#. module: project
+#: model:ir.actions.act_window,name:project.project_milestone_action_view_tasks
+msgid "Tasks.test"
+msgstr "Tasks.test"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_template_create_wizard__template_id
+msgid "Template"
+msgstr "Predložak"
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_template_create_wizard__template_has_dates
+msgid "Template Has Dates"
+msgstr "Predložak ima datume"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "Template converted back to regular project."
+msgstr "Predložak konvertiran nazad u obični projekt."
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Template converted back to regular task"
+msgstr "Predložak konvertiran nazad u obični zadatak"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "Template created from %s."
+msgstr "Predložak kreiran iz %s."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
+msgid "Templates"
+msgstr "Predlošci"
+
+#. module: project
+#: code:addons/project/static/src/views/burndown_chart/burndown_chart_search_model.js:0
+msgid "The Burndown Chart must be grouped by Date"
+msgstr "Burndown grafikon mora biti grupiran po datumu"
+
+#. module: project
+#: code:addons/project/controllers/portal.py:0
+msgid ""
+"The document does not exist or you do not have the rights to access it."
+msgstr "Dokument ne postoji ili nemate prava pristupa."
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid ""
+"The project and the associated partner must be linked to the same company."
+msgstr "Projekt i povezani partner moraju biti vezani za istu kompaniju."
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid ""
+"The project's company cannot be changed if its analytic account has analytic"
+" lines or if more than one project is linked to it."
+msgstr ""
+"Kompanija projekta ne može biti promijenjena ako njegov analitički konto ima"
+" analitičke stavke ili ako je više od jednog projekta povezano s njim."
+
+#. module: project
+#: code:addons/project/static/src/views/burndown_chart/burndown_chart_search_model.js:0
+msgid ""
+"The report should be grouped either by \"Stage\" to represent a Burndown "
+"Chart or by \"Is Closed\" to represent a Burn-up chart. Without one of these"
+" groupings applied, the report will not provide relevant information."
+msgstr ""
+"Izvještaj treba biti grupiran po \"Fazi\" za prikaz Burndown grafikona ili "
+"po \"Zatvoreno\" za prikaz Burn-up grafikona. Bez jednog od ovih grupiranja,"
+" izvještaj neće pružiti relevantne informacije."
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid ""
+"The task and the associated partner must be linked to the same company."
+msgstr "Zadatak i povezani partner moraju biti vezani za istu kompaniju."
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_form/project_task_form_controller.js:0
+msgid "The task description was empty at the time."
+msgstr "Opis zadatka je bio prazan u tom trenutku."
+
+#. module: project
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
+msgid ""
+"The view must be grouped by date and by Stage - Burndown chart or Is Closed "
+"- Burnup chart"
+msgstr ""
+"Pregled mora biti grupiran po datumu i po Fazi - Burndown grafikon ili "
+"Zatvoreno - Burnup grafikon"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_share_wizard_confirm_form
+msgid ""
+"They can edit shared project tasks and view specific documents in read mode "
+"on your website. This includes leads/opportunities, quotations/sales orders,"
+" purchase orders, invoices and bills, timesheets, and tickets."
+msgstr ""
+"Mogu uređivati dijeljene zadatke projekta i pregledati određene dokumente u "
+"načinu čitanja na vašoj web stranici. To uključuje potencijalne "
+"kupce/prilike, ponude/naloge za prodaju, naloge za nabavu, fakture i račune,"
+" evidencije radnog vremena i tikete."
+
+#. module: project
+#: code:addons/project/static/src/views/analytic_account_form/analytic_account_form_controller.js:0
+msgid ""
+"This analytic account is associated with the following projects:\n"
+"%(projectList)s\n"
+"\n"
+"Archiving the account will remove the option to log timesheets for these projects.\n"
+"\n"
+"Are you sure you want to proceed?"
+msgstr ""
+"Ovaj analitički konto je povezan sa sljedećim projektima:\n"
+"%(projectList)s\n"
+"\n"
+"Arhiviranje konta će ukloniti mogućnost evidentiranja radnog vremena za ove projekte.\n"
+"\n"
+"Jeste li sigurni da želite nastaviti?"
+
+#. module: project
+#: code:addons/project/static/src/core/web/follower_list_patch.js:0
+msgid ""
+"This follower is currently a project collaborator. Removing them will revoke"
+" their portal access to the project. Are you sure you want to proceed?"
+msgstr ""
+"Ovaj pratilac je trenutno suradnik na projektu. Uklanjanje će opozvati "
+"njihov pristup portalu za projekt. Jeste li sigurni da želite nastaviti?"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
+msgid ""
+"This is a preview of how the project will look when it's shared with "
+"customers and they have editing access."
+msgstr ""
+"Ovo je pregled kako će projekt izgledati kada bude podijeljen s kupcima i "
+"kada imaju pristup za uređivanje."
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid ""
+"This project is associated with %(project_company)s, whereas the selected "
+"stage belongs to %(stage_company)s. There are a couple of options to "
+"consider: either remove the company designation from the project or from the"
+" stage. Alternatively, you can update the company information for these "
+"records to align them under the same company."
+msgstr ""
+"Ovaj projekt je povezan s %(project_company)s, dok odabrana faza pripada "
+"%(stage_company)s. Postoji nekoliko opcija: uklonite oznaku kompanije s "
+"projekta ili s faze. Alternativno, možete ažurirati informacije o kompaniji "
+"za ove zapise kako biste ih uskladili pod istom kompanijom."
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid ""
+"This project is currently a template. Would you like to convert it back into"
+" a regular project?"
+msgstr ""
+"Ovaj projekt je trenutno predložak. Želite li ga konvertirati nazad u obični"
+" projekt?"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid ""
+"This project is not associated with any company, while the stage is "
+"associated with %s. There are a couple of options to consider: either change"
+" the project's company to align with the stage's company or remove the "
+"company designation from the stage"
+msgstr ""
+"Ovaj projekt nije povezan s nijednom kompanijom, dok je faza povezana s %s. "
+"Postoji nekoliko opcija: promijenite kompaniju projekta da se uskladi s "
+"kompanijom faze ili uklonite oznaku kompanije s faze"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "This task has sub-tasks, so it can't be private."
+msgstr "Ovaj zadatak ima podzadatke, pa ne može biti privatni."
+
+#. module: project
+#: code:addons/project/static/src/components/project_task_state_selection/project_task_state_selection.xml:0
+msgid "This task is blocked by another unfinished task"
+msgstr "Ovaj zadatak je blokiran drugim nezavršenim zadatkom"
+
+#. module: project
+#: code:addons/project/static/src/actions/client_actions.js:0
+msgid ""
+"This task is currently a template. Would you like to convert it back into a "
+"regular task?"
+msgstr ""
+"Ovaj zadatak je trenutno predložak. Želite li ga konvertirati nazad u obični"
+" zadatak?"
+
+#. module: project
+#: code:addons/project/static/src/project_sharing/components/depend_on_ids_one2many/depend_on_ids_list_renderer.xml:0
+msgid "This task is currently blocked by"
+msgstr "Ovaj zadatak je trenutno blokiran od"
+
+#. module: project
+#: model:digest.tip,name:project.digest_tip_project_3
+msgid "Tip: Project-Specific Fields"
+msgstr "Savjet: Projektno-specifična polja"
+
+#. module: project
+#: model:digest.tip,name:project.digest_tip_project_0
+msgid "Tip: Use task states to keep track of your tasks' progression"
+msgstr "Savjet: Koristite stanja zadataka za praćenje napretka vaših zadataka"
+
+#. module: project
+#: model:digest.tip,name:project.digest_tip_project_2
+msgid "Tip: Your Own Personal Kanban"
+msgstr "Savjet: Vaš vlastiti osobni Kanban"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid ""
+"To give portal users access to your project, add them as followers. For task"
+" access, add them as followers for each task."
+msgstr ""
+"Za pristup portal korisnika vašem projektu, dodajte ih kao pratioce. Za "
+"pristup zadacima, dodajte ih kao pratioce za svaki zadatak."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_task_convert_to_subtask_view_form
+msgid ""
+"To transform a task into a sub-task, select a parent task. Alternatively, "
+"leave the parent task field blank to convert a sub-task into a standalone "
+"task."
+msgstr ""
+"Za pretvaranje zadatka u podzadatak, odaberite nadređeni zadatak. "
+"Alternativno, ostavite polje nadređenog zadatka praznim za konvertovanje "
+"podzadatka u samostalni zadatak."
+
+#. module: project
+#: code:addons/project/static/src/views/project_task_control_panel/project_task_control_panel.xml:0
+msgid "Top Menu"
+msgstr "Gornji meni"
+
+#. module: project
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
+msgid "Total Costs"
+msgstr "Ukupni troškovi"
+
+#. module: project
+#: code:addons/project/static/src/components/project_right_side_panel/components/project_profitability.xml:0
+msgid "Total Revenues"
+msgstr "Ukupni prihodi"
+
+#. module: project
+#: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.xml:0
+msgid ""
+"Track project costs, revenues, and margin by setting the analytic account "
+"associated with the project on relevant documents."
+msgstr ""
+"Pratite troškove, prihode i maržu projekta postavljanjem analitičkog konta "
+"povezanog s projektom na relevantne dokumente."
+
+#. module: project
+#: code:addons/project/models/project_project_stage.py:0
+msgid "Unarchive Projects"
+msgstr "Dearhiviraj projekte"
+
+#. module: project
+#: code:addons/project/static/src/actions/client_actions.js:0
+msgid "Undo"
+msgstr "Poništi"
+
+#. module: project
+#: code:addons/project/static/src/project_sharing/chatter/portal_chatter_patch.xml:0
+msgid "Unfollow"
+msgstr "Prestani pratiti"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_kanban
+msgid "Unhappy face"
+msgstr "Nezadovoljno lice"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task__priority__3
+msgid "Urgent"
+msgstr "Hitno"
+
+#. module: project
+#: model_terms:digest.tip,tip_description:project.digest_tip_project_2
+msgid ""
+"Use personal stages to organize your tasks and create your own workflow."
+msgstr ""
+"Koristite osobne faze za organizaciju zadataka i kreiranje vlastitog toka "
+"rada."
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid ""
+"Use the chatter to <b>send emails</b> and communicate efficiently with your "
+"customers. Add new people to the followers' list to make them aware of the "
+"main changes about this task."
+msgstr ""
+"Koristite chat za <b>slanje emailova</b> i efikasnu komunikaciju s kupcima. "
+"Dodajte nove osobe na listu pratilaca kako biste ih obavijestili o glavnim "
+"promjenama na ovom zadatku."
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_task__display_name
+msgid ""
+"Use these keywords in the title to set new tasks:\n"
+"\n"
+"        30h Allocate 30 hours to the task\n"
+"        #tags Set tags on the task\n"
+"        @user Assign the task to a user\n"
+"        ! Set the task a medium priority\n"
+"        !! Set the task a high priority\n"
+"        !!! Set the task a urgent priority\n"
+"\n"
+"        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
+msgstr ""
+"Koristite ove ključne riječi u naslovu za postavljanje novih zadataka:\n"
+"\n"
+"        30h Dodijeli 30 sati zadatku\n"
+"        #tags Postavi oznake na zadatku\n"
+"        @user Dodijeli zadatak korisniku\n"
+"        ! Postavi zadatku srednji prioritet\n"
+"        !! Postavi zadatku visok prioritet\n"
+"        !!! Postavi zadatku hitan prioritet\n"
+"\n"
+"        Pazite da koristite ispravan format i redoslijed npr. Improve the configuration screen 5h #feature #v16 @Mitchell !"
+
+#. module: project
+#: model:ir.model,name:project.model_res_users_settings
+msgid "User Settings"
+msgstr "Postavke korisnika"
+
+#. module: project
+#: model:res.groups,comment:project.group_project_user
+msgid "User can user the your employees' schedule"
+msgstr "Korisnik može koristiti raspored vaših zaposlenika"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "Visible to all"
+msgstr "Vidljivo svima"
+
+#. module: project
+#: code:addons/project/static/src/components/project_task_state_selection/project_task_state_selection.xml:0
+msgid "Waiting"
+msgstr "Čekanje"
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_task__role_ids
+msgid ""
+"When you create a project from a template, you can choose which employee "
+"takes each role. These employees will be added to the tasks, along with "
+"anyone already assigned."
+msgstr ""
+"Kada kreirate projekt iz predloška, možete odabrati koji zaposlenik preuzima"
+" svaku ulogu. Ti zaposlenici će biti dodani na zadatke, zajedno s već "
+"dodijeljenim osobama."
+
+#. module: project
+#: model:project.tags,name:project.project_tags_14
+msgid "Work"
+msgstr "Posao"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_stage_unarchive_wizard
+msgid ""
+"Would you like to unarchive all of the projects contained in these stages as"
+" well?"
+msgstr "Želite li također dearhivirati sve projekte sadržane u ovim fazama?"
+
+#. module: project
+#: code:addons/project/static/src/components/subtask_kanban_list/subtask_kanban_create/subtask_kanban_create.js:0
+msgid "Write a task name"
+msgstr "Upišite naziv zadatka"
+
+#. module: project
+#: code:addons/project/models/project_project_stage.py:0
+msgid ""
+"You are not able to switch the company of this stage to %(company_name)s "
+"since it currently includes projects associated with "
+"%(project_company_name)s. Please ensure that this stage exclusively consists"
+" of projects linked to %(company_name)s."
+msgstr ""
+"Ne možete promijeniti kompaniju ove faze na %(company_name)s jer trenutno "
+"uključuje projekte povezane s %(project_company_name)s. Molimo osigurajte da"
+" ova faza isključivo sadrži projekte povezane s %(company_name)s."
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "You can change the sub-task state here!"
+msgstr "Ovdje možete promijeniti stanje podzadatka!"
+
+#. module: project
+#: code:addons/project/static/src/js/tours/project.js:0
+msgid "You can open sub-tasks from the kanban card!"
+msgstr "Podzadatke možete otvoriti s kanban kartice!"
+
+#. module: project
+#: model:ir.model.constraint,message:project.constraint_project_task_recurring_task_has_no_parent
+msgid "You cannot convert this task into a sub-task because it is recurrent."
+msgstr "Ne možete konvertirati ovaj zadatak u podzadatak jer je ponavljajući."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_stage_delete_wizard
+msgid ""
+"You cannot delete stages containing projects. You can either archive them or"
+" first delete all of their projects."
+msgstr ""
+"Ne možete obrisati faze koje sadrže projekte. Možete ih arhivirati ili prvo "
+"obrisati sve njihove projekte."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_project_stage_delete_wizard
+msgid ""
+"You cannot delete stages containing projects. You should first delete all of"
+" their projects."
+msgstr ""
+"Ne možete obrisati faze koje sadrže projekte. Prvo trebate obrisati sve "
+"njihove projekte."
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "You have been invited to follow %s"
+msgstr "Pozvani ste da pratite %s"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.task_invitation_follower
+msgid "You have been invited to follow Task Document :"
+msgstr "Pozvani ste da pratite dokument zadatka:"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_share_wizard_confirm_form
+msgid ""
+"You have full control and can revoke portal access anytime. Are you ready to"
+" proceed?"
+msgstr ""
+"Imate punu kontrolu i možete opozvati pristup portalu u bilo kojem trenutku."
+" Jeste li spremni za nastavak?"
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid "Your managers decide which feedback is accepted"
+msgstr "Vaši menadžeri odlučuju koja povratna informacija se prihvata"
+
+#. module: project
+#: code:addons/project/static/src/views/analytic_account_form/analytic_account_form_controller.js:0
+msgid "\\t- ${"
+msgstr "\\t- ${"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "alias"
+msgstr "alijas"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "analytic"
+msgstr "analitički"
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid "button."
+msgstr "gumb."
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_role_view_list
+msgid "e.g. Developer"
+msgstr "npr. Programer"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "e.g. Tasks"
+msgstr "npr. Zadaci"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_stage_view_form
+msgid "e.g. To Do"
+msgstr "npr. Za uraditi"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "e.g. mycompany.com"
+msgstr "npr. mojakompanija.com"
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid ""
+"icon to see tasks waiting on other ones. Once a task is marked as complete "
+"or cancelled, all of its dependencies will be unblocked."
+msgstr ""
+"ikonu za pregled zadataka koji čekaju na druge. Kada se zadatak označi kao "
+"završen ili otkazan, sve njegove zavisnosti će biti deblokirane."
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status__periodic
+msgid "on a periodic basis"
+msgstr "na periodičnoj osnovi"
+
+#. module: project
+#: code:addons/project/controllers/portal.py:0
+msgid "project_id"
+msgstr "project_id"
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid ""
+"state to indicate a request for changes or a need for discussion on a task."
+msgstr ""
+"stanje za označavanje zahtjeva za promjenama ili potrebe za diskusijom o "
+"zadatku."
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid ""
+"state to inform your colleagues that a task is approved for the next stage."
+msgstr ""
+"stanje za obavještavanje kolega da je zadatak odobren za sljedeću fazu."
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid "state to mark the task as cancelled."
+msgstr "stanje za označavanje zadatka kao otkazanog."
+
+#. module: project
+#: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
+msgid "state to mark the task as complete."
+msgstr "stanje za označavanje zadatka kao završenog."
+
+#. module: project
+#: code:addons/project/static/src/components/project_task_name_with_subtask_count_char_field/project_task_name_with_subtask_count_char_field.xml:0
+msgid "sub-tasks)"
+msgstr "podzadataka)"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status__stage
+msgid "when reaching this stage"
+msgstr "pri dostizanju ove faze"
+
+#. module: project
+#: model:mail.template,subject:project.rating_project_request_email_template
+msgid ""
+"{{ object.project_id.company_id.name or user.env.company.name }}: "
+"Satisfaction Survey"
+msgstr ""
+"{{ object.project_id.company_id.name or user.env.company.name }}: Anketa "
+"zadovoljstva"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_project_kanban
+msgid "{{0}} Milestones reached out of {{1}}"
+msgstr "{{0}} miljokaza dostignutih od {{1}}"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "👤 Unassigned"
+msgstr "👤 Nedodijeljeno"
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "🔒 Private"
+msgstr "🔒 Privatno"
