@@ -1,9 +1,12 @@
 from .test_project_base import TestProjectCommon
 from odoo import Command
 from odoo.addons.mail.tests.common import MailCase
+from odoo.tests import tagged
+
 from odoo.exceptions import AccessError
 
 
+@tagged('at_install', '-post_install')  # LEGACY at_install, fails post install
 class TestProjectFlow(TestProjectCommon, MailCase):
 
     def test_project_process_project_manager_duplicate(self):
@@ -24,7 +27,7 @@ class TestProjectFlow(TestProjectCommon, MailCase):
             - 'another_parent_task' linked to the partner_3
         """
 
-        Task = self.env['project.task'].with_context({'tracking_disable': True})
+        Task = self.env['project.task']
 
         parent_task = Task.create({
             'name': 'Mother Task',
@@ -122,7 +125,7 @@ class TestProjectFlow(TestProjectCommon, MailCase):
 
     def test_rating(self):
         """Check if rating works correctly even when task is changed from project A to project B"""
-        Task = self.env['project.task'].with_context({'tracking_disable': True})
+        Task = self.env['project.task']
         first_task = Task.create({
             'name': 'first task',
             'user_ids': self.user_projectuser,
@@ -474,3 +477,16 @@ class TestProjectFlow(TestProjectCommon, MailCase):
         self.assertFalse(task1.user_ids)
         self.assertEqual(self.user_projectuser + self.user_projectmanager, task_2.user_ids)
         self.assertEqual(self.user_projectuser, task_3.user_ids)
+
+    def test_customer_can_access_public_project(self):
+        """Test that a customer is automatically subscribed when the project is public."""
+        project = self.env['project.project'].create({
+            'name': 'Public Project',
+            'privacy_visibility': 'portal',
+            'partner_id': self.partner_1.id,
+        })
+
+        self.assertIn(
+            self.partner_1, project.message_partner_ids,
+            "Customer should be automatically subscribed to the project when visibility is set to 'public'."
+        )

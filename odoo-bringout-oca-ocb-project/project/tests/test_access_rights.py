@@ -5,7 +5,7 @@ from odoo.addons.mail.tests.common import mail_new_test_user
 from odoo.addons.project.tests.test_project_base import TestProjectCommon
 from odoo import Command
 from odoo.exceptions import AccessError, ValidationError
-from odoo.tests.common import users
+from odoo.tests.common import tagged, users
 from odoo.tools import mute_logger
 
 class TestAccessRights(TestProjectCommon):
@@ -18,6 +18,7 @@ class TestAccessRights(TestProjectCommon):
     def create_task(self, name, *, with_user=None, **kwargs):
         values = dict(name=name, project_id=self.project_pigs.id, **kwargs)
         return self.env['project.task'].with_user(with_user or self.env.user).create(values)
+
 
 class TestCRUDVisibilityFollowers(TestAccessRights):
 
@@ -112,6 +113,7 @@ class TestCRUDVisibilityFollowers(TestAccessRights):
         with self.assertRaises(AccessError, msg="%s should not be able to unlink the task" % self.env.user.name):
             self.task.with_user(self.env.user).unlink()
 
+
 class TestCRUDVisibilityPortal(TestAccessRights):
 
     def setUp(self):
@@ -138,6 +140,7 @@ class TestCRUDVisibilityPortal(TestAccessRights):
         self.task.invalidate_model()
         self.task.with_user(self.env.user).name
 
+
 class TestCRUDVisibilityEmployees(TestAccessRights):
 
     def setUp(self):
@@ -158,6 +161,7 @@ class TestCRUDVisibilityEmployees(TestAccessRights):
         self.task.flush_model()
         self.task.invalidate_model()
         self.task.with_user(self.env.user).name
+
 
 class TestAllowedUsers(TestAccessRights):
 
@@ -254,6 +258,7 @@ class TestProjectPortalCommon(TestProjectCommon):
         self.task_6 = self.env['project.task'].with_context({'mail_create_nolog': True}).create({
             'name': 'Test5', 'user_ids': False, 'project_id': self.project_pigs.id})
 
+
 class TestPortalProject(TestProjectPortalCommon):
 
     @mute_logger('odoo.addons.base.models.ir_model')
@@ -327,6 +332,7 @@ class TestPortalProject(TestProjectPortalCommon):
             'mail_create_nolog': True}).create, {'name': 'Pigs task', 'project_id': pigs.id})
 
 
+@tagged('at_install', '-post_install')  # LEGACY at_install, fails post install
 class TestAccessRightsPrivateTask(TestAccessRights):
 
     @classmethod

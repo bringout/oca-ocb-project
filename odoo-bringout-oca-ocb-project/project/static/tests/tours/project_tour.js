@@ -2,7 +2,6 @@ import { registry } from "@web/core/registry";
 import { stepUtils } from "@web_tour/tour_utils";
 
 registry.category("web_tour.tours").add('project_test_tour', {
-    url: '/odoo',
     steps: () => [
     stepUtils.showAppsMenuItem(), {
         trigger: '.o_app[data-menu-xmlid="project.menu_main_pm"]',
@@ -64,11 +63,11 @@ registry.category("web_tour.tours").add('project_test_tour', {
         trigger: '.o_kanban_record span:contains("New task")',
         run: "click",
     }, {
-        trigger: 'a[name="sub_tasks_page"]',
+        trigger: 'button[name="sub_tasks_page"]',
         content: 'Open sub-tasks notebook section',
         run: 'click',
     }, {
-        trigger: '.o_field_subtasks_one2many .o_list_renderer a[role="button"]',
+        trigger: '.o_field_subtasks_one2many .o_list_renderer .o_field_x2many_list_row_add button',
         content: 'Add a subtask',
         run: 'click',
     }, {
@@ -135,11 +134,11 @@ registry.category("web_tour.tours").add('project_test_tour', {
         content: 'Assign the task to you',
         run: "click",
     }, {
-        trigger: 'a[name="sub_tasks_page"]',
+        trigger: 'button[name="sub_tasks_page"]',
         content: 'Open sub-tasks notebook section',
         run: 'click',
     }, {
-        trigger: '.o_field_subtasks_one2many .o_list_renderer a[role="button"]',
+        trigger: '.o_field_subtasks_one2many .o_list_renderer .o_field_x2many_list_row_add button',
         content: 'Add a subtask',
         run: 'click',
     }, {

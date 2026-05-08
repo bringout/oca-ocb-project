@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:36+0000\n"
+"POT-Creation-Date: 2025-12-16 18:36+0000\n"
 "PO-Revision-Date: 2025-10-22 11:08+0000\n"
 "Last-Translator: Kristina Pešehodko <kristina@avalah.ee>\n"
 "Language-Team: Estonian <https://translate.odoo.com/projects/odoo-19/"
@@ -40,8 +40,8 @@ msgstr "Analüütilised read"
 
 #. module: project_timesheet_holidays
 #: model:ir.model,name:project_timesheet_holidays.model_res_company
-msgid "Companies"
-msgstr "Ettevõtted"
+msgid "Company"
+msgstr ""
 
 #. module: project_timesheet_holidays
 #: model:ir.model,name:project_timesheet_holidays.model_res_config_settings
@@ -233,37 +233,3 @@ msgstr ""
 #: code:addons/project_timesheet_holidays/__init__.py:0
 msgid "allow_timesheets"
 msgstr "allow_timesheets"
-
-#~ msgid ""
-#~ "Both the internal project and task are required to generate a timesheet "
-#~ "for the time off %s. If you don't want a timesheet, you should leave the "
-#~ "internal project and task empty."
-#~ msgstr ""
-#~ "Puhkuse %s ajatabeli loomiseks on vaja nii sisemist projekti kui ka "
-#~ "ülesannet. Kui te tööaja tabelit ei soovi, peaksite sisemise projekti ja "
-#~ "ülesande tühjaks jätma."
-
-#~ msgid "Generate Timesheet"
-#~ msgstr "Lisa puudumine ajaarvestusse"
-
-#~ msgid "Global Time Off"
-#~ msgstr "Riiklikud pühad"
-
-#~ msgid ""
-#~ "If checked, when validating a time off, timesheet will be generated in "
-#~ "the Vacation Project of the company."
-#~ msgstr ""
-#~ "If checked, when validating a time off, timesheet will be generated in "
-#~ "the Vacation Project of the company."
-
-#~ msgid "Is Time off Task"
-#~ msgstr "Töölt vaba aeg"
-
-#~ msgid "Operation not supported"
-#~ msgstr "Toiming pole toetatud"
-
-#~ msgid "Time Off (%s/%s)"
-#~ msgstr "Puudumised (%s/%s)"
-
-#~ msgid "Time Off Type"
-#~ msgstr "Puudumise tüüp"

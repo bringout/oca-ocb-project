@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 18:37+0000\n"
-"PO-Revision-Date: 2026-02-11 17:43+0000\n"
+"POT-Creation-Date: 2026-02-20 09:01+0000\n"
+"PO-Revision-Date: 2026-02-14 12:15+0000\n"
 "Last-Translator: \"Noemi Pla Garcia (nopl)\" <nopl@odoo.com>\n"
-"Language-Team: Spanish <https://translate.odoo.com/projects/odoo-19/"
+"Language-Team: Spanish <https://translate.odoo.com/projects/odoo-s19-1/"
 "project_mrp/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 #. module: project_mrp
 #: model_terms:ir.ui.view,arch_db:project_mrp.mrp_production_form_view_inherit_project_mrp
 msgid "<span class=\"o_stat_text\">Project</span>"
-msgstr "<span class=\"o_stat_text\">Proyecto</span>"
+msgstr ""
 
 #. module: project_mrp
 #: model:ir.model,name:project_mrp.model_mrp_bom
@@ -36,6 +36,7 @@ msgstr "Lista de materiales"
 #: code:addons/project_mrp/models/project_project.py:0
 #: model:ir.embedded.actions,name:project_mrp.project_embedded_action_bills_of_materials
 #: model:ir.embedded.actions,name:project_mrp.project_embedded_action_bills_of_materials_dashboard
+#: model_terms:ir.ui.view,arch_db:project_mrp.project_view_form_inherit_project_mrp
 msgid "Bills of Materials"
 msgstr "Lista de materiales"
 
@@ -75,10 +76,9 @@ msgid "Manufacturing Order"
 msgstr "Orden de fabricación"
 
 #. module: project_mrp
-#. odoo-python
-#: code:addons/project_mrp/models/project_project.py:0
 #: model:ir.embedded.actions,name:project_mrp.project_embedded_action_manufacturing_orders
 #: model:ir.embedded.actions,name:project_mrp.project_embedded_action_manufacturing_orders_dashboard
+#: model_terms:ir.ui.view,arch_db:project_mrp.project_view_form_inherit_project_mrp
 msgid "Manufacturing Orders"
 msgstr "Órdenes de fabricación"
 

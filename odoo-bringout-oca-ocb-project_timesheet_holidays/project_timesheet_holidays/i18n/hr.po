@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:36+0000\n"
+"POT-Creation-Date: 2025-12-16 18:36+0000\n"
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: Bole <bole@dajmi5.com>, 2023\n"
 "Language-Team: Croatian (https://app.transifex.com/odoo/teams/41243/hr/)\n"
@@ -35,8 +35,8 @@ msgstr "Analitičke stavke"
 
 #. module: project_timesheet_holidays
 #: model:ir.model,name:project_timesheet_holidays.model_res_company
-msgid "Companies"
-msgstr "Tvrtke"
+msgid "Company"
+msgstr ""
 
 #. module: project_timesheet_holidays
 #: model:ir.model,name:project_timesheet_holidays.model_res_config_settings
@@ -202,22 +202,3 @@ msgstr ""
 #: code:addons/project_timesheet_holidays/__init__.py:0
 msgid "allow_timesheets"
 msgstr ""
-
-#~ msgid "Generate Timesheet"
-#~ msgstr "Kreiraj kontrolne kartice"
-
-#~ msgid "Global Time Off"
-#~ msgstr "Generalno vrijeme odsustva"
-
-#~ msgid ""
-#~ "If checked, when validating a time off, timesheet will be generated in "
-#~ "the Vacation Project of the company."
-#~ msgstr ""
-#~ "Označavanjem omogućavate kreiranje stavaka kontrolnih katica prilikom "
-#~ "odobravanja odsustava (prema postavkama projekta)."
-
-#~ msgid "Operation not supported"
-#~ msgstr "Operacija nije podržana"
-
-#~ msgid "Time Off Type"
-#~ msgstr "Vrsta odsustva"

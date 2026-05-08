@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:36+0000\n"
+"POT-Creation-Date: 2025-12-16 18:36+0000\n"
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: Hanna Kheradroosta, 2023\n"
 "Language-Team: Persian (https://app.transifex.com/odoo/teams/41243/fa/)\n"
@@ -36,8 +36,8 @@ msgstr "سطرهای تحلیلی"
 
 #. module: project_timesheet_holidays
 #: model:ir.model,name:project_timesheet_holidays.model_res_company
-msgid "Companies"
-msgstr "شرکت"
+msgid "Company"
+msgstr ""
 
 #. module: project_timesheet_holidays
 #: model:ir.model,name:project_timesheet_holidays.model_res_config_settings
@@ -203,28 +203,3 @@ msgstr ""
 #: code:addons/project_timesheet_holidays/__init__.py:0
 msgid "allow_timesheets"
 msgstr ""
-
-#~ msgid ""
-#~ "Both the internal project and task are required to generate a timesheet "
-#~ "for the time off %s. If you don't want a timesheet, you should leave the "
-#~ "internal project and task empty."
-#~ msgstr ""
-#~ "هم پروژه داخلی و هم وظیفه برای ایجاد یک برگه ساعت کارکرد برای مرخصی %s "
-#~ "مورد نیاز است. اگر برگه ساعت کارکرد نمی خواهید، باید پروژه و وظیفه داخلی "
-#~ "را خالی بگذارید."
-
-#~ msgid "Generate Timesheet"
-#~ msgstr "تولید برگه ساعت کارکرد"
-
-#~ msgid ""
-#~ "If checked, when validating a time off, timesheet will be generated in "
-#~ "the Vacation Project of the company."
-#~ msgstr ""
-#~ "در صورت علامت زدن، هنگام اعتبارسنجی زمان مرخصی، برگه ساعت کارکرد در پروژه "
-#~ "تعطیلات شرکت ایجاد می شود."
-
-#~ msgid "Operation not supported"
-#~ msgstr "عملیات پشتیبانی نمی شود"
-
-#~ msgid "Time Off Type"
-#~ msgstr "نوع مرخصی"

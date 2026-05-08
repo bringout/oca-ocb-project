@@ -52,7 +52,7 @@ class ProjectShareWizard(models.TransientModel):
         project_model = self.env['ir.model']._get('project.project')
         return [(project_model.model, project_model.name)]
 
-    share_link = fields.Char("Public Link", help="Anyone with this link can access the project in read mode.")
+    share_link = fields.Char("Share Link")
     collaborator_ids = fields.One2many('project.share.collaborator.wizard', 'parent_wizard_id', string='Collaborators')
     existing_partner_ids = fields.Many2many('res.partner', compute='_compute_existing_partner_ids', export_string_translation=False)
 
@@ -173,10 +173,8 @@ class ProjectShareWizard(models.TransientModel):
                 partner_ids_in_edit_mode.append(collaborator.partner_id.id)
         if partner_ids_in_edit_mode:
             new_collaborators = self.env['res.partner'].browse(partner_ids_in_edit_mode)
-            portal_partners = new_collaborators.filtered('user_ids')
             # send mail to users
-            self._send_public_link(portal_partners)
-            self._send_signup_link(partners=new_collaborators.with_context({'signup_valid': True}) - portal_partners)
+            self._send_signup_link(partners=new_collaborators.with_context({'signup_valid': True}))
         if partner_ids_in_readonly_mode:
             self.partner_ids = self.env['res.partner'].browse(partner_ids_in_readonly_mode)
             super().action_send_mail()

@@ -1,7 +1,10 @@
-import { Component, onWillStart, useState } from "@odoo/owl";
-import { useService } from "@web/core/utils/hooks";
+import { useState } from "@web/owl2/utils";
+import { Component, onWillStart } from "@odoo/owl";
+import { useService, useOwnedDialogs } from "@web/core/utils/hooks";
 import { Dropdown } from "@web/core/dropdown/dropdown";
 import { DropdownItem } from "@web/core/dropdown/dropdown_item";
+import { _t } from "@web/core/l10n/translation";
+import { SelectCreateDialog } from "@web/views/view_dialogs/select_create_dialog";
 
 import { ProjectTemplateButtons } from "./project_template_buttons";
 
@@ -14,6 +17,10 @@ export class ProjectTaskTemplateDropdown extends Component {
     };
 
     static props = {
+        archInfo: {
+            type: Object,
+            optional: true,
+        },
         hotkey: {
             type: String,
             optional: true,
@@ -39,8 +46,19 @@ export class ProjectTaskTemplateDropdown extends Component {
     setup() {
         this.action = useService("action");
         this.orm = useService("orm");
+        this.offlineService = useService("offline");
+        this.addDialog = useOwnedDialogs();
+        this.displayTasksLimit = 10;
         this.state = useState({ taskTemplates: [] });
         onWillStart(this.onWillStart);
+    }
+
+    get displayViewMoreButton() {
+        return this.state.taskTemplates.length > this.displayTasksLimit;
+    }
+
+    get displayedtaskTemplates() {
+        return this.state.taskTemplates.slice(0, this.displayTasksLimit);
     }
 
     async onWillStart() {
@@ -59,6 +77,28 @@ export class ProjectTaskTemplateDropdown extends Component {
         }
     }
 
+    get isNewButtonAvailableOffline() {
+        const { actionId, viewType } = this.env.config;
+        if (viewType === "list") {
+            return (
+                !this.props.archInfo.editable &&
+                this.offlineService.isAvailableOffline(actionId, "form", false)
+            );
+        } else if (viewType === "kanban") {
+            if (this.props.archInfo.activeActions.quickCreate) {
+                return this.offlineService.isAvailableOffline(
+                    actionId,
+                    "kanban_quick_create",
+                    false
+                );
+            }
+            return this.offlineService.isAvailableOffline(actionId, "form", false);
+        } else if (viewType === "form") {
+            return this.offlineService.isAvailableOffline(actionId, "form", false);
+        }
+        return false;
+    }
+
     async createTaskFromTemplate(templateId) {
         const context = { ...this.props.context };
         if (this.props.getAdditionalContext) {
@@ -74,6 +114,25 @@ export class ProjectTaskTemplateDropdown extends Component {
                 }
             ),
             focusTitle: true,
+        });
+    }
+
+    onClickViewMore() {
+        this.addDialog(SelectCreateDialog, {
+            title: _t("Tasks Templates"),
+            noCreate: true,
+            multiSelect: false,
+            resModel: "project.task",
+            context: {
+                list_view_ref: "project.project_task_view_tree_base",
+            },
+            domain: [
+                ["project_id", "in", [this.props.projectId, false]],
+                ["is_template", "=", true],
+            ],
+            onSelected: ([taskTemplateId]) => {
+                this.createTaskFromTemplate(taskTemplateId);
+            },
         });
     }
 }

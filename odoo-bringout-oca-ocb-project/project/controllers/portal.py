@@ -1,5 +1,4 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
-
 import json
 
 from collections import OrderedDict
@@ -320,6 +319,7 @@ class ProjectCustomerPortal(CustomerPortal):
             'state': {'label': _('Status'), 'sequence': 40},
             'priority': {'label': _('Priority'), 'sequence': 60},
             'partner_id': {'label': _('Customer'), 'sequence': 70},
+            'parent_id': {'label': self.env._('Parent Task'), 'sequence': 90},
         }
         if not project:
             values['project_id'] = {'label': _('Project'), 'sequence': 30}
@@ -339,6 +339,7 @@ class ProjectCustomerPortal(CustomerPortal):
             'status': {'input': 'status', 'label': _('Search in Status'), 'sequence': 40},
             'priority': {'input': 'priority', 'label': _('Search in Priority'), 'sequence': 60},
             'partner_id': {'input': 'partner_id', 'label': _('Search in Customer'), 'sequence': 80},
+            'parent_id': {'input': 'parent_id', 'label': self.env._('Search in Parent Task'), 'sequence': 110},
         }
         if not project:
             values['project_id'] = {'input': 'project_id', 'label': _('Search in Project'), 'sequence': 50}
@@ -383,7 +384,7 @@ class ProjectCustomerPortal(CustomerPortal):
 
         domain = Domain.AND([domain or [], [('has_template_ancestor', '=', False)]])
         if not su and Task.has_access('read'):
-            domain &= Domain(request.env['ir.rule']._compute_domain(Task._name, 'read'))
+            domain &= Task._access_domain('read').optimize_full(Task.sudo())
         Task_sudo = Task.sudo()
         milestone_domain = domain & Domain('allow_milestones', '=', True) & Domain('milestone_id', '!=', False)
         milestones_allowed = Task_sudo.search_count(milestone_domain, limit=1) == 1
@@ -428,7 +429,7 @@ class ProjectCustomerPortal(CustomerPortal):
 
             if groupby != 'none':
                 if groupby == 'milestone_id':
-                    grouped_tasks = [Task_sudo.concat(*g) for k, g in groupbyelem(tasks_project_allow_milestone, itemgetter(groupby))]
+                    grouped_tasks = [Task_sudo.concat(g) for k, g in groupbyelem(tasks_project_allow_milestone, itemgetter(groupby))]
 
                     if not grouped_tasks:
                         if tasks_no_milestone:
@@ -440,7 +441,7 @@ class ProjectCustomerPortal(CustomerPortal):
                             grouped_tasks[len(grouped_tasks) - 1] |= tasks_no_milestone
 
                 else:
-                    grouped_tasks = [Task_sudo.concat(*g) for k, g in groupbyelem(tasks, itemgetter(groupby))]
+                    grouped_tasks = [Task_sudo.concat(g) for k, g in groupbyelem(tasks, itemgetter(groupby))]
             else:
                 grouped_tasks = [tasks] if tasks else []
 
@@ -570,7 +571,7 @@ class ProjectCustomerPortal(CustomerPortal):
 
         values = IrAttachment._check_contents({
             'name': name,
-            'datas': data,
+            'raw': data,
             'res_model': 'project.task',
             'res_id': res_id,
             'access_token': IrAttachment._generate_access_token(),

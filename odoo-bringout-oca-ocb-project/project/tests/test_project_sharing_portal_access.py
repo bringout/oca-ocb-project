@@ -56,7 +56,11 @@ class TestProjectSharingPortalAccess(TestProjectSharingCommon):
         ])
 
     def test_mention_suggestions(self):
-        data = self.task_portal.with_user(self.user_portal).get_mention_suggestions(search="")
+        data = (
+            self.task_portal.with_user(self.user_portal)
+            .get_mention_suggestions(search="")
+            ._build_result()
+        )
         suggestion_ids = {partner.get("id") for partner in data.get("res.partner")}
         self.assertEqual(
             suggestion_ids,
@@ -148,6 +152,7 @@ class TestProjectSharingPortalAccess(TestProjectSharingCommon):
                 task.write({field: dummy_value(field)})
 
     def test_wizard_confirm(self):
+        self.env['ir.config_parameter'].set_str('web.base.url', "gopher://example.org")
         partner_portal_no_user = self.env['res.partner'].create({
             'name': 'NoUser portal',
             'email': 'no@user.portal',
@@ -171,37 +176,5 @@ class TestProjectSharingPortalAccess(TestProjectSharingCommon):
         project_share_wizard_confirmation.action_send_mail()
         mail_partner = self.env['mail.message'].search([('partner_ids', '=', partner_portal_no_user.id)], limit=1)
         self.assertTrue(mail_partner, 'A mail should have been sent to the non portal user')
-        self.assertIn(f'href="http://localhost:{config["http_port"]}/web/signup', str(mail_partner.body), 'The message link should contain the url to register to the portal')
+        self.assertIn('href="gopher://example.org/web/signup', str(mail_partner.body), 'The message link should contain the url to register to the portal')
         self.assertIn('token=', str(mail_partner.body), 'The message link should contain a personalized token to register to the portal')
-
-
-class TestProjectSharingChatterAccess(TestProjectSharingCommon, HttpCase):
-    @mute_logger('odoo.addons.http_routing.models.ir_http', 'odoo.http')
-    def test_post_chatter_as_portal_user(self):
-        self.project_no_collabo.privacy_visibility = 'portal'
-        message = self.get_project_share_link()
-        share_link = str(message.body.split('href="')[1].split('">')[0])
-        match = search(r"access_token=([^&]+)&amp;pid=([^&]+)&amp;hash=([^&]*)", share_link)
-        access_token, pid, _hash = match.groups()
-
-        res = self.url_open(
-            url="/mail/message/post",
-            data=json.dumps({
-                "params": {
-                    "thread_model": self.task_no_collabo._name,
-                    "thread_id": self.task_no_collabo.id,
-                    "post_data": {'body': '(-b ±√[b²-4ac]) / 2a'},
-                    "token": access_token,
-                    "pid": pid,
-                    "hash": _hash,
-                },
-            }),
-            headers={'Content-Type': 'application/json'},
-        )
-        self.assertEqual(res.status_code, 200)
-
-        self.assertTrue(
-            self.env['mail.message'].sudo().search([
-                ('author_id', '=', self.user_portal.partner_id.id),
-            ])
-        )
