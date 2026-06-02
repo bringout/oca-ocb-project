@@ -1512,7 +1512,7 @@ msgstr ""
 #. module: project
 #: model:ir.model,name:project.model_res_company
 msgid "Companies"
-msgstr "Preduzeća"
+msgstr "Kompanije"
 
 # taken from hr.po
 #. module: project
@@ -1524,7 +1524,7 @@ msgstr "Kompanija"
 #. module: project
 #: model:ir.model,name:project.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 # taken from hr.po
 #. module: project
@@ -2095,7 +2095,7 @@ msgstr "Prikaz načina pristupa"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_account_analytic_account__display_name
 msgid "Display Name"
-msgstr "Naziv za prikaz"
+msgstr "Naziv prikaza"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__display_parent_task_button
@@ -2944,7 +2944,7 @@ msgstr "Posljednji"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_collaborator____last_update
 msgid "Last Modified on"
-msgstr "Zadnja izmjena"
+msgstr "Zadnji put izmijenjeno"
 
 # taken from hr.po
 #. module: project
@@ -2986,13 +2986,13 @@ msgstr "Vrijeme promjene"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_collaborator__write_uid
 msgid "Last Updated by"
-msgstr "Zadnji ažurirao"
+msgstr "Zadnji put ažurirao"
 
 # taken from hr.po
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_collaborator__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažurirano"
+msgstr "Zadnji put ažurirano"
 
 # taken from hr.po
 #. module: project
@@ -5832,7 +5832,7 @@ msgstr "Vrijednost treba biti True ili False (ne %s)"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
 msgid "View"
-msgstr "Pregled"
+msgstr "Prikaz"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
@@ -8559,3 +8559,432 @@ msgstr "👤 Nedodijeljeno"
 #: code:addons/project/models/project_task.py:0
 msgid "🔒 Private"
 msgstr "🔒 Privatno"
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "%(name)s Updates"
+msgstr ""
+
+#. module: project
+#: model:mail.template,body_html:project.project_done_email_template
+msgid ""
+"<div>\n"
+"    Dear <t t-out=\"object.partner_id.name or 'customer'\">Brandon Freeman</t>,<br/>\n"
+"    It is my pleasure to let you know that we have successfully completed the project \"<strong t-out=\"object.name or ''\">Renovations</strong>\".\n"
+"    <t t-if=\"user.signature\">\n"
+"        <br/>\n"
+"        <div data-o-mail-quote=\"1\">--<br data-o-mail-quote=\"1\"/><t t-out=\"user.signature or ''\">Mitchell Admin</t></div>\n"
+"    </t>\n"
+"</div>\n"
+"<br/><span style=\"margin: 0px 0px 0px 0px; font-size: 12px; opacity: 0.5; color: #454748;\" groups=\"project.group_project_stages\">You are receiving this email because your project has been moved to the stage <b t-out=\"object.stage_id.name or ''\">Done</b></span>\n"
+"            "
+msgstr ""
+
+#. module: project
+#: model:mail.template,body_html:project.mail_template_data_project_task
+msgid ""
+"<div>\n"
+"    Dear <t t-out=\"object.partner_id.name or 'customer'\">Brandon Freeman</t>,<br/><br/>\n"
+"    Thank you for contacting us. We appreciate your interest in our products/services.<br/>\n"
+"    Our team is currently reviewing your inquiry and will respond to your email as soon as possible.<br/>\n"
+"    If you have any further questions or concerns in the meantime, please do not hesitate to let us know. We are here to help.<br/><br/>\n"
+"    Thank you for your patience.<br/>\n"
+"    Best regards,\n"
+"    <t t-if=\"user.signature\">\n"
+"        <br/>\n"
+"        <div data-o-mail-quote=\"1\">--<br data-o-mail-quote=\"1\"/><t t-out=\"user.signature or ''\">Mitchell Admin</t></div>\n"
+"    </t>\n"
+"</div>\n"
+"        "
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid ""
+"<i class=\"d-none d-md-inline fa fa-fw fa-user me-2 fa fa-envelope\" "
+"title=\"Email\"/>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid ""
+"<i class=\"d-none d-md-inline fa fa-fw fa-user me-2 fa fa-phone\" "
+"title=\"Phone\"/>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid ""
+"<i class=\"d-none d-md-inline fa fa-fw fa-user me-2 fa fa-tag\" "
+"title=\"Tags\"/>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid ""
+"<i class=\"d-none d-md-inline fa fa-fw fa-user me-2\" title=\"Customer\" "
+"name=\"partner_id\"/>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid ""
+"<i class=\"fa o_button_icon fa-check\" invisible=\"next_milestone_status == False or next_milestone_status != 'on_track'\" title=\"On Track\"/>\n"
+"                            <i class=\"fa o_button_icon fa-check text-success\" invisible=\"next_milestone_status != 'next_track'\" title=\"On Track\"/>\n"
+"                            <i class=\"fa o_button_icon fa-check text-danger\" invisible=\"next_milestone_status != 'off_track'\" title=\"Off Track\"/>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid ""
+"<span class=\"o_field_widget ps-1\" invisible=\"closed_task_count == "
+"0\">(</span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<span class=\"o_field_widget ps-1\">(</span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<span class=\"o_field_widget\" invisible=\"closed_task_count == 0\"> ) </span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<span class=\"o_field_widget\"> / 5 </span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<span class=\"o_field_widget\"> / </span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<span class=\"o_field_widget\">%)</span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid ""
+"<span class=\"o_stat_text\">Burndown</span>\n"
+"                                <span class=\"o_stat_text\">Chart</span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<span class=\"o_stat_text\">Milestones</span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<span class=\"o_stat_text\">Rating</span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "<span class=\"o_stat_text\">Status</span>"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_view_form_simplified
+msgid "<span>@</span>"
+msgstr "<span>@</span>"
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_stage_view_form
+msgid "<span>days</span>"
+msgstr "<span>dana</span>"
+
+#. module: project
+#: model:ir.model.constraint,message:project.constraint_project_task_private_task_has_no_parent
+msgid "A private (non-template) task cannot have a parent."
+msgstr ""
+
+#. module: project
+#: code:addons/project/static/src/components/project_many2one_field/project_many2one_field.js:0
+msgid "All Projects"
+msgstr ""
+
+#. module: project
+#: code:addons/project/static/src/components/subtask_one2many_field/subtask_list_renderer.js:0
+msgid ""
+"Are you sure you want to delete this subtask? All its content will be lost."
+msgstr ""
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_task_type__rating_active
+msgid "Ask for Ratings"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_view_form_simplified_template
+msgid "Assignment"
+msgstr ""
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid ""
+"Cannot convert back to regular task because the task has no project defined "
+"but has a parent or sub-tasks."
+msgstr ""
+
+#. module: project
+#: model:ir.model.fields,help:project.field_project_project_stage__rotting_threshold_days
+msgid ""
+"Day count before projects in this stage become stale. Set to 0 to disable."
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.task_type_edit
+msgid "Default"
+msgstr "Zadano"
+
+#. module: project
+#: code:addons/project/static/src/components/subtask_one2many_field/subtask_list_renderer.js:0
+msgid "Delete Subtask"
+msgstr ""
+
+#. module: project
+#: model:project.role,name:project.project_role_2
+msgid "Design Architect"
+msgstr ""
+
+#. module: project
+#: model:project.role,name:project.project_role_5
+msgid "Electrician"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_stage_view_form
+msgid "Fold by Default"
+msgstr "Po podrazumijevanom presavij"
+
+#. module: project
+#: model:portal.entry,description:project.portal_tasks
+msgid "Follow and comments tasks of your projects"
+msgstr ""
+
+#. module: project
+#: model:project.role,name:project.project_role_6
+msgid "Gas Technician"
+msgstr ""
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_report_project_task_user__has_project_template
+msgid "Has Project Template"
+msgstr ""
+
+#. module: project
+#: code:addons/project/static/src/webclient/share_target/project_share_target_item.xml:0
+msgid "In Project"
+msgstr ""
+
+#. module: project
+#: model:project.project,name:project.project_template_2
+msgid "Kitchen Assembly"
+msgstr ""
+
+#. module: project
+#: model:project.role,name:project.project_role_3
+msgid "Logistics Staff"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "Map"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "Name of Tasks"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.portal_tasks_list
+msgid "No Parent Task"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_stage_view_form
+msgid "No email"
+msgstr "Bez e-maila"
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status__periodic
+msgid "On a periodic basis"
+msgstr ""
+
+#. module: project
+#: model:ir.embedded.actions,name:project.project_embedded_action_project_overview
+msgid "Overview"
+msgstr ""
+
+#. module: project
+#: model:project.role,name:project.project_role_8
+msgid "Plumber"
+msgstr ""
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid ""
+"Private (non-template) tasks cannot be converted into sub-tasks. Please set "
+"a project on the task to gain access to this feature."
+msgstr ""
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "Project Overview"
+msgstr ""
+
+#. module: project
+#: model:ir.model,name:project.model_project_tags
+msgid "Project Tag"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "Project name"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "Project's Email"
+msgstr ""
+
+#. module: project
+#: model:project.role,name:project.project_role_9
+msgid "Quality & Safety Officer"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.task_type_edit
+msgid "Rating Email"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_view_form_simplified_template
+msgid "Role"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_stage_view_form
+msgid "Rotting in"
+msgstr "Truhne u"
+
+#. module: project
+#: code:addons/project/controllers/portal.py:0
+msgid "Search in Parent Task"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.view_task_kanban
+msgid "See Parent Task"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "Select Customer"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.edit_project
+msgid "Select Tags"
+msgstr ""
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_share_wizard__share_link
+msgid "Share Link"
+msgstr ""
+
+#. module: project
+#: code:addons/project/models/project_project.py:0
+msgid "Sharing is not available with this project visibility setting."
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_stage_view_form
+msgid "Show to all companies"
+msgstr ""
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_project_stage__name
+msgid "Stage Name"
+msgstr ""
+
+#. module: project
+#: model:project.role,name:project.project_role_7
+msgid "Surface Installer"
+msgstr ""
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Task templates cannot be shared."
+msgstr ""
+
+#. module: project
+#: code:addons/project/static/src/views/components/project_task_template_dropdown.js:0
+msgid "Tasks Templates"
+msgstr ""
+
+#. module: project
+#: model:ir.model.fields,field_description:project.field_project_role__user_ids
+msgid "Team Members"
+msgstr ""
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "Template for Tasks"
+msgstr ""
+
+#. module: project
+#: code:addons/project/report/project_task_burndown_chart_report.py:0
+msgid "The view must be grouped by date and by Stage - Burndown chart"
+msgstr ""
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "This new task has been created in the \"%(project_name)s\" project."
+msgstr ""
+
+#. module: project
+#: code:addons/project/models/project_task.py:0
+msgid "This new task is not part of any project."
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.task_type_edit
+msgid "Update Stage"
+msgstr ""
+
+#. module: project
+#: model:ir.actions.act_window,name:project.project_update_all_action
+msgid "Updates"
+msgstr ""
+
+#. module: project
+#: code:addons/project/static/src/views/components/project_task_template_dropdown.xml:0
+msgid "View More"
+msgstr ""
+
+#. module: project
+#: model:ir.model.fields.selection,name:project.selection__project_task_type__rating_status__stage
+msgid "When reaching this stage"
+msgstr ""
+
+#. module: project
+#: model:project.role,name:project.project_role_4
+msgid "Worker"
+msgstr ""
+
+#. module: project
+#: code:addons/project/static/src/project_sharing/chatter/composer_patch.js:0
+msgid "Write a message…"
+msgstr ""
+
+#. module: project
+#: model_terms:ir.ui.view,arch_db:project.project_project_stage_view_form
+msgid "e.g. Qualification"
+msgstr "npr. Kvalifikacija"

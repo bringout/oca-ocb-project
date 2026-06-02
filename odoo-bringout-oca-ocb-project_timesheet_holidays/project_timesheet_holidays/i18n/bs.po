@@ -47,7 +47,7 @@ msgstr "Kompanije"
 #. module: project_timesheet_holidays
 #: model:ir.model,name:project_timesheet_holidays.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 # taken from hr.po
 #. module: project_timesheet_holidays
@@ -280,3 +280,45 @@ msgstr ""
 #: code:addons/project_timesheet_holidays/__init__.py:0
 msgid "allow_timesheets"
 msgstr "allow_timesheets"
+
+#. module: project_timesheet_holidays
+#: model:ir.model,name:project_timesheet_holidays.model_res_company
+msgid "Company"
+msgstr ""
+
+#. module: project_timesheet_holidays
+#: model:ir.model.fields,help:project_timesheet_holidays.field_res_config_settings__internal_project_id
+msgid ""
+"The default project used when automatically generating timesheets via time "
+"off requests. You can specify another project on each time type "
+"individually."
+msgstr ""
+
+#. module: project_timesheet_holidays
+#: model:ir.model.fields,help:project_timesheet_holidays.field_res_config_settings__leave_timesheet_task_id
+msgid ""
+"The default task used when automatically generating timesheets via time off "
+"requests. You can specify another task on each time type individually."
+msgstr ""
+
+#. module: project_timesheet_holidays
+#: model:ir.model.fields,field_description:project_timesheet_holidays.field_project_task__leave_types_count
+msgid "Time Types Count"
+msgstr ""
+
+#. module: project_timesheet_holidays
+#: code:addons/project_timesheet_holidays/models/account_analytic.py:0
+msgid "Timesheets linked to public holidays cannot be deleted."
+msgstr ""
+
+#. module: project_timesheet_holidays
+#: code:addons/project_timesheet_holidays/models/account_analytic.py:0
+msgid "Timesheets linked to public holidays cannot be modified."
+msgstr ""
+
+#. module: project_timesheet_holidays
+#: code:addons/project_timesheet_holidays/models/account_analytic.py:0
+msgid ""
+"Timesheets related to time off cannot be created or modified. Please manage "
+"your requests in the Time Off app instead."
+msgstr ""
