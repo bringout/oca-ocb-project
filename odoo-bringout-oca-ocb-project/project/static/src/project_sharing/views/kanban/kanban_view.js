@@ -1,19 +1,16 @@
 /** @odoo-module */
 
 import { kanbanView } from "@web/views/kanban/kanban_view";
-import { KanbanDynamicGroupList, KanbanModel } from "@web/views/kanban/kanban_model";
+import { RelationalModel } from "@web/model/relational_model/relational_model";
 
-export class ProjectSharingTaskKanbanDynamicGroupList extends KanbanDynamicGroupList {
-    get context() {
-        return {
-            ...super.context,
+export class ProjectSharingTaskKanbanModel extends RelationalModel {
+    async _webReadGroup(config, firstGroupByName, orderBy) {
+        config.context = {
+            ...config.context,
             project_kanban: true,
         };
+        return super._webReadGroup(...arguments);
     }
 }
-
-export class ProjectSharingTaskKanbanModel extends KanbanModel {}
-
-ProjectSharingTaskKanbanModel.DynamicGroupList = ProjectSharingTaskKanbanDynamicGroupList;
 
 kanbanView.Model = ProjectSharingTaskKanbanModel;
