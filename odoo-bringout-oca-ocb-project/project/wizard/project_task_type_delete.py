@@ -2,12 +2,11 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo import api, fields, models, _
-from ast import literal_eval
 
 
 class ProjectTaskTypeDelete(models.TransientModel):
     _name = 'project.task.type.delete.wizard'
-    _description = 'Project Stage Delete Wizard'
+    _description = 'Project Task Stage Delete Wizard'
 
     project_ids = fields.Many2many('project.project', domain="['|', ('active', '=', False), ('active', '=', True)]", string='Projects', ondelete='cascade')
     stage_ids = fields.Many2many('project.task.type', string='Stages To Delete', ondelete='cascade')
@@ -55,23 +54,9 @@ class ProjectTaskTypeDelete(models.TransientModel):
         return self._get_action()
 
     def _get_action(self):
-        project_id = self.env.context.get('default_project_id')
-
-        if project_id:
-            action = self.env["ir.actions.actions"]._for_xml_id("project.action_view_task")
-            action['domain'] = [('display_project_id', '=', project_id)]
-            action['context'] = str({
-                'pivot_row_groupby': ['user_ids'],
-                'default_project_id': project_id,
-            })
-        elif self.env.context.get('stage_view'):
-            action = self.env["ir.actions.actions"]._for_xml_id("project.open_task_type_form")
-        else:
-            action = self.env["ir.actions.actions"]._for_xml_id("project.action_view_all_task")
-
-        context = action.get('context', '{}')
-        context = context.replace('uid', str(self.env.uid))
-        context = dict(literal_eval(context), active_test=True)
-        action['context'] = context
-        action['target'] = 'main'
-        return action
+        return {
+            'type': 'ir.actions.act_window_close',
+            'infos': {
+                'success': True,
+            },
+        }

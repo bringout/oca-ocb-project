@@ -43,11 +43,47 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
         dogs = pigs.copy()
         self.assertEqual(len(dogs.tasks), 2, 'project: duplicating a project must duplicate its tasks')
 
+    def test_task_creation_notifies_author(self):
+        """ In the following configuration sending an email to the project should spawn a
+        task for it and put it in the first stage, which should notify task creator (author) by email.
+
+        Client                                  Odoo
+         │        "Task: buy flowers"             │
+         ├──────────────────────────────────────►│
+         │                                        │ Creates a task
+         │                                        │ Task lands in a stage with some mail template set
+         │  "Task: buy flowers" has been created  │
+         │◄──────────────────────────────────────┤
+        """
+        mail_template = self.env['mail.template'].create({
+            'name': 'Test template',
+            'subject': 'Test',
+            'body_html': '<p>Test</p>',
+            'auto_delete': True,
+            'model_id': self.env.ref('project.model_project_task').id,
+            'partner_to': '{{ object.id }}',
+            'use_default_to': True,
+        })
+        self.project_goats.type_ids[0].mail_template_id = mail_template.id
+
+        with self.mock_mail_gateway():
+            task = self.format_and_process(
+                EMAIL_TPL,
+                to=f'project+goats@{self.alias_domain}, valid.lelitre@agrolait.com',
+                cc='valid.other@gmail.com',
+                email_from='%s' % self.user_portal.email,
+                subject='Super Frog',
+                target_model='project.task')
+            self.flush_tracking()
+
+        self.assertIn("<p>Test</p>", str(self._new_mails.body), "Stage tracking email should be sent to authors")
+        self.assertEqual(self._new_mails.partner_ids, self.user_portal.partner_id, "Stage tracking email should be sent to authors")
+
     @mute_logger('odoo.addons.mail.models.mail_thread')
     def test_task_process_without_stage(self):
         # Do: incoming mail from an unknown partner on an alias creates a new task 'Frogs'
         task = self.format_and_process(
-            EMAIL_TPL, to='project+pigs@mydomain.com, valid.lelitre@agrolait.com', cc='valid.other@gmail.com',
+            EMAIL_TPL, to=f'project+pigs@{self.alias_domain}, valid.lelitre@agrolait.com', cc='valid.other@gmail.com',
             email_from='%s' % self.user_projectuser.email,
             subject='Frogs', msg_id='<1198923581.41972151344608186760.JavaMail@agrolait.com>',
             target_model='project.task')
@@ -74,7 +110,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
     def test_task_process_with_stages(self):
         # Do: incoming mail from an unknown partner on an alias creates a new task 'Cats'
         task = self.format_and_process(
-            EMAIL_TPL, to='project+goats@mydomain.com, valid.lelitre@agrolait.com', cc='valid.other@gmail.com',
+            EMAIL_TPL, to=f'project+goats@{self.alias_domain}, valid.lelitre@agrolait.com', cc='valid.other@gmail.com',
             email_from='%s' % self.user_projectuser.email,
             subject='Cats', msg_id='<1198923581.41972151344608186760.JavaMail@agrolait.com>',
             target_model='project.task')
@@ -101,7 +137,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
     def test_task_from_email_alias(self):
         # Do: incoming mail from a known partner email on an alias creates a new task 'Super Frog'
         task = self.format_and_process(
-            EMAIL_TPL, to='project+goats@mydomain.com, valid.lelitre@agrolait.com', cc='valid.other@gmail.com',
+            EMAIL_TPL, to=f'project+goats@{self.alias_domain}, valid.lelitre@agrolait.com', cc='valid.other@gmail.com',
             email_from='%s' % self.user_portal.email,
             subject='Super Frog', msg_id='<1198923581.41972151344608186760.JavaMail@agrolait.com>',
             target_model='project.task')
@@ -133,6 +169,52 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             'The task description should be the email content.',
         )
 
+    @mute_logger('odoo.addons.mail.models.mail_thread')
+    def test_task_creation_from_mail(self):
+        server = self.env['fetchmail.server'].create({
+            'name': 'Test server',
+            'user': 'test@example.com',
+            'password': '',
+        })
+        task_id = self.env["mail.thread"].with_context(
+            default_fetchmail_server_id=server.id
+        ).message_process(
+            server.object_id.model,
+            EMAIL_TPL.format(
+                cc="",
+                email_from="chell@gladys.portal",
+                to=f"project+pigs@{self.alias_domain}",
+                subject="In a cage",
+                msg_id="<on.antibiotics@example.com>",
+            ),
+            save_original=server.original,
+            strip_attachments=not server.attach,
+        )
+        task = self.env['project.task'].browse(task_id)
+        self.assertEqual(task.name, "In a cage")
+        self.assertEqual(task.project_id, self.project_pigs)
+
+    @mute_logger('odoo.addons.mail.models.mail_thread')
+    def test_auto_create_partner(self):
+        email = 'unknown@test.com'
+        new_partner = self.env['res.partner'].search([('email', '=', email)])
+        self.assertFalse(new_partner)
+
+        task = self.format_and_process(
+            EMAIL_TPL, to=f'project+pigs@{self.alias_domain}, valid.lelitre@agrolait.com',
+                cc='valid.other@gmail.com',
+                email_from=email,
+                subject='subject',
+                msg_id='<1198923581.41972151344608186760.JavaMail@agrolait.com>',
+                target_model='project.task'
+            )
+
+        self.assertEqual(len(task), 1)
+        new_partner = self.env['res.partner'].search([('email', '=', email)])
+        self.assertTrue(new_partner)
+        self.assertEqual(task.partner_id, new_partner)
+        self.assertEqual(task.message_ids.author_id, new_partner)
+
     def test_subtask_process(self):
         """
         Check subtask mecanism and change it from project.
@@ -153,7 +235,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             'user_ids': self.user_projectuser,
             'project_id': self.project_pigs.id,
             'partner_id': self.partner_2.id,
-            'planned_hours': 12,
+            'allocated_hours': 12,
         })
 
         another_parent_task = Task.create({
@@ -161,7 +243,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             'user_ids': self.user_projectuser,
             'project_id': self.project_pigs.id,
             'partner_id': self.partner_3.id,
-            'planned_hours': 0,
+            'allocated_hours': 0,
         })
 
         # remove the partner_id of the 'goats' project
@@ -174,7 +256,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
         # the child task 1 is linked to a project without partner_id (goats project)
         child_task_1 = Task.with_context(default_project_id=self.project_goats.id, default_parent_id=parent_task.id).create({
             'name': 'Task Child with project',
-            'planned_hours': 3,
+            'allocated_hours': 3,
         })
 
         # the child task 2 is linked to a project with a partner_id (pigs project)
@@ -182,8 +264,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             'name': 'Task Child without project',
             'parent_id': parent_task.id,
             'project_id': self.project_pigs.id,
-            'display_project_id': self.project_pigs.id,
-            'planned_hours': 5,
+            'allocated_hours': 5,
         })
 
         self.assertEqual(
@@ -199,7 +280,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             "Parent task should have 2 children")
 
         self.assertEqual(
-            parent_task.subtask_planned_hours, 8,
+            parent_task.subtask_allocated_hours, 8,
             "Planned hours of subtask should impact parent task")
 
         # change the parent of a subtask without a project partner_id
@@ -222,7 +303,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
 
         # set a project with partner_id to a subtask without project partner_id
         child_task_1.write({
-            'display_project_id': self.project_pigs.id
+            'project_id': self.project_pigs.id
         })
 
         self.assertNotEqual(
@@ -236,7 +317,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
 
         # set a project with partner_id to a subtask with a project partner_id
         child_task_2.write({
-            'display_project_id': self.project_goats.id
+            'project_id': self.project_goats.id
         })
 
         self.assertEqual(
@@ -446,7 +527,7 @@ class TestProjectFlow(TestProjectCommon, MailCommon):
             },
         ])
         for project in projects:
-            groups = project._notify_get_recipients_groups()
+            groups = project._notify_get_recipients_groups(self.env['mail.message'], False)
             groups_per_key = {g[0]: g for g in groups}
             for key, group in groups_per_key.items():
                 has_button_access = group[2]['has_button_access']
